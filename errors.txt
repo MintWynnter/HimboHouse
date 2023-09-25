@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/screens.rpy", line 373: 'Action' is not a keyword argument or valid child for the imagebutton statement.
+    Action Start()
+          ^
+
+Ren'Py Version: Ren'Py 8.0.3.22090809
+Sat Sep 23 14:25:04 2023
