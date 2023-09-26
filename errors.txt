@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 373: 'Action' is not a keyword argument or valid child for the imagebutton statement.
-    Action Start()
-          ^
+File "game/hubScreen.rpy", line 5: 'w' is not a keyword argument or valid child for the screen statement.
+    w "This is where the character would be, if we had the sprites right now."
+     ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Sat Sep 23 14:25:04 2023
+Mon Sep 25 23:56:51 2023
