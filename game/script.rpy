@@ -27,8 +27,28 @@ label start:
 
     # These display lines of dialogue.
 label testing:
-    a "Why hello there."
+    $config.allow_skipping = True
+    $config.keymap["dismiss"].extend(['mouseup_1', 'K_RETURN', 'K_SPACE', 'K_KP_ENTER', 'K_SELECT'])
+    a "Why are you here? This part is not done yet."
 
     # This ends the game.
 
+    return
+
+label lysan:
+    $config.allow_skipping = True
+    $config.keymap["dismiss"].extend(['mouseup_1', 'K_RETURN', 'K_SPACE', 'K_KP_ENTER', 'K_SELECT'])
+    w "This is where Lysander's stuff will be."
+    return
+
+label liz:
+    $config.allow_skipping = True
+    $config.keymap["dismiss"].extend(['mouseup_1', 'K_RETURN', 'K_SPACE', 'K_KP_ENTER', 'K_SELECT'])
+    w "This is where Elizabeth's's stuff will be."
+    return
+
+label mari:
+    $config.allow_skipping = True
+    $config.keymap["dismiss"].extend(['mouseup_1', 'K_RETURN', 'K_SPACE', 'K_KP_ENTER', 'K_SELECT'])
+    w "This is where Marianne's stuff will be."
     return
