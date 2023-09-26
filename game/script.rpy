@@ -3,6 +3,10 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
+init:
+    transform spritezoom:
+        zoom .1
+
 define a = Character("Aures", image="aures")
 define w = Character("Minoru", image="minoru")
 
@@ -21,7 +25,7 @@ label start:
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    show aures heartbroken
+    show aures yanderepose at spritezoom
 
     call screen minimap()
 
