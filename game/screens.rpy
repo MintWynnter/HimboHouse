@@ -365,6 +365,7 @@ screen main_menu():
         xpos .3229167
         ypos .0842593
         at logozoom
+        action [Hide("main_menu"), Show("devChoice")]
     
     imagebutton:
         idle "gui/button/Start.png"

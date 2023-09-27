@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/hubScreen.rpy", line 5: 'w' is not a keyword argument or valid child for the screen statement.
-    w "This is where the character would be, if we had the sprites right now."
-     ^
+File "game/devChoice.rpy", line 6: expected a keyword argument, colon, or end of line.
+    textbutton text "Marie Minuet" pos (.25, .5) 
+                    ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Mon Sep 25 23:56:51 2023
+Tue Sep 26 22:52:55 2023
