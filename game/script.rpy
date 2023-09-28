@@ -84,11 +84,10 @@ label arabella:
     call screen hubScreen("Arabella")
     return
 
-label liz:
+label mari:
     hide aures
     show minoru neutral at spritezoom
     $config.allow_skipping = True
     $config.keymap["dismiss"].extend(['mouseup_1', 'K_RETURN', 'K_SPACE', 'K_KP_ENTER', 'K_SELECT'])
-    w "This is where Elizabeth's's stuff will be."
-    call screen hubScreen("Elizabeth")
-    return
+    jump marianne_bedroom
+    call screen minimap()
