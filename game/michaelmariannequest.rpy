@@ -277,7 +277,7 @@ label marianne_startquest:
 
 label marianne_abouttoleave:
 
-    $ marianne_queststate = 2.5
+    $ marianne_queststate = 10
 
     "The voice in the back of your head pipes up."
 

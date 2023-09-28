@@ -91,3 +91,11 @@ label mari:
     $config.keymap["dismiss"].extend(['mouseup_1', 'K_RETURN', 'K_SPACE', 'K_KP_ENTER', 'K_SELECT'])
     jump marianne_bedroom
     call screen minimap()
+
+label pres:
+    hide aures
+    show minoru neutral at spritezoom
+    $config.allow_skipping = True
+    $config.keymap["dismiss"].extend(['mouseup_1', 'K_RETURN', 'K_SPACE', 'K_KP_ENTER', 'K_SELECT'])
+    jump presper_hub
+    call screen minimap()
