@@ -2,9 +2,11 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 373: 'Action' is not a keyword argument or valid child for the imagebutton statement.
-    Action Start()
-          ^
+The label liz is defined twice, at File "game/script.rpy", line 51:
+label liz:
+and File "game/script.rpy", line 87:
+label liz:
+
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Sat Sep 23 14:25:04 2023
+Wed Sep 27 22:44:04 2023
