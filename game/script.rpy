@@ -53,15 +53,42 @@ label liz:
     show minoru neutral at spritezoom
     $config.allow_skipping = True
     $config.keymap["dismiss"].extend(['mouseup_1', 'K_RETURN', 'K_SPACE', 'K_KP_ENTER', 'K_SELECT'])
-    w "This is where Elizabeth's's stuff will be."
+    w "This is where Elizabeth's stuff will be."
     call screen hubScreen("Elizabeth")
     return
 
-label mari:
+label aures:
     hide aures
     show minoru neutral at spritezoom
     $config.allow_skipping = True
     $config.keymap["dismiss"].extend(['mouseup_1', 'K_RETURN', 'K_SPACE', 'K_KP_ENTER', 'K_SELECT'])
-    w "This is where Marianne's stuff will be."
-    call screen hubScreen("Marianne")
+    w "This is where Aures's stuff will be."
+    call screen hubScreen("Aures")
+    return
+
+label herman:
+    hide aures
+    show minoru neutral at spritezoom
+    $config.allow_skipping = True
+    $config.keymap["dismiss"].extend(['mouseup_1', 'K_RETURN', 'K_SPACE', 'K_KP_ENTER', 'K_SELECT'])
+    w "This is where Herma's stuff will be."
+    call screen hubScreen("Herman")
+    return
+
+label arabella:
+    hide aures
+    show minoru neutral at spritezoom
+    $config.allow_skipping = True
+    $config.keymap["dismiss"].extend(['mouseup_1', 'K_RETURN', 'K_SPACE', 'K_KP_ENTER', 'K_SELECT'])
+    w "This is where Arabella's stuff will be."
+    call screen hubScreen("Arabella")
+    return
+
+label liz:
+    hide aures
+    show minoru neutral at spritezoom
+    $config.allow_skipping = True
+    $config.keymap["dismiss"].extend(['mouseup_1', 'K_RETURN', 'K_SPACE', 'K_KP_ENTER', 'K_SELECT'])
+    w "This is where Elizabeth's's stuff will be."
+    call screen hubScreen("Elizabeth")
     return
