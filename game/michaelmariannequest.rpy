@@ -296,8 +296,7 @@ label marianne_abouttoleave:
     ab "Perhaps that’s not for me to ask."
 
     ab "Never mind, then. On with your business."
-
-    # jump to the map screen
+    call screen minimap()
 
 label marianne_presper:
 

@@ -13,3 +13,5 @@ label marianne_hub:
             # a goodbye line
             if marianne_queststate is 2:
                 jump marianne_abouttoleave
+            else:
+                call screen minimap()
