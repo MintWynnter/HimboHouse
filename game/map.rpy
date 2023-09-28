@@ -21,15 +21,18 @@ screen minimap():
         action [Hide("minimap"), Jump("mari")]
         at chibizoom
     imagebutton:
-        idle "Cera_idle.gif"
+        idle "chibi_aures.png"
         pos (.7, .5)
         action [Hide("minimap"), Jump("testing")]
+        at chibizoom
     imagebutton:
-        idle "Cera_idle.gif"
+        idle "chibi_herman.png"
         pos (.5, .3)
         action [Hide("minimap"), Jump("testing")]
+        at chibizoom
     imagebutton:
-        idle "Cera_idle.gif"
+        idle "chibi_arabella.png"
         pos (.8, .3)
         action [Hide("minimap"), Jump("testing")]
+        at chibizoom
     
