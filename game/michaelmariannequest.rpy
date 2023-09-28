@@ -297,7 +297,7 @@ label marianne_abouttoleave:
 
     ab "Never mind, then. On with your business."
 
-    # jump to the map screen
+    call screen minimap()
 
 label marianne_presper:
 
