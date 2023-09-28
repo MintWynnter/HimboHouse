@@ -89,3 +89,15 @@ label rumi:
     "(((yes that's it)))"
     call screen devChoice
 
+label Eufasy:
+    $config.allow_skipping = True
+    $config.keymap["dismiss"].extend(['mouseup_1', 'K_RETURN', 'K_SPACE', 'K_KP_ENTER', 'K_SELECT'])
+    "Hi, hi!"
+    "My name's Eufasy and I'm the artist who drew Elizabeth. I'm a 2D and 3D video game artist."
+    "Yeah, you gotta do some multitasking if you work in an indie studio. And that's actually the reason why I couldn't do more art in this game."
+    "Being an adult is hard, darn it."
+    "Anyways, I love visual novels and spooky things so this is my third year participating in this jam. Jams can be stressful and all but they are sooo funny, that I keep coming back."
+    "They allow you to meet people and do things in record time so I really recommend trying to participate in one at least once in your life."
+    "Hope you enjoyed the game, it was really fun to meet all of the people who took part on this project and make a visual novel together (even though I'm SO shy, sorry guys)."
+    "Thanks to Michael for reaching me and thanks to Elina for checking up on me. And thanks too to all of the team because you are all really talented artists and nice people."
+    call screen devChoice

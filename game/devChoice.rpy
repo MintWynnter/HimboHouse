@@ -24,3 +24,6 @@ screen devChoice():
     textbutton "Faust":
         pos (.25, .75)
         action [Hide("devChoice"), Jump("Faust")]
+    textbutton "Eufasy":
+        pos (.5, .75)
+        action [Hide("devChoice"), Jump("Eufasy")]
