@@ -1,0 +1,143 @@
+Fri Sep 29 01:44:52 2023
+Windows-10-10.0.19045
+Ren'Py 8.1.3.23091805
+ 
+
+Bootstrap to the start of init.init. took 0.03s
+Early init. took 0.00s
+Loader init. took 0.03s
+Loading error handling. took 0.03s
+game/michaelmariannehub.rpy:8: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"Is there something I can do for you, [marianne_name]?\"" if marianne_queststate is 1:
+game/michaelmariannehub.rpy:12: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"I have the camcorder you were asking for.\"" if marianne_queststate is 3:
+game/michaelmariannehub.rpy:60: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if marianne_queststate is 2:
+game/michaelmariannequest.rpy:9: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if marianne_queststate is 0:
+game/michaelmidpoint.rpy:169: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if arabella_queststate is 4:
+game/michaelmidpoint.rpy:172: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if arabella_queststate is 3:
+game/michaelmidpoint.rpy:175: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if arabella_queststate is 2:
+game/michaelmidpoint.rpy:178: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if elizabeth_queststate is 6:
+game/michaelmidpoint.rpy:181: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if elizabeth_queststate is 7:
+game/michaelmidpoint.rpy:184: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if herman_queststate is 6:
+game/michaelmidpoint.rpy:189: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if aures_queststate is 5:
+game/michaelmidpoint.rpy:192: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if aures_queststate is 6:
+game/michaelmidpoint.rpy:195: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 5:
+game/michaelmidpoint.rpy:198: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 6:
+game/michaelpostquests.rpy:5: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if questsdone is 1:
+game/michaelpostquests.rpy:8: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if questsdone is 2:
+game/michaelpostquests.rpy:11: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if questsdone is 3:
+game/michaelpostquests.rpy:14: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if questsdone is 4:
+game/michaelpostquests.rpy:17: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if questsdone is 5:
+game/michaelpostquests.rpy:20: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if questsdone is 6:
+game/michaelpostquests.rpy:266: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if marianne_queststate is 4:
+game/michaelpostquests.rpy:268: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if marianne_queststate is 5:
+game/michaelpostquests.rpy:270: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if marianne_queststate is 6:
+game/michaelpresperhub.rpy:11: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"Have you seen a camcorder around here?\"" if marianne_queststate is 10:
+Loading script. took 0.20s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Running init code. took 0.05s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.02s
+Index archives took 0.00s
+Dump and make backups. took 0.04s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.01s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object. took 0.26s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.12s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 2070/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.99'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1379, 776) drawable=(1379, 776)
+Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 4.32s
+Early init. took 0.00s
+Loader init. took 0.03s
+Loading error handling. took 0.02s
+Loading script. took 0.12s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.05s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.02s
+Index archives took 0.00s
+Dump and make backups. took 0.04s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object. took 0.24s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 2070/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.99'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1379, 776) drawable=(1379, 776)
+Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1

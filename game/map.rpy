@@ -35,4 +35,8 @@ screen minimap():
         pos (.8, .3)
         action [Hide("minimap"), Jump("testing")]
         at chibizoom
-    
+    imagebutton:
+        idle "question_mark.png"
+        pos (.8, .7)
+        action [Hide("minimap"), Jump("presper_hub")]
+        at chibizoom
