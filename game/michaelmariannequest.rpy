@@ -45,7 +45,7 @@ label marianne_intro:
     "The air slowly shifts."
     "A shiver runs up your spine as an amused looking woman materializes into existence."
     #voice maq6-04
-    show marianne smile at spritezoom
+    show marianne smile
     ma "Sorry it took me so long, hon, I had to go make myself presentable."
     #voice ma_uni
     show marianne happysad
