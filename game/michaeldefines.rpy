@@ -1,4 +1,6 @@
 
+default questsdone = 0 # how many quests have you completed?
+
 # the marianne corner (she's magenta-pink)
 default marianne_name = "???"
 define ma = Character("marianne_name", dynamic = True, color="#f7c8f3",what_color="#f7c8f3", image = "marianne")
@@ -10,8 +12,9 @@ define ma = Character("marianne_name", dynamic = True, color="#f7c8f3",what_colo
     # if you change her name to daisy
 #$ marianne_name = "—"
 
-
 default marianne_queststate = 0
+default marianne_questdone = False # did you finish the quest?
+default marianne_questjustfinished = False   #did you just finish the quest, so abbe can check in?
 
 # the presper corner (he's gray)
 default presper_name = "???"
@@ -27,3 +30,10 @@ define ab = Character("abbe_name", dynamic = True, color = "#e3f0ff", what_color
 
     #when he introduces himself
 #$ abbe_name = "Abbé Maurice"
+
+# the everyone else corner so i can do the midpoint scene
+default arabella_queststate = 0
+default herman_queststate = 0
+default lysander_queststate = 0
+default elizabeth_queststate = 0
+default aures_queststate = 0

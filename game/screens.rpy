@@ -366,25 +366,25 @@ screen main_menu():
         ypos .0842593
         at logozoom
         action [Hide("main_menu"), Show("devChoice")]
-    
+
     imagebutton:
         idle "gui/button/Start.png"
         xpos .0208333
         ypos .8925926
         action Start()
-    
+
     imagebutton:
         idle "gui/button/Load.png"
         xpos .2151042
         ypos .8925926
         action ShowMenu("load")
-    
+
     imagebutton:
         idle "gui/button/Settings.png"
         xpos .4119792
         ypos .8925926
         action ShowMenu("preferences")
-    
+
     imagebutton:
         idle "gui/button/Extras.png"
         xpos .6072917
@@ -933,7 +933,7 @@ screen history():
                             text_color h.who_args["color"]
 
                 $ what = renpy.filter_text_tags(h.what, allow=gui.history_allow_tags)
-                text what:
+                text what + "\n":
                     substitute False
 
         if not _history_list:

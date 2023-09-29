@@ -236,7 +236,7 @@ define config.thumbnail_height = 216
 
 ## The number of columns and rows in the grid of save slots.
 define gui.file_slot_cols = 3
-define gui.file_slot_rows = 2
+define gui.file_slot_rows = 1
 
 
 ## Positioning and Spacing #####################################################
@@ -339,7 +339,7 @@ define config.history_length = 250
 
 ## The height of a history screen entry, or None to make the height variable at
 ## the cost of performance.
-define gui.history_height = 210
+define gui.history_height = None
 
 ## The position, width, and alignment of the label giving the name of the
 ## speaking character.
