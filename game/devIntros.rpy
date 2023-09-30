@@ -1,7 +1,7 @@
 label marMin:
     $config.allow_skipping = True
     $config.keymap["dismiss"].extend(['mouseup_1', 'K_RETURN', 'K_SPACE', 'K_KP_ENTER', 'K_SELECT'])
-    "Hey! My name is Marie Minuet, and I'm one of the writers crafting the story for “The House On Limbo Lane”, and it has been a remarkable journey!"
+    "Hey! My name is Marie Minuet, and I'm one of the writers crafting the story for \“The House On Limbo Lane\", and it has been a remarkable journey!"
     "Currently, I'm pursuing my degree in clinical psychology, specializing in behavioral analysis. Beyond my academic pursuits, my heart belongs to the world of storytelling and my video game addiction."
     "What truly fuels my passion is creating narratives that not only entertain and keep our attention but also resonate deeply with our emotions and experiences."
     "\"The House On Limbo Lane\" marks an incredible milestone for me—it's the first finished project I've been a part of that has been published. The experience was nothing short of amazing, and it's left me buzzing with excitement for future projects."
@@ -11,7 +11,7 @@ label marMin:
     "Drawing from my background in psychology, I aim to provide an authentic representation of mental health issues, striving to shed light on these topics with compassion and understanding in my writing."
     "I must take a moment to express my deep gratitude to the most amazing team I've ever had the pleasure of working with. Their dedication and outstanding work have made this project truly exceptional."
     "I'm immensely thankful for their patience and support, which has been instrumental in my growth as a writer."
-    "I'm a firm believer in the power of stories to inspire change and foster empathy. With “The House On Limbo Lane”, I hope I have been able to contribute to the conversation on mental health while delivering an engaging and immersive experience."
+    "I'm a firm believer in the power of stories to inspire change and foster empathy. With \“The House On Limbo Lane\", I hope I have been able to contribute to the conversation on mental health while delivering an engaging and immersive experience."
     "Thank you for joining us on this exciting journey! Oh, and… Welcome to Limbo Lane!"
     call screen devChoice
 
@@ -55,7 +55,7 @@ label Jett:
     "I came into this project with game-writing and tech experience, but knew after finishing my last Really Big Project in 2020 that gamedev wasn't something I could reasonably continue whilst also pursuing a career in voice acting."
     "I never lost my love for the medium, though—so, when approached about the possibility of writing just a portion of a title for Spooktober 2023, I absolutely jumped at the chance. I'm so glad to have (re)joined this merry band of misfits for what has always been my favorite jam of the year!"
     "If I were to thank folks individually, I'd probably end up detailing literally everyone on the team; you all are such wonderful artists to collaborate with, and I'm honored to have been alongside you all for the ride."
-    "That said, I'd like to quickly extend my sincerest gratitude to the folks I can best describe as “Team Lysander”—to Michael, for assembling this goofy group, doing an incredible amount of work on the broader narrative, and pivoting between wearing so many hats;"
+    "That said, I'd like to quickly extend my sincerest gratitude to the folks I can best describe as \“Team Lysander\"—to Michael, for assembling this goofy group, doing an incredible amount of work on the broader narrative, and pivoting between wearing so many hats;"
     "to Kylie, for your always-impeccable schedule management, stellar audio work, and willingness to play with my terrible, gooey noises;"
     "to Thoe, for artwork that legitimately made me cry multiple times (because you somehow managed to transport the Lysander from my brain into the real world);"
     "to Henri, for a score that more clearly encapsulated Lysander's interior energy than anything I could ever conceptualize; to Faust, for ensuring that my somewhat-unwieldy writing remained comprehensible to most humans;"
@@ -66,7 +66,7 @@ label Jett:
 label Kat:
     $config.allow_skipping = True
     $config.keymap["dismiss"].extend(['mouseup_1', 'K_RETURN', 'K_SPACE', 'K_KP_ENTER', 'K_SELECT'])
-    "I'm Kat, a Canadian artist and Voice actress whose passion is Storytelling. I was fortunate enough to have worked as a voice actor for Marianne, and artist for several background arts for “The House On Limbo Lane”."
+    "I'm Kat, a Canadian artist and Voice actress whose passion is Storytelling. I was fortunate enough to have worked as a voice actor for Marianne, and artist for several background arts for \“The House On Limbo Lane\"."
     "I can't wait to share the story with people, and am really proud of the hard work that everyone has put in. Such a lovely group of folks. I always felt very welcomed and cared about!"
     "Storytelling like this is so immersive and comes to life in such a special way. Enjoy exploring Limbo Lane everyone!"
     call screen devChoice

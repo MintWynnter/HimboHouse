@@ -19,7 +19,9 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene bg room
+
+
+    #jump gameintro
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
@@ -44,7 +46,7 @@ label lysan:
     show minoru neutral at spritezoom
     $config.allow_skipping = True
     $config.keymap["dismiss"].extend(['mouseup_1', 'K_RETURN', 'K_SPACE', 'K_KP_ENTER', 'K_SELECT'])
-    w "This is where Lysander's stuff will be."
+    jump lysander_garden
     call screen hubScreen("Lysander")
     return
 
@@ -53,7 +55,7 @@ label liz:
     show minoru neutral at spritezoom
     $config.allow_skipping = True
     $config.keymap["dismiss"].extend(['mouseup_1', 'K_RETURN', 'K_SPACE', 'K_KP_ENTER', 'K_SELECT'])
-    w "This is where Elizabeth's stuff will be."
+    jump elizabeth_livingroom
     call screen hubScreen("Elizabeth")
     return
 
@@ -80,7 +82,7 @@ label arabella:
     show minoru neutral at spritezoom
     $config.allow_skipping = True
     $config.keymap["dismiss"].extend(['mouseup_1', 'K_RETURN', 'K_SPACE', 'K_KP_ENTER', 'K_SELECT'])
-    w "This is where Arabella's stuff will be."
+    jump arabella_foyer
     call screen hubScreen("Arabella")
     return
 
@@ -90,4 +92,12 @@ label mari:
     $config.allow_skipping = True
     $config.keymap["dismiss"].extend(['mouseup_1', 'K_RETURN', 'K_SPACE', 'K_KP_ENTER', 'K_SELECT'])
     jump marianne_bedroom
+    call screen minimap()
+
+label pres:
+    hide aures
+    show minoru neutral at spritezoom
+    $config.allow_skipping = True
+    $config.keymap["dismiss"].extend(['mouseup_1', 'K_RETURN', 'K_SPACE', 'K_KP_ENTER', 'K_SELECT'])
+    jump presper_hub
     call screen minimap()

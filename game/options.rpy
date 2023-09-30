@@ -4,6 +4,9 @@
 ## them. Lines beginning with a single '#' mark are commented-out code, and you
 ## may want to uncomment them when appropriate.
 
+define config.mouse = { }
+define config.mouse['default'] = [ ( "gui/cursor.png", 0, 0) ]
+
 
 ## Basics ######################################################################
 
@@ -49,6 +52,8 @@ define build.name = "TheHouseOnLimboLane"
 define config.has_sound = True
 define config.has_music = True
 define config.has_voice = True
+
+define config.voice_filename_format = "audio/{filename}.ogg"
 
 
 ## To allow the user to play a test sound on the sound or voice channel,

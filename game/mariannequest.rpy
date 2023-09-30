@@ -277,7 +277,7 @@ label marianne_startquest:
 
 label marianne_abouttoleave:
 
-    $ marianne_queststate = 2.5
+    $ marianne_queststate = 10
 
     "The voice in the back of your head pipes up."
 
@@ -396,7 +396,7 @@ label presper_doesnotmatterlol:
 
     $ marianne_queststate = 3
 
-    jump presper_hub
+    jump presper_convohub
 
 label marianne_gotcamcorder:
 
@@ -430,7 +430,7 @@ label marianne_gotcamcorder:
             #voice maq6-41
             show marianne thoughtful
             ma "Is all the glitz not glitzy enough? Hm? How about the glamor — not up to par?"
-            #voice maq6-42
+            #voice maq6-42 THIS DOES NOT EXIST
             show marianne thoughtful
             ma "Are you not really a shambling, half-functional walking corpse?"
 
@@ -630,7 +630,7 @@ label marianne_alsodoesntmatterlol:
             #voice ma_dis
             show marianne thoughtful
             ma "I thought losing weight would turn things around."
-            #voice maq6-59
+            #voice maq6-59 THIS DOES NOT EXIST
             show marianne happysad
             ma "But I guess even shedding 100% of your mass and going fully incorporeal still doesn’t cut it."
 
@@ -816,6 +816,7 @@ label marianne_lmfao:
 
         "\"Keep living your… life, Marianne.\"":
             $ marianne_queststate = 4
+            $ marianne_name = "Marianne"
             "Her lips purse. Her eyes dart back and forth."
             "She freezes, swallows, and stands back up."
             #voice maq6-77
@@ -828,6 +829,7 @@ label marianne_lmfao:
 
         "\"Drop the act and be yourself, Daisy.\"":
             $ marianne_queststate = 5
+            $ marianne_name = "Daisy"
             "Her lips purse. Her eyes dart back and forth."
             "She freezes, swallows, and stands back up."
             #voice maq6-79
@@ -845,6 +847,7 @@ label marianne_lmfao:
 
         "\"Be someone new, not someone you thought you should be.\"":
             $ marianne_queststate = 6
+            $ marianne_name = "Marianne"
             "Her lips purse. Her eyes dart back and forth."
             "She freezes, swallows, and stands back up."
             #voice maq6-82
@@ -882,5 +885,9 @@ label marianne_lmfao:
     #voice maq6-91
     show marianne happysad
     ma "I’ll be here. Take the time it takes."
+
+    $ marianne_questdone = True
+    $ marianne_questjustfinished = True
+    $ questsdone = questsdone + 1
 
     jump marianne_hub
