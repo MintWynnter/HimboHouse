@@ -1,16 +1,18 @@
-Sat Sep 30 14:07:24 2023
+Sat Sep 30 14:48:52 2023
 Windows-10-10.0.19045
 Ren'Py 8.0.3.22090809
  
 
-Bootstrap to the start of init.init took 0.06s
+Bootstrap to the start of init.init took 0.05s
 Early init took 0.00s
-Loader init took 1.12s
-Loading error handling took 0.04s
+Loader init took 0.30s
+Loading error handling took 0.08s
 game/hermanHub.rpy:4: SyntaxWarning: "is" with a literal. Did you mean "=="?
   "\"Is there something I can do for you, Herman?\"" if marianne_queststate is 1:
 game/hermanHub.rpy:11: SyntaxWarning: "is" with a literal. Did you mean "=="?
   if marianne_queststate is 2:
+game/hermanQuest.rpy:9: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if herman_queststate is 0:
 game/michaelmariannehub.rpy:4: SyntaxWarning: "is" with a literal. Did you mean "=="?
   "\"Is there something I can do for you, [marianne_name]?\"" if marianne_queststate is 1:
 game/michaelmariannehub.rpy:8: SyntaxWarning: "is" with a literal. Did you mean "=="?
@@ -21,17 +23,83 @@ game/michaelmariannequest.rpy:9: SyntaxWarning: "is" with a literal. Did you mea
   if marianne_queststate is 0:
 game/michaelpresperhub.rpy:4: SyntaxWarning: "is" with a literal. Did you mean "=="?
   "\"Have you seen a camcorder around here?\"" if marianne_queststate is 2.5:
-Loading script took 0.53s
-Loading save slot metadata. took 0.25s
+Loading script took 1.16s
+Loading save slot metadata. took 0.08s
 Loading persistent took 0.00s
 
-File "game/hermanQuest.rpy", line 574: is not terminated with a newline. (Check strings and parenthesis.)
+File "game/hermanQuest.rpy", line 92: expected statement.
+    he A toast to health, and to the start of our magnificent `mahg-NIF-uh-scent` friendship!
+                        ^
+
+File "game/hermanQuest.rpy", line 96: expected statement.
 (Perhaps you left out a ' at the end of the first line.)
-    he Head on down to the basement. That's where the rituals were held here. I doubt those yella bellied cowards would have had the gall to clean up afterwards.
+    he Oh, in case you didn't know, this is the part where we lightly touch glasses together as a show of trust.
+         ^
+        #voice heq2-14
+        show herman happy
+        he I wouldn't expect someone of your... 'condition' and caliber to understand that so figured I'd best explain it.
+        "Lift your glass and clink it with his, acknowledging his toast."
+        #voice 
+        mc Leave your glass untouched. "Sorry, I don't drink, but can you answer some questions for me?"
+    
+    
+        "Herman's eyebrow lifts over his monocle, his face showing a mix of intrigue and annoyance."
+        #voice heq2-15
+        show herman neutral
+        he Well now, perhaps you forget your station, my not-so-alive friend.
+        "Herman pauses for a few moments and looks away, rubbing his bearded chin slowly before lowering his eyebrow and looking back, seeming less annoyed."
+        #voice heq2-16
+        show herman neutral
+        he However, a bit of kindness on my part is perhaps in order. I might be persuaded to entertain a question or two if you'd 'allow' me to wet my whistle.
+
+File "game/hermanQuest.rpy", line 122: end of line expected.
+(Perhaps you left out a ' at the end of the first line.)
+    he Now WHY you gone an' done sum'in STU-PIT like'dat?!
+                                     ^
+        "He storms up to you, the sound of his polished shoes slapping against the floor, his stomach a hair's breadth away from you, yet you cannot feel his presence."
+        #voice heq2-18
+        show herman angry
+        he You got some fuck'n NERVE, youngin! I oughta yank mah belt off and beat the GAH-damn TAR outta ya!
+        "Herman breathes heavily down at you, his fist clenched and shaking with anger."
+        #voice 
+        mc "Are you ready to treat me with respect now? I need answers from you."
+        #voice 
+        mc "That is what you get for being rude and demanding!"
+        "--"
+    
+    label HermanScene3:
+    
+        #voice heq2-19
+        show herman neutral
+        he Ahh, just like my pappy used to make.
+        "Herman takes a slow, savoring sip from his glass before lowering it with a look of deep satisfaction, tapping his cigar and ashing on the bar."
+        "Mmm-MM! Now that's some genuine `gen-u-ine` top-shelf bourbon right there, I tell you what."
+        "Take a drink along with Herman."
+        "Herman's stern look slowly melts away as you pour the amber liquid into the glass, allowing you to finish before gently grasping the fine crystal in his fingers and swirling it, his eyes fixed on the glass."
+        "Yet, he does not drink."
+        #voice heq2-20
+        show herman neutral
+        he So...
+        "He lifts the glass to his nose and smells it, then places it back on the bar. He wags the cigar in his fingers a moment before taking a drag from it and exhaling away from you somewhat."
+        #voice heq2-21
+        show herman happy
+        he You're just the right amount of shrewd and polite... I like that. I think you'd make a mighty fine associate, so why don't you and I discuss business before gett'n to your question?
+        "Herman extends his free hand toward you, offering a shake."
+        "Whadda'ya say, 'partner'?"
+        "Firmly shake hands with Herman."
+        "\"No thank you, I'd rather you answer my questions.\""
+
+File "game/hermanQuest.rpy", line 158: end of line expected.
+    he Ya'aint gonna let this go, are ya? Whatcha gonna do, hold my bourbon ransom until I answer yer fuckin' questions?
+                                                                                                              ^
+
+File "game/hermanQuest.rpy", line 442: expected statement.
+    "Opening the book, the first few dozen pages are somewhat together, quite weathered and smudged, as if the book was sitting in water for a long time and then dried out. You're able to read some writing of the opening endpaper beside a curious symbol; "The Jour... rutus Indi ..."."
+                                                                                                                                                                                                                                                                        ^
 DPI scale factor: 1.250000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Interface start took 0.46s
+Interface start took 0.52s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -43,3 +111,82 @@ Version: b'4.6.0 NVIDIA 528.52'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1724, 970) drawable=(1724, 970)
 Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 75.39s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.01s
+Loading script took 0.19s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+
+File "game/hermanQuest.rpy", line 442: expected statement.
+    "Opening the book, the first few dozen pages are somewhat together, quite weathered and smudged, as if the book was sitting in water for a long time and then dried out. You're able to read some writing of the opening endpaper beside a curious symbol; "The Jour... rutus Indi ..."."
+                                                                                                                                                                                                                                                                        ^
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.48s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1650/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 528.52'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1724, 970) drawable=(1724, 970)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 91.77s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 1.03s
+Loading script took 0.22s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'D:\\Ren'Py\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.28s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\sosul\\AppData\\Roaming/RenPy/backups\\The House on Limbo Lane':
+Dump and make backups. took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.36s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.14s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1650/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 528.52'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1724, 970) drawable=(1724, 970)
+Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
