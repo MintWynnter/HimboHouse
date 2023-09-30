@@ -381,3 +381,146 @@ label marianne_reflection_end:
     #voice
     ab "Anyhow, there is yet still more to be attended to."
     jump postquest
+
+label lysander_reflection:
+
+    "The voice in your head opines."
+
+    if lysander_queststate is 7:
+        jump lysander_reflection_free
+
+    if lysander_queststate is 8:
+        jump lysander_reflection_doom
+
+    if lysander_queststate is 9:
+        jump lysander_reflection_trade
+
+    if lysander_queststate is 10:
+        jump lysander_reflection_doom
+
+label lysander_reflection_free:
+
+    #voice
+    ab "You got him out. Very impressive."
+    #voice
+    ab "And you even somehow managed to make a perpetually guilty man not feel so guilty."
+    #voice
+    ab "That was a tall ask to extend such kindness, and I don’t recall anyone actually asking."
+    #voice abq0-s507
+    menu:
+        ab "This compassion, what has prompted it?"
+        "\"Lysander has suffered enough. He needed relief.\"":
+            #voice abq0-s508
+            ab "You’re right to say that. The poor sap has gone through hell and back."
+            #voice abq0-s509
+            ab "Something tells me he’ll never really be free."
+            #voice
+            ab "But, undoing the curse is an excellent start."
+            jump lysander_reflection_end
+
+        "\"Compassion doesn’t need prompting, you know.\"":
+            #voice abq0-s510
+            ab "A bleeding heart, we are. The man died whilst shooting another."
+            #voice
+            ab "To assume compassion is warranted is… naive, I think."
+            #voice
+            ab "Not to sound callous."
+            #voice abq0-s511
+            ab "A more level head would serve you, is all."
+            jump lysander_reflection_end
+
+        "\"Kindness begets kindness. I expect it in turn.\"":
+            #voice abq0-s512
+            ab "Selfish, but with good means. I quite like that tack."
+            #voice
+            ab "Kill ‘em with kindness, as they say."
+            #voice abq0-s513
+            ab "I’m sure Lysander is enough of a pushover to return the favor."
+            jump lysander_reflection_end
+
+label lysander_reflection_trade:
+
+    #voice abq0-s519
+    ab "Well, it’s all yours. The curse, that is."
+    #voice
+    ab "I suppose it’s your lot, now."
+    #voice
+    ab "I’m not sure how that will manifest."
+    #voice abq0-s520
+    ab "Perhaps it won’t matter. Perhaps it will spell something worse."
+    #voice
+    ab "I couldn’t tell you, but I can ask:"
+    #voice abq0-s521
+    menu:
+        ab "Why make a trade like that?"
+
+        "\"Lysander has suffered enough. He needed relief.\"":
+            #voice abq0-66.01
+            ab "You’re right to say that. The poor sap has gone through hell and back."
+            #voice abq0-s509
+            ab "Something tells me he’ll never really be free."
+            #voice
+            ab "But, undoing the curse is an excellent start."
+
+        "\"Compassion doesn’t need prompting, you know.\"":
+            #voice abq0-s510
+            ab "A bleeding heart, we are. The man died whilst shooting another."
+            #voice
+            ab "To assume compassion is warranted is… naive, I think."
+            #voice
+            ab "Not to sound callous."
+            #voice abq0-s511
+            ab "A more level head would serve you, is all."
+
+        "\"Kindness begets kindness. I expect it in turn.\"":
+            #voice abq0-s512
+            ab "Selfish, but with good means. I quite like that tack."
+            #voice
+            ab "Kill ‘em with kindness, as they say."
+            #voice abq0-s513
+            ab "I’m sure Lysander is enough of a pushover to return the favor."
+
+    jump lysander_reflection_end
+
+label lysander_reflection_doom:
+
+    #voice abq0-s514
+    ab "That is… not how I expected you to handle this, if I’ll be honest."
+    #voice
+    ab "The boy doesn't seem like he'll be getting out of the ground anytime soon."
+    ab "Not without that piece of jewlery you found, at least."
+    #voice
+    ab "I expect this spirit will be forever in poor… spirits."
+    #voice abq0-s515
+    menu:
+        ab "Is that what you wanted, for him to suffer?"
+
+        "\"Yes.\"":
+            #voice
+            ab "Aha. I see."
+            #voice abq0-s516
+            ab "Well, full points for you then, he is certainly suffering."
+            #voice
+            ab "(sigh) At least you do what you set out to do."
+            #voice
+            ab "I cannot say that of everyone."
+        "\"I don’t want it. He just deserves it.\"":
+            #voice abq0-s517
+            ab "And you are the arbiter of that deserving?"
+            #voice
+            ab "That’s certainly news to me."
+            #voice
+            ab "Still, I cannot fault you. He brought it on himself."
+            #voice
+            ab "The least he can do is own up to it."
+        "\"This was a misunderstanding. I didn't want this for him.\"":
+            ab "Well, it doesn't seem the fates are that keen on heeding your wants."
+            ab "Still, I cannot fault you. He brought it on himself."
+            ab "The least he can do is own up to it."
+
+    jump lysander_reflection_end
+
+label lysander_reflection_end:
+
+    ab "Anyhow, that is that, as they say. Onward."
+    jump postquest
