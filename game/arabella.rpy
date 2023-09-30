@@ -4,20 +4,20 @@ define un = Character('???')
 define mc = Character('You')
 define ar = Character('Arabella')
 
-q3_entry_count = 0
-q3_priest_journal = false
-q3_mom_journal = false
-q3_doctor_journal = false
-q3_own_journal = false
-q3_lysander_convo = false
-q3_pendant_encounter = false
-q3_pendant_keep = false
-q3_state = 0
-q3_ending_trigger = false
-q3_death_convo_trigger = false
-q3_ending_points = 0
+$q3_entry_count = 0
+$q3_priest_journal = false
+$q3_mom_journal = false
+$q3_doctor_journal = false
+$q3_own_journal = false
+$q3_lysander_convo = false
+$q3_pendant_encounter = false
+$q3_pendant_keep = false
+$q3_state = 0
+$q3_ending_trigger = false
+$q3_death_convo_trigger = false
+$q3_ending_points = 0
 
-q5_state = 0
+$q5_state = 0
 
 label foyer_hub:
 
@@ -25,10 +25,10 @@ label foyer_hub:
 
 
 
-    if q3_state == 0
+    if q3_state == 0:
         "A soft, whispery voice calls out from somewhere nearby."
         voice "voice/arq3-01.ogg"
-        un "Who are you?”
+        un "Who are you?"
     
         menu:
             "Politely respond.":
@@ -68,7 +68,7 @@ label foyer_hub:
                 "You take a hesitant step forward, captivated by her beauty yet terrified of the unknown."
                 mc "Why are you haunting this house?"
                 "The specter is taken a bit back by your sudden hostility." 
-                "She sighs softly and it sounds almost like a whisper.""
+                "She sighs softly and it sounds almost like a whisper."
                 "Speaking softly, she gazes around the room with a melancholic expression on her face."
                 ar "M-my name is Arabella. I lived in this home with my mother and father, but my life ended here many years ago." 
                 "She hesitates." 
@@ -108,7 +108,7 @@ label foyer_hub:
                     jump q3_true_hub
                 "Pry for more information.":
                     mc "Before I agree, I need to know more. Why are you trapped here?"
-                    ar "I believe it's because I can't forgive my parents.”
+                    ar "I believe it's because I can't forgive my parents."
                     ar "I don't have many memories, but it's a lingering, overwhelming feeling."                    
                     ar "I believe that the mansion won't let me go until I do."
                     mc "I see… Well, I want to help you the best that I can."
@@ -133,7 +133,7 @@ label foyer_hub:
         "The gentle glow of the chandeliers cast a golden light, accentuating the intricate designs of the walls, the elaborate staircase, and the vast portraits of ancestors long gone." 
         "The mansion seems to breathe with a mix of tension and hope, awaiting a resolution."
         "You stand in the center of the grand foyer, recounting the items you've discovered:" 
-        "Evanegline's journal, the notes from Doctor Whitman, Father O'Malley's observations, Arabella's own journal, and the moonstone pendant.)
+        "Evanegline's journal, the notes from Doctor Whitman, Father O'Malley's observations, Arabella's own journal, and the moonstone pendant.)"
         "Each object holds a piece of Arabella's story, a fragment of her past that could potentially guide her toward the peace she so desperately seeks."
         "As if summoned by the gravity of the moment, Arabella's ethereal form emerges from the shadows."
         "Her flowing gown seems to glow in the dim light, and her eyes, filled with a mixture of hope and apprehension, are fixed on you."
@@ -174,7 +174,7 @@ label foyer_hub:
             "As she reads, her confusion turns into something you can't place… Sadness and pain mixed with… affliction?"
             "Arabella doesn't say anything, but she closes the journal and holds it close to her chest and closes her eyes, tears starting to well up, threatening to spill over."
             "You can see her shoulders shaking. She seems to be stifling a sob."
-            q3_ending_points ++
+            $q3_ending_points += 1
         else:
             "You tell Arabella that you didn't manage to find much information that you could understand, but you tell her that anything she needs to know is more than likely in the folders and the journals that you found."
             "Arabella looks a little confused, but opens one of the folders and begins reading it."
@@ -186,7 +186,7 @@ label foyer_hub:
             "You offer her the pendant, and gently she takes it from your hand."
             "Arabella holds the pendant, her fingers caressing the moonstone."
             "The soft luminescence of the stone seems to pulse, resonating with her heartbeat."
-            q3_ending_points ++
+            $q3_ending_points += 1
         mc "You can choose to forgive, to understand that those around you acted out of love, even if their choices were sometimes misguided."
         mc "You can ponder upon this, seeking your own path to forgiveness in time, or you can decide not to forgive, holding onto the memories as they are."
         mc "At the end of the day, the choice is your own, Arabella..."
@@ -201,7 +201,7 @@ label foyer_hub:
             "She sets the letter on a nearby table. She quickly composes herself and turns to you."
             "The mansion seems to glow, a warmth spreading through its halls as if, it too, was part of this cathartic moment."
             "When she starts to speak, her voice is soft but clear..."
-            ar "I... understand now... The intentions behind their actions, the love, the fear, the hope... It's… a lot to process, but... I choose… to forgive. It's time to find my peace. From the bottom of my heart, I thank you.” 
+            ar "I... understand now... The intentions behind their actions, the love, the fear, the hope... It's… a lot to process, but... I choose… to forgive. It's time to find my peace. From the bottom of my heart, I thank you."
             "Arabella gives you a warm, heartfelt smile. The joy can be felt through her unshed tears."
             ar "The help that you've provided in my time of need will forever mean a great deal to me... I will never forget what you've done for me here." 
 
@@ -299,17 +299,17 @@ label q3_true_hub:
                         "Arabella turns and looks intently at you, an intense expression contorts her usually dollish face, one that you've never seen before. It almost seems like... Arabella is no longer herself..."
                         ar "I warn you, if you are trying to get her to tell you where she lives so that you can try to force her back to her home... If you wish to bring that poor child more harm..."
                         mc "Arabella, please listen! I promise you, it's not what you think! It's the other way around! I'm not trying to FORCE her to go home, she WANTS to go home..."
-                        ar "I... I do not believe that... You wish to bring her harm! She... she wouldn't lie to me... She tells me only truth... She says... that you lie... that you are not to be trusted, not with me, not with Elizabeth… She... protects us... She... loves us...”
+                        ar "I... I do not believe that... You wish to bring her harm! She... she wouldn't lie to me... She tells me only truth... She says... that you lie... that you are not to be trusted, not with me, not with Elizabeth… She... protects us... She... loves us..."
                         mc "Why would I lie to you? If you can't believe me, then please... Ask her yourself..."
                         ar "... You... you swear this to be the truth? She... asked you for your aid? You're only offering a hand to help her at her behest?"
                         mc "I promise you, that's all I'm doing. That seems to be why I'm here, to help."
                         "Arabella looks around for a moment, sighs hard in reluctance, then composes herself into the well-mannered girl you know her to be."
-                        "Arabella pulls out a pen and some paper from a drawer on the other side of the foyer. Then she turns once again to face you.""
+                        "Arabella pulls out a pen and some paper from a drawer on the other side of the foyer. Then she turns once again to face you."
 
                     "Ask for the items once more.":
                         mc "I'm sorry, but I'm in a bit of a hurry... Do you know where I can find them?"
                         "Arabella is giving you a look you can't place. It's intimidating, but you try to hold a poker face."
-                        "She doesn't speak, doesn't even move. It seems you won't be getting anything out of her this way.""
+                        "She doesn't speak, doesn't even move. It seems you won't be getting anything out of her this way."
 
                     "Lie to her.":
                         mc "She wants to draw something."
@@ -319,7 +319,7 @@ label q3_true_hub:
                         mc "What else would she need a pen and paper for, then?"
                         ar "To write a letter, perhaps...? To use it to have someone draw a map for her...?"
                         mc "She doesn't even know where she lives!"
-                        ar "And are you so sure about this? How are you so sure she doesn't?”
+                        ar "And are you so sure about this? How are you so sure she doesn't?"
                         "You shift under her gaze, looking away from her briefly, gulping hard."
                         ar "I knew it."
                 ar "So... It is you... You are the one to bring her back to her... tragic truth..."
@@ -354,7 +354,7 @@ label q3_true_hub:
             #Elizabeth quest 2
             "Elizabeth":
                 mc "I need to ask you something, It's about the little girl, Elizabeth."
-                ar "I'm sorry... but I do not wish to have that conversation with you… I can't...”
+                ar "I'm sorry... but I do not wish to have that conversation with you… I can't..."
                 mc "Can you at least hear me out and let me ask my questions, please?"
                 ar "Listen to me carefully... I appreciate what you have been doing here, for all of us... With that being said, though, and I believe I have already told you… Please... Elizabeth... Just... Leave her be."
                 "Arabella seems to think for a moment, then after a few beats nods in a way that is obviously not directed at you."
@@ -375,7 +375,7 @@ label q3_true_hub:
                 ar "What do you think happened to her?"
                 menu:
                     "She fell into a river after running away.":
-                        ar "Do you feel her situation to be that simplistic? There had to of been a factoring cause that would've caused her to flee in the first place, do you not agree?”
+                        ar "Do you feel her situation to be that simplistic? There had to of been a factoring cause that would've caused her to flee in the first place, do you not agree?"
                         mc "It said she had an argument before leaving home—"
                         ar "If I may be blunt, the situation with Elizabeth and her mother, I can understand to a certain degree. The child's mother, she was not good to her daughter most of the time."
                         ar "Though she won't plainly admit to it, Elizabeth's mother was abusive to the child, maybe not physically, but emotionally, that poor girl had been suffering. That's why she fled in the dead of winter."
@@ -399,7 +399,7 @@ label q3_true_hub:
                 "She averts her gaze, now avoiding eye contact with you. Something… doesn't feel right with her. She seems… more paranoid."
                 mc "Well, I think we should stick with the facts instead of going off of a hunch or any assumptions. Look, we have the newspaper articles right here, but I don't feel like we have the whole story here."
                 ar "What if… the stories had been fabricated? By the mother, the police… anybody… to try to paint the mother in a light that made her stand out to be something that she was not...?"
-                ar "If what I believe is to be reality... how... would you be able to help Elizabeth then... without hurting her...?”
+                ar "If what I believe is to be reality... how... would you be able to help Elizabeth then... without hurting her...?"
                 menu:
                     "I will still tell her the truth.":
                         ar "No... the truth will only hurt her... There has to be another way to go about this..."
@@ -471,7 +471,7 @@ label q3_hub_topic_4:
     if !q3_death_convo_trigger:
         mc "Can you tell me, how did you die?"
         ar "... That... is a topic that I would rather not indulge in... Would the truth of my death make a difference on this quest?"
-        q3_death_convo_trigger = true
+        $q3_death_convo_trigger = true
     else:
         "Arabella refuses to speak any more about this."
     jump q3_true_hub
