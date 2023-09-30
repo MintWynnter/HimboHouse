@@ -19,7 +19,7 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene bg room
+
 
     #jump gameintro
 
@@ -55,7 +55,7 @@ label liz:
     show minoru neutral at spritezoom
     $config.allow_skipping = True
     $config.keymap["dismiss"].extend(['mouseup_1', 'K_RETURN', 'K_SPACE', 'K_KP_ENTER', 'K_SELECT'])
-    w "This is where Elizabeth's stuff will be."
+    jump elizabeth_livingroom
     call screen hubScreen("Elizabeth")
     return
 
@@ -82,7 +82,7 @@ label arabella:
     show minoru neutral at spritezoom
     $config.allow_skipping = True
     $config.keymap["dismiss"].extend(['mouseup_1', 'K_RETURN', 'K_SPACE', 'K_KP_ENTER', 'K_SELECT'])
-    w "This is where Arabella's stuff will be."
+    jump arabella_foyer
     call screen hubScreen("Arabella")
     return
 

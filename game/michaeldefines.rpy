@@ -36,6 +36,7 @@ default arabella_queststate = 0
 default herman_queststate = 0
 
 default elizabeth_queststate = 0
+define el = Character("Elizabeth", color="#ffffff",what_color="#ffffff")
 default aures_queststate = 0
 
 
@@ -46,3 +47,25 @@ default lysander_questjustfinished = False
 define ly = Character("Lysander", image="lysander",color = "#fff4db", what_color = "#fff4db")
 default lysander_angy = False #will lysander play an angy line if you minge him
 default lysander_ded = False #is lysander sealed in a necklace lmao
+
+
+#the arabella corner
+default arabella_name = "???"
+define ar = Character("arabella_name", dynamic = True, color="#ffffff",what_color="#ffffff", image = "arabella")
+define mc = Character("You", color="#ffffff",what_color="#ffffff")
+
+
+default q3_entry_count = 0
+default q3_priest_journal = False
+default q3_mom_journal = False
+default q3_doctor_journal = False
+default q3_own_journal = False
+default q3_lysander_convo = False
+default q3_pendant_encounter = False
+default q3_pendant_keep = False
+default q3_state = 0
+default q3_ending_trigger = False
+default q3_death_convo_trigger = False #did you try to ask arabella about her death?
+default q3_ending_points = 0
+
+#default elizabeth_queststate = 0 already declared in michaeldefines

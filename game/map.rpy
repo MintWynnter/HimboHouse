@@ -33,7 +33,7 @@ screen minimap():
     imagebutton:
         idle "chibi_arabella.png"
         pos (.8, .3)
-        action [Hide("minimap"), Jump("testing")]
+        action [Hide("minimap"), Jump("arabella")]
         at chibizoom
     imagebutton:
         idle "question_mark.png"
