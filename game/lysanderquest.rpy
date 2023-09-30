@@ -129,9 +129,8 @@ label lysander_abouttoleave:
     ly "I strongly suspect whatever that stash of literature contains is otherworldly in nature and may provide me with the means to alter the ties that bind me here…but I need your help in acquiring it."
     #voice lyq1-41
     show lysander grateful
-    ly "Could I trouble you for this kindness?"
-
     menu:
+        ly "Could I trouble you for this kindness?"
         "\"I'll look into it, Lysander.\"":
             pass
         "\"I'll think about it.\"":
@@ -149,7 +148,6 @@ label lysander_abouttoleave:
     call screen minimap()
 
 label lysander_livingroom:
-    #THIS IS LINKED FROM ELIZABETH'S CONVO HUB IF LYSANDER_QUESTSTATE IS 2
     "You find yourself struck with a simultaneous feeling of warmth and disconcertment."
     "As tempted as you are to take a seat by the fireplace, you can't help but feel as though the portrait immediately above its mantle is…observing you, somehow."
     "You glance around the room, deliberately avoiding the harsh gaze of the painting before you, and spot a bookshelf against the wall to your right."
@@ -166,7 +164,7 @@ label lysander_livingroom:
     "Iris petals are scattered around it, and it looks as though an iris petal is in the process of being consumed in the illustration."
     "You smile and shut the sketchbook, sliding it back onto its place on the shelf."
     "You doubt that this is the location Lysander wanted you to check—after all, didn't he send you on this knowledge-hunting quest because he was unable to access the location in which that information was held?"
-    # JUMP BACK TO LIVING ROOM CONVO HUB
+    jump elizabeth_convohub
 
 label lysander_lounge:
 

@@ -19,7 +19,6 @@ label lysander_convohub:
         "\"I found this green book in the lounge...\"" if lysander_queststate is 4:
             jump lysander_gottome
 
-
         "\"Tell me about yourself.\"" if not lysander_ded:
             #voice lyq1-12
             show lysander neutral
@@ -57,9 +56,6 @@ label lysander_convohub:
 
         "\"You said something about losing yourself…\"" if lysander_queststate > 5 and not lysander_ded:
             jump lysander_convo_hub_losing
-
-
-
 
         "\"Tell me about the garden.\"" if not lysander_ded:
             #voice lyht-01

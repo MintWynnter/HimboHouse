@@ -12,9 +12,6 @@ label marianne_convohub:
         "\"I have the camcorder you were asking for.\"" if marianne_queststate is 3:
             jump marianne_gotcamcorder
 
-        #"Look around the room for information about Arabella.":
-        #    jump WHEREEVER MAYA SAYS THIS CONTENT IS
-
         "\"What do you know about this mansion?\"":
             #voice mar-ht01
             ma "Why, next to nothing, sorry."
@@ -58,6 +55,15 @@ label marianne_convohub:
             ma "Dead is dead, and I ain’t even complaining."
             jump marianne_convohub
 
+        "Search the nearby desk for clues on Arabella's past." if q3_state is 1 and not q3_own_journal:
+            # hey can i get marianne to fade away here?
+            jump marianne_arabella
+
+        "Search the nightstand for clues on Arabella's past." if q3_state is 1 and not q3_pendant_encounter:
+            $ q3_pendant_encounter = True
+            # hey can i get marianne to fade away here?
+            jump marianne_arabella_pendant
+
         "\"See you later, [marianne_name].\"":
 
             if marianne_queststate is 2:
@@ -68,3 +74,38 @@ label marianne_convohub:
             # a goodbye line
 
             call screen minimap()
+
+label marianne_arabella:
+    "You pick up one of the books from the desk."
+    menu:
+        "Upon further inspection, you see that it’s a carefully hand-bound journal."
+
+        "Read the journal.":
+            $ q3_own_journal = True
+            jump arabella_journalentries
+
+        "Don't read the journal.":
+            $ q3_own_journal = True
+            "You decide not to read the journal, feeling it to be a major invasion of privacy."
+            "You put the journal back on the desk, deciding not to bring the journal with you, though the information from it seems to shed some new light on a few things."
+            jump marianne_convohub
+
+label marianne_arabella_pendant:
+
+    "Your attention is drawn towards the walnut nightstand."
+    "The closed drawer beneath beckons silently."
+    "The brass handle feels cool to the touch as you open the drawer."
+    "Nestled inside, amidst a few parchment letters and dried lavender sprigs, lay a radiant pendant."
+    "It’s a moonstone, set within an intricate silver setting, its delicate glow seemingly emanating its own soft luminescence."
+    "The stone seems to capture the very essence of moonlight, its translucent surface dancing with milky blues and silvers, reflecting a mesmerizing play of colors."
+
+    menu:
+        "Take the pendant.":
+            $ q3_pendant_keep = True
+            "You decide to take the pendant. The energy radiating from it feels too important not to take."
+
+        "Leave the pendant alone.":
+            $ q3_pendant_keep = False
+            "You put the pendant back on the nightstand. The energy radiating from it feels too important to take."
+
+    jump marianne_convohub
