@@ -10,7 +10,7 @@ label marianne_bedroom:
         jump marianne_intro
 
 
-label marianne_intro:
+#label marianne_intro:
     "As you approach the bedroom, the crackle of a radio peaks over the sound of soulful jazz."
 
     menu:
@@ -296,7 +296,6 @@ label marianne_abouttoleave:
     ab "Perhaps that’s not for me to ask."
 
     ab "Never mind, then. On with your business."
-
     call screen minimap()
 
 label marianne_presper:
