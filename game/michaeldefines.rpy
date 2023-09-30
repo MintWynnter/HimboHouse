@@ -34,6 +34,15 @@ define ab = Character("abbe_name", dynamic = True, color = "#e3f0ff", what_color
 # the everyone else corner so i can do the midpoint scene
 default arabella_queststate = 0
 default herman_queststate = 0
-default lysander_queststate = 0
+
 default elizabeth_queststate = 0
 default aures_queststate = 0
+
+
+#the lysander corner (he's yellow-orange)
+default lysander_queststate = 0
+default lysander_questdone = False
+default lysander_questjustfinished = False
+define ly = Character("Lysander", image="lysander",color = "#fff4db", what_color = "#fff4db")
+default lysander_angy = False #will lysander play an angy line if you minge him
+default lysander_ded = False #is lysander sealed in a necklace lmao

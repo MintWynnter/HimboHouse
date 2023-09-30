@@ -12,6 +12,9 @@ label marianne_convohub:
         "\"I have the camcorder you were asking for.\"" if marianne_queststate is 3:
             jump marianne_gotcamcorder
 
+        #"Look around the room for information about Arabella.":
+        #    jump WHEREEVER MAYA SAYS THIS CONTENT IS
+
         "\"What do you know about this mansion?\"":
             #voice mar-ht01
             ma "Why, next to nothing, sorry."
@@ -56,10 +59,12 @@ label marianne_convohub:
             jump marianne_convohub
 
         "\"See you later, [marianne_name].\"":
-            # a goodbye line
+
             if marianne_queststate is 2:
                 jump marianne_abouttoleave
             if marianne_questjustfinished:
                 jump marianne_reflection
+
+            # a goodbye line
 
             call screen minimap()

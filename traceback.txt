@@ -1,26 +1,62 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/michaelmariannequest.rpy", line 891, in script
-    $ marianne_questjustfinished = Trues
-  File "game/michaelmariannequest.rpy", line 891, in <module>
-    $ marianne_questjustfinished = Trues
-NameError: name 'Trues' is not defined
+While processing the color property of anonymous style:
+  File "game/michaellysanderquest.rpy", line 45, in script
+    ly "Are you alright? I’m sorry if I grabbed you too firmly. I just didn’t want you to fall into the water."
+Exception: Color string '#fff4db' must be 3, 4, 6, or 8 hex digits long.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/michaelmariannequest.rpy", line 891, in script
-    $ marianne_questjustfinished = Trues
-  File "C:\Users\Owner\Desktop\renpy-8.0.3-sdk\renpy\ast.py", line 1138, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\Owner\Desktop\renpy-8.0.3-sdk\renpy\python.py", line 1122, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/michaelmariannequest.rpy", line 891, in <module>
-    $ marianne_questjustfinished = Trues
-NameError: name 'Trues' is not defined
+  File "game/michaellysanderquest.rpy", line 45, in script
+    ly "Are you alright? I’m sorry if I grabbed you too firmly. I just didn’t want you to fall into the water."
+  File "C:\Users\Owner\Desktop\renpy-8.0.3-sdk\renpy\ast.py", line 930, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\Owner\Desktop\renpy-8.0.3-sdk\renpy\exports.py", line 1474, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\Owner\Desktop\renpy-8.0.3-sdk\renpy\character.py", line 1352, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "C:\Users\Owner\Desktop\renpy-8.0.3-sdk\renpy\character.py", line 1003, in do_display
+    display_say(who,
+  File "C:\Users\Owner\Desktop\renpy-8.0.3-sdk\renpy\character.py", line 693, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\Users\Owner\Desktop\renpy-8.0.3-sdk\renpy\ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\Owner\Desktop\renpy-8.0.3-sdk\renpy\display\core.py", line 3582, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\Owner\Desktop\renpy-8.0.3-sdk\renpy\display\core.py", line 4055, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\Owner\Desktop\renpy-8.0.3-sdk\renpy\display\core.py", line 684, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Owner\Desktop\renpy-8.0.3-sdk\renpy\display\core.py", line 684, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Owner\Desktop\renpy-8.0.3-sdk\renpy\display\core.py", line 684, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Owner\Desktop\renpy-8.0.3-sdk\renpy\display\screen.py", line 481, in visit_all
+    self.child.visit_all(callback, seen=None)
+  File "C:\Users\Owner\Desktop\renpy-8.0.3-sdk\renpy\display\core.py", line 684, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Owner\Desktop\renpy-8.0.3-sdk\renpy\display\core.py", line 684, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Owner\Desktop\renpy-8.0.3-sdk\renpy\display\core.py", line 684, in visit_all
+    d.visit_all(callback, seen)
+  [Previous line repeated 1 more time]
+  File "C:\Users\Owner\Desktop\renpy-8.0.3-sdk\renpy\display\core.py", line 686, in visit_all
+    callback(self)
+  File "C:\Users\Owner\Desktop\renpy-8.0.3-sdk\renpy\display\core.py", line 4055, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\Owner\Desktop\renpy-8.0.3-sdk\renpy\text\text.py", line 1792, in per_interact
+    if self.style.slow_abortable:
+  File "gen3-static/styleclass.pxi", line 533, in renpy.styledata.styleclass.Style.slow_abortable.__get__
+  File "style.pyx", line 493, in renpy.style.StyleCore._get
+  File "style.pyx", line 710, in renpy.style.build_style
+  File "style.pyx", line 707, in renpy.style.build_style
+  File "gen3-static/style_functions.pyx", line 323, in style_functions.color_property
+  File "C:\Users\Owner\Desktop\renpy-8.0.3-sdk\renpy\color.py", line 167, in __new__
+    raise Exception("Color string {!r} must be 3, 4, 6, or 8 hex digits long.".format(c))
+Exception: Color string '#fff4db' must be 3, 4, 6, or 8 hex digits long.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.1.3.23091805
 The House On Limbo Lane 1.0
-Thu Sep 28 22:05:46 2023
+Fri Sep 29 13:35:26 2023
