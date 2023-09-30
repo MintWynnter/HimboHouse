@@ -1,1 +1,26 @@
-﻿
+﻿I'm sorry, but an uncaught exception occurred.
+
+While parsing D:\ST2023\The House on Limbo Lane\game/mariannequest.rpy.
+Exception: Line with id marianne_startquest_7c2459a6 appeared twice, at game/mariannequest.rpy:157 and game/michaelmariannequest.rpy:157.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\bootstrap.py", line 277, in bootstrap
+    renpy.main.main()
+  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\main.py", line 490, in main
+    renpy.game.script.load_script() # sets renpy.game.script.
+  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\script.py", line 297, in load_script
+    self.load_appropriate_file(".rpyc", ".rpy", dir, fn, initcode)
+  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\script.py", line 809, in load_appropriate_file
+    self.finish_load(stmts, initcode, filename=lastfn) # type: ignore
+  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\script.py", line 427, in finish_load
+    self.translator.take_translates(all_stmts)
+  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\translation\__init__.py", line 166, in take_translates
+    raise Exception("Line with id %s appeared twice, at %s:%d and %s:%d." %
+Exception: Line with id marianne_startquest_7c2459a6 appeared twice, at game/mariannequest.rpy:157 and game/michaelmariannequest.rpy:157.
+
+Windows-10-10.0.19045 AMD64
+Ren'Py 8.0.3.22090809
+ 
+Sat Sep 30 16:42:08 2023

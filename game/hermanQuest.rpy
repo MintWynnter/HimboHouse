@@ -24,9 +24,12 @@ label HermanScene1:
     show herman happy
     he "The name's Herman, but my friends call me Rory, so you'd best call me Rory!"
     menu:
-        "Please cover your mouth."
-        "Cover your mouth, you're rude."
-        "What is wrong with you?!"
+        "Please cover your mouth.":
+            ""
+        "Cover your mouth, you're rude.":
+            ""
+        "What is wrong with you?!":
+            ""
     "Herman does not appear to acknowledge what you say, brushing your words aside as if they are meaningless."
     #voice heq2-03
     show herman happy
