@@ -1,0 +1,45 @@
+Sat Sep 30 14:07:24 2023
+Windows-10-10.0.19045
+Ren'Py 8.0.3.22090809
+ 
+
+Bootstrap to the start of init.init took 0.06s
+Early init took 0.00s
+Loader init took 1.12s
+Loading error handling took 0.04s
+game/hermanHub.rpy:4: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"Is there something I can do for you, Herman?\"" if marianne_queststate is 1:
+game/hermanHub.rpy:11: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if marianne_queststate is 2:
+game/michaelmariannehub.rpy:4: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"Is there something I can do for you, [marianne_name]?\"" if marianne_queststate is 1:
+game/michaelmariannehub.rpy:8: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"I have the camcorder you were asking for.\"" if marianne_queststate is 3:
+game/michaelmariannehub.rpy:14: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if marianne_queststate is 2:
+game/michaelmariannequest.rpy:9: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if marianne_queststate is 0:
+game/michaelpresperhub.rpy:4: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"Have you seen a camcorder around here?\"" if marianne_queststate is 2.5:
+Loading script took 0.53s
+Loading save slot metadata. took 0.25s
+Loading persistent took 0.00s
+
+File "game/hermanQuest.rpy", line 574: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a ' at the end of the first line.)
+    he Head on down to the basement. That's where the rituals were held here. I doubt those yella bellied cowards would have had the gall to clean up afterwards.
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.46s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1650/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 528.52'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1724, 970) drawable=(1724, 970)
+Maximum texture size: 4096x4096
