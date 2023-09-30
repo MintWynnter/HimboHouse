@@ -23,52 +23,49 @@ label HermanScene1:
     #voice heq2-02
     show herman happy
     he "The name's Herman, but my friends call me Rory, so you'd best call me Rory!"
-    #voice 
-    mc "Please cover your mouth."
-    #voice 
-    mc "Cover your mouth, you're rude."
-    #voice 
-    mc "What is wrong with you?!"
+    menu:
+        "Please cover your mouth."
+        "Cover your mouth, you're rude."
+        "What is wrong with you?!"
     "Herman does not appear to acknowledge what you say, brushing your words aside as if they are meaningless."
     #voice heq2-03
     show herman happy
     he "Say, friend, y'ain't happen to got a spot of good bourbon, would ya? I got something stuck in my gizzard, and the swill behind the bar just won’t cut it."
     "He coughs again and pulls his hand back from yours to rub his throat."
-    " < "
-    #voice 
-    mc "Hello, sir, I was sent to help you with your problem."
-    "As before, Herman ignores your words and grins, grabbing your shoulder while laughing in delight."
-    #voice heq2-04
-    show herman happy
-    he "What manners, I love it!"
-    "As you try to speak, he continues to laugh, his body rumbling... along with your view of the world as he shakes your shoulder."
-    "Not paying you any mind, yet again, he rambles on."
-    #voice heq2-05
-    show herman happy
-    he "Go on and get that bourbon - oh, and don't forget my favorite glass. Take a gander in the ''Ballroom'', I'm certain the porters would have left it there."
-    #voice 
-    mc "No, I do not have any 'good bourbon,' and I'm not here to fetch things for you."
-    "Herman takes a step back, adjusting his tie as he looks you once over, finally seeming to notice you for the first time."
-    #voice heq2-06
-    show herman happy
-    he "Well, I can certainly respect your calm demeanor."
-    "he rubs his throat again, covering his mouth and coughing once more"
-    #voice heq2-07
-    show herman neutral
-    he "However, without that bourbon, I'm not feeling too keen on talking to one of 'your kind' about much'a nothin'. So it seems that, without you fetching, we're at an impasse."
-    "With no hesitation, and as graceful as a snake slithering back into the tall grass, he seats himself back in his chair to once again ignore your presence."
-    #voice heq2-08
-    show herman happy
-    he "Oh, and bring my favorite crystal glass. I can't be seen to be on the nut."
-    "Wipe your face and glare at Herman."
-    "That right there is the stare my momma used to give me when she was mad. Are you mad, little rabbit?"
-    "Herman rolls his eyes and wafts his hand in your direction, treating you like a pest."
-    #voice heq2-09
-    show herman neutral
-    he "You heard what I said. Go on and fetch my giggle water. I don't have time to waste on your tantrum, little rabbit. Oh, and don't you forget to bring my crystal glass, neither."
-    "Herman returns to his seat, crossing his ankle onto his knee, and bounces his foot angrily to the music, pen and booklet yet again in hand."
-    "--"
+    menu:
+        "Hello, sir, I was sent to help you with your problem.":
+            "As before, Herman ignores your words and grins, grabbing your shoulder while laughing in delight."
+            #voice heq2-04
+            show herman happy
+            he "What manners, I love it!"
+            "As you try to speak, he continues to laugh, his body rumbling... along with your view of the world as he shakes your shoulder."
+            "Not paying you any mind, yet again, he rambles on."
+            #voice heq2-05
+            show herman happy
+            he "Go on and get that bourbon - oh, and don't forget my favorite glass. Take a gander in the ''Ballroom'', I'm certain the porters would have left it there."
+            #voice 
+        "No, I do not have any 'good bourbon,' and I'm not here to fetch things for you.":
+            "Herman takes a step back, adjusting his tie as he looks you once over, finally seeming to notice you for the first time."
+            #voice heq2-06
+            show herman happy
+            he "Well, I can certainly respect your calm demeanor."
+            "he rubs his throat again, covering his mouth and coughing once more"
+            #voice heq2-07
+            show herman neutral
+            he "However, without that bourbon, I'm not feeling too keen on talking to one of 'your kind' about much'a nothin'. So it seems that, without you fetching, we're at an impasse."
+            "With no hesitation, and as graceful as a snake slithering back into the tall grass, he seats himself back in his chair to once again ignore your presence."
+            #voice heq2-08
+            show herman happy
+            he "Oh, and bring my favorite crystal glass. I can't be seen to be on the nut."
+        "Wipe your face and glare at Herman.":
+            "That right there is the stare my momma used to give me when she was mad. Are you mad, little rabbit?"
+            "Herman rolls his eyes and wafts his hand in your direction, treating you like a pest."
+            #voice heq2-09
+            show herman neutral
+            he "You heard what I said. Go on and fetch my giggle water. I don't have time to waste on your tantrum, little rabbit. Oh, and don't you forget to bring my crystal glass, neither."
+            "Herman returns to his seat, crossing his ankle onto his knee, and bounces his foot angrily to the music, pen and booklet yet again in hand."
     "Turn and leave the lounge."
+    jump herman_hub
 
 label HermanScene2:
 
@@ -84,52 +81,48 @@ label HermanScene2:
     #voice heq2-11
     he "Well, come on, now, let's get that sweet nectar open. I insist we toast to your health after you put in all that 'strenuous' effort."
     "Herman pats the top of the bar and slides a dust-covered glass in front of you, a glint of the light bouncing off his gold tooth as he grins."
-    "<"
-    "Place Herman's glass on the bar, pull the cork, then pour a modest amount in each glass."
-    "Herman grins ear to ear as he swiftly lifts his glass, nodding his head to you as he raises the glass in your direction."
-    #voice heq2-12
-    show herman neutral
-    he "A toast to health, and to the start of our magnificent `mahg-NIF-uh-scent` friendship!"
-    "He holds his glass toward you still, waiting to clink his glass with yours."
-    #voice heq2-13
-    show herman laugh
-    he "Oh, in case you didn't know, this is the part where we lightly touch glasses together as a show of trust."
-    #voice heq2-14
-    show herman happy
-    he "I wouldn't expect someone of your... 'condition' and caliber to understand that so figured I'd best explain it."
-    "Lift your glass and clink it with his, acknowledging his toast."
-    #voice 
-    mc "Leave your glass untouched. \"Sorry, I don't drink, but can you answer some questions for me?\""
+    menu:
+        "Place Herman's glass on the bar, pull the cork, then pour a modest amount in each glass.":
+            "Herman grins ear to ear as he swiftly lifts his glass, nodding his head to you as he raises the glass in your direction."
+            #voice heq2-12
+            show herman neutral
+            he "A toast to health, and to the start of our magnificent `mahg-NIF-uh-scent` friendship!"
+            "He holds his glass toward you still, waiting to clink his glass with yours."
+            #voice heq2-13
+            show herman laugh
+            he "Oh, in case you didn't know, this is the part where we lightly touch glasses together as a show of trust."
+            #voice heq2-14
+            show herman happy
+            he "I wouldn't expect someone of your... 'condition' and caliber to understand that so figured I'd best explain it."
+            "Lift your glass and clink it with his, acknowledging his toast."
+        "Leave your glass untouched. \"Sorry, I don't drink, but can you answer some questions for me?\"":
+            "Herman's eyebrow lifts over his monocle, his face showing a mix of intrigue and annoyance."
+            #voice heq2-15
+            show herman neutral
+            he "Well now, perhaps you forget your station, my not-so-alive friend."
+            "Herman pauses for a few moments and looks away, rubbing his bearded chin slowly before lowering his eyebrow and looking back, seeming less annoyed."
+            #voice heq2-16
+            show herman neutral
+            he "However, a bit of kindness on my part is perhaps in order. I might be persuaded to entertain a question or two if you'd 'allow' me to wet my whistle."
+            "His gaze shifts towards the glass and bourbon you hold, then back to meet your eyes. His look is simultaneously kind and yet unnervingly direct."
+            "Bring his glass and bourbon to the bar and pour him a small amount."
+            mc "I need you to tell me how you died."
 
-
-    "Herman's eyebrow lifts over his monocle, his face showing a mix of intrigue and annoyance."
-    #voice heq2-15
-    show herman neutral
-    he "Well now, perhaps you forget your station, my not-so-alive friend."
-    "Herman pauses for a few moments and looks away, rubbing his bearded chin slowly before lowering his eyebrow and looking back, seeming less annoyed."
-    #voice heq2-16
-    show herman neutral
-    he "However, a bit of kindness on my part is perhaps in order. I might be persuaded to entertain a question or two if you'd 'allow' me to wet my whistle."
-    "His gaze shifts towards the glass and bourbon you hold, then back to meet your eyes. His look is simultaneously kind and yet unnervingly direct."
-    "Bring his glass and bourbon to the bar and pour him a small amount."
-    #voice 
-    mc "I need you to tell me how you died."
-
-    "Throw the bourbon and his glass on the floor, shattering both."
-    "Herman's eyes widen, his face contorts into a mix of rage and astonishment, quickly looking you dead in the eye as a flood of pure vitriol pours from his mouth like the bourbon slides along the marble floor."
-    #voice heq2-17
-    show herman angry
-    he "Now WHY you gone an' done sum'in STU-PIT like'dat?!"
-    "He storms up to you, the sound of his polished shoes slapping against the floor, his stomach a hair's breadth away from you, yet you cannot feel his presence."
-    #voice heq2-18
-    show herman angry
-    he "You got some fuck'n NERVE, youngin! I oughta yank mah belt off and beat the GAH-damn TAR outta ya!"
-    "Herman breathes heavily down at you, his fist clenched and shaking with anger."
-    #voice 
-    mc "Are you ready to treat me with respect now? I need answers from you."
-    #voice 
-    mc "That is what you get for being rude and demanding!"
-    "--"
+        "Throw the bourbon and his glass on the floor, shattering both.":
+            "Herman's eyes widen, his face contorts into a mix of rage and astonishment, quickly looking you dead in the eye as a flood of pure vitriol pours from his mouth like the bourbon slides along the marble floor."
+            #voice heq2-17
+            show herman angry
+            he "Now WHY you gone an' done sum'in STU-PIT like'dat?!"
+            "He storms up to you, the sound of his polished shoes slapping against the floor, his stomach a hair's breadth away from you, yet you cannot feel his presence."
+            #voice heq2-18
+            show herman angry
+            he "You got some fuck'n NERVE, youngin! I oughta yank mah belt off and beat the GAH-damn TAR outta ya!"
+            "Herman breathes heavily down at you, his fist clenched and shaking with anger."
+            #voice 
+            mc "Are you ready to treat me with respect now? I need answers from you."
+            #voice 
+            mc "That is what you get for being rude and demanding!"
+    jump herman_hub
 
 label HermanScene3:
 
