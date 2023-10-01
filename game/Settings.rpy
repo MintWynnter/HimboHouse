@@ -37,9 +37,9 @@ screen bigMenu(mtype, subtype):
         action ShowMenu("main_menu")
     textbutton "RETURN":
         hover_color "#FF90F4"
-
-        xpos .770833
-        ypos .038889
+        size 32
+        xpos .026563
+        ypos .935185
         action return
     
     if mtype == "Settings":
