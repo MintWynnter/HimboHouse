@@ -1,9 +1,43 @@
 label marianne_hub:
 
+    default ma_greeting_1 = True
+    default ma_greeting_2 = True
+    default ma_greeting_3 = True
+    default ma_greeting_4 = True
+
+    default ma_farewell_1 = True
+    default ma_farewell_2 = True
+    default ma_farewell_3 = True
+    default ma_farewell_4 = True  
+
     show marianne smile
     with dissolve
 
     # custom greeting
+
+    if ma_greeting_1:
+        $ ma_greeting_1 = False
+        #voice "mag-01"
+        ma "How ya faring, hon?"
+    elif ma_greeting_2:
+        $ ma_greeting_2 = False
+        #voice "mag-02"
+        ma "Welcome back, darlin'."
+    elif ma_greeting_3 and !marianne_questdone:
+        $ ma_greeting_3 = False
+        #voice "mag-03"
+        ma "What can Marianne do for you, huh?"
+    elif ma_greeting_4:
+        $ ma_greeting_4 = False
+        #voice "mag-04"
+        ma "Why, hello-there-howdy!"
+    else:
+        $ ma_greeting_1 = True
+        $ ma_greeting_2 = True
+        $ ma_greeting_3 = True
+        $ ma_greeting_4 = True  
+        #voice "mag-05"
+        ma "Looking fresh, zombiepie!"
 
 label marianne_convohub:
 
@@ -78,6 +112,30 @@ label marianne_convohub:
                 jump marianne_reflection
 
             # a goodbye line
+
+            if ma_farewell_1:
+                $ ma_farewell_1 = False
+                #voice "maf-01"
+                ma "Come on back around sometime soon, alright?"
+            elif ma_farewell_2:
+                $ ma_farewell_2 = False
+                #voice "maf-02"
+                ma "I'll be counting petals till you're back, don't keep me waiting!"
+            elif ma_farewell_3:
+                $ ma_farewell_3 = False
+                #voice "maf-03"
+                ma "Oh, go on, then. Take the time it takes, I'll be right here."
+            elif ma_farewell_4:
+                $ ma_farewell_4 = False
+                #voice "maf-04"
+                ma "Ta-ta for now!"
+            else:
+                $ ma_farewell_1 = True
+                $ ma_farewell_2 = True
+                $ ma_farewell_3 = True
+                $ ma_farewell_4 = True   
+                #voice "maf-05"
+                ma "Keep it peachy, sugar."
 
             call screen minimap()
 

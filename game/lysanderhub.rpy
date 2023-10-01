@@ -1,6 +1,14 @@
 label lysander_hub:
 
-
+    default ly_greeting_1 = True
+    default ly_greeting_2 = True
+    default ly_greeting_3 = True
+    
+    default ly_farewell_1 = True
+    default ly_farewell_2 = True
+    default ly_farewell_3 = True
+    default ly_farewell_4 = True
+    
 
     # custom greeting if not and not lysander_ded
     if lysander_ded:
@@ -8,6 +16,24 @@ label lysander_hub:
     else:
         show lysander neutral
         with dissolve
+        if ly_greeting_1:
+            $ ly_greeting_1 = False
+            #voice "lyg-01"
+            ly "Ah, welcome back."
+        elif ly_greeting_2:
+            $ ly_greeting_2 = False
+            #voice "lyg-02"
+            ly "…oh! My apologies—I didn't hear you approach."
+        elif ly_greeting_3:
+            $ ly_greeting_3 = False
+            #voice "lyg-03"
+            ly "Welcome back. Did you need a bit of fresh air?"
+        else:
+            $ ly_greeting_1 = True
+            $ ly_greeting_2 = True
+            $ ly_greeting_3 = True
+            #voice "lyg-04"
+            ly "My perennial visitor! (laughs) It's good to see you again."
 
 label lysander_convohub:
 
@@ -143,6 +169,30 @@ label lysander_convohub:
                 jump lysander_quest2intro
 
             # a goodbye message (if lysander_angy = True then make it the angy goodbye, if lysander_ded do not play a greeting)
+            if !lysander_ded:
+                if lysander_angy and ly_farewell_4:
+                    $ ly_farewell_4 = False
+                    #voice "lyf-05"
+                    ly "May we meet again under better circumstances."
+                elif ly_farewell_1:
+                    $ ly_farewell_1 = False
+                    #voice "lyf-01"
+                    ly "Of course. I wouldn't want to delay you."
+                elif ly_farewell_2:
+                    $ ly_farewell_2 = False
+                    #voice "lyf-02"
+                    ly "Be well."
+                elif ly_farewell_3:
+                    $ ly_farewell_3 = False
+                    #voice "lyf-03"
+                    ly "Feel free to return whenever you wish."
+                else:
+                    $ ly_farewell_1 = True
+                    $ ly_farewell_2 = True
+                    $ ly_farewell_3 = True                  
+                    #voice "lyf-04"
+                    ly "Should you require my assistance, you know where I'll be."
+
             call screen minimap()
 
 

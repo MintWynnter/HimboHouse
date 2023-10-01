@@ -2,9 +2,50 @@
 
 label aures_hub:
 
+    default au_greeting_kill = True
+    default au_greeting_1 = True
+    default au_greeting_2 = True
+    default au_greeting_3 = True
+    default au_greeting_4 = True
+
+    default au_farewell_selfish = True
+    default au_farewell_1 = True
+    default au_farewell_2 = True
+    default au_farewell_3 = True
+    default au_farewell_4 = True
+
     show aures neutral
     with dissolve
+    
     #greeting
+    if au_greeting_kill and killPath:
+        $ au_greeting_kill = False
+        #voice "aug-06"
+        au "Oh, hello. Have you seen Minoru? I can't find him."
+    elif au_greeting_1:
+        $ au_greeting_1 = False
+        #voice "aug-01"
+        au "Ohohohohoho!"
+    elif au_greeting_2:
+        $ au_greeting_2 = False
+        #voice "aug-02"
+        au "Why hello, my friend."
+    elif au_greeting_3:
+        $ au_greeting_3 = False
+        #voice "aug-03"
+        au "Would you like some tea?"
+    elif au_greeting_4:
+        $ au_greeting_4 = False
+        #voice "aug-04"
+        au "Oh, I didn't notice you standing there."
+    else:
+        $ au_greeting_1 = True
+        $ au_greeting_2 = True
+        $ au_greeting_3 = True
+        $ au_greeting_4 = True
+        #voice "aug-05"
+        au "Would you like to dance for a bit?"
+
     if auresQuestState == 7:
         if killPath:
             jump auresScene7K
@@ -64,6 +105,33 @@ label aures_convohub:
         "\"See you later, Aures.\"":
 
             # a goodbye line
+            if selfish >= 15 and au_farewell_selfish:
+                au_farewell_selfish = False
+                #voice "auf-04"
+                au "Oh, you're leaving me? I see. This will not be forgotten."
+            elif au_farewell_1:
+                $ au_farewell_1 = False
+                #voice "auf-01"
+                au "Are you leaving? Would you like a cup of tea for the road?"
+            elif au_farewell_2:
+                $ au_farewell_2 = False
+                #voice "auf-02"
+                au "How about one final waltz before you go?"
+            elif au_farewell_3:
+                $ au_farewell_3 = False
+                #voice "auf-03"
+                au "Farewell. I hope our paths will cross again soon."
+            elif au_farewell_4:
+                $ au_farewell_4 = False
+                #voice "auf-05"
+                au "I'll have some tea ready for you next time you arrive."
+            else:
+                $ au_farewell_1 = True
+                $ au_farewell_2 = True
+                $ au_farewell_3 = True
+                $ au_farewell_4 = True
+                #voice "auf-06"
+                au "Do you have time for one more dance before you go?"
 
             call screen minimap()
 
