@@ -1,0 +1,38 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/michaeldefines.rpy", line 3: Line is indented, but the preceding ATL statement does not expect a block. Please check this line's indentation.
+    "blink{i}.png"
+    ^
+
+File "game/michaeldefines.rpy", line 8: ATL statement contains two expressions in a row; is one of them a misspelled property? If not, separate them with pass.
+    for i in range(1, 4):
+                        ^
+
+File "game/michaeldefines.rpy", line 14: ATL statement contains two expressions in a row; is one of them a misspelled property? If not, separate them with pass.
+    for i in range(1, 6):
+                        ^
+
+File "game/michaeldefines.rpy", line 20: ATL statement contains two expressions in a row; is one of them a misspelled property? If not, separate them with pass.
+    for i in range(1, 12):
+                         ^
+
+File "game/michaeldefines.rpy", line 26: ATL statement contains two expressions in a row; is one of them a misspelled property? If not, separate them with pass.
+    for i in range(1, 3):
+                        ^
+
+File "game/michaeldefines.rpy", line 32: ATL statement contains two expressions in a row; is one of them a misspelled property? If not, separate them with pass.
+    for i in range(1, 4):
+                        ^
+
+File "game/michaeldefines.rpy", line 38: ATL statement contains two expressions in a row; is one of them a misspelled property? If not, separate them with pass.
+    for i in range(1, 4):
+                        ^
+
+File "game/michaeldefines.rpy", line 44: ATL statement contains two expressions in a row; is one of them a misspelled property? If not, separate them with pass.
+    for i in range(7, 13):
+                         ^
+
+Ren'Py Version: Ren'Py 8.0.3.22090809
+Sun Oct  1 02:31:56 2023

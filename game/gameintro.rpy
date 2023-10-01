@@ -3,7 +3,7 @@ label gameintro:
     show bg mansion exterior
     $config.allow_skipping = True
     $config.keymap["dismiss"].extend(['mouseup_1', 'K_RETURN', 'K_SPACE', 'K_KP_ENTER', 'K_SELECT'])
-
+    show curtain
     "A mansion stands before you."
     menu:
         "It beckons you in."
