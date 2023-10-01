@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/Settings.rpy", line 58: 'Preference' is not a keyword argument or valid child for the textbutton statement.
-    action action Preference("display", "fullscreen")
-                            ^
+File "game/screens.rpy", line 250: 'call' is not a keyword argument or valid child for the imagebutton statement.
+    action call("quick_menu", False)
+               ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Sun Oct  1 11:41:11 2023
+Sun Oct  1 13:29:51 2023

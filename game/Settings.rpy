@@ -10,8 +10,6 @@ style smallbuttons:
     hover_color "#FF90F4"
     size 32
 
-default variableName = 0
-
 screen bigMenu(mtype, subtype):
     tag menu
     add "gui/setting_bg.png"
@@ -119,6 +117,50 @@ screen bigMenu(mtype, subtype):
                     if variableName == 2:
                         label "Normal"
                     bar value Preference("auto-forward time")
-        #have the settings be buttons that are super janky. Hopefully it uses the same style react does
+        if subtype == "Audio":
+            text "Music Volume" xpos .121354 ypos .213889 size 48
+            text "SFX Volume" xpos .121354 ypos .368519 size 48
+            text "Voice Volume" xpos .121354 ypos .523148 size 48
+            text "Low" xpos .149479 ypos .285185 size 32
+            text "High" xpos .642708 ypos .285185 size 32
+            text "Low" xpos .149479 ypos .440741 size 32
+            text "High" xpos .642708 ypos .440741 size 32
+            text "Low" xpos .149479 ypos .595370 size 32
+            text "High" xpos .642708 ypos .595370 size 32
+            textbutton _("Mute All"):
+                xpos .801563
+                ypos .794444
+                action Preference("all mute", "toggle")
+                style "mute_all_button"
+            hbox:
+                style_prefix "slider"
+                xpos .191146
+                ypos .290741
+                vbox:
+                    if variableName == 1:
+                        label "Weak"
+                    if variableName == 2:
+                        label "Normal"
+                    bar value Preference("music volume")
+            hbox:
+                style_prefix "slider"
+                xpos .191146
+                ypos .445370
+                vbox:
+                    if variableName == 1:
+                        label "Weak"
+                    if variableName == 2:
+                        label "Normal"
+                    bar value Preference("sound volume")
+            hbox:
+                style_prefix "slider"
+                xpos .191146
+                ypos .6
+                vbox:
+                    if variableName == 1:
+                        label "Weak"
+                    if variableName == 2:
+                        label "Normal"
+                    bar value Preference("voice volume")
 
         

@@ -9,6 +9,7 @@ init:
 
 define a = Character("Aures", image="aures")
 define w = Character("Minoru", image="minoru")
+image splash = "images/splash.png"
 
 
 # The game starts here.

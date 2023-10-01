@@ -1,76 +1,70 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-After initialization, but before game start.
-  File "game/Settings.rpy", line 15, in prepare_screen
-    screen bigMenu(mtype, subtype):
-  File "game/Settings.rpy", line 15, in prepare
-    screen bigMenu(mtype, subtype):
-  File "game/Settings.rpy", line 50, in prepare
-    if mtype == "Settings":
-  File "game/Settings.rpy", line 50, in prepare
-    if mtype == "Settings":
-  File "game/Settings.rpy", line 96, in prepare
-    hbox:
-  File "game/Settings.rpy", line 96, in prepare
-    hbox:
-  File "game/Settings.rpy", line 100, in prepare
-    vbox:
-  File "game/Settings.rpy", line 100, in prepare
-    vbox:
-  File "game/Settings.rpy", line 105, in prepare
-    bar value Preference("skip speed")
-  File "game/Settings.rpy", line 105, in prepare
-    bar value Preference("skip speed")
-  File "game/Settings.rpy", line 105, in <module>
-    bar value Preference("skip speed")
-  File "renpy/common/00preferences.rpy", line 570, in Preference
-    rv = get()
-  File "renpy/common/00preferences.rpy", line 568, in get
-    raise Exception("Preference(%r, %r) is unknown." % (name , value))
-Exception: Preference('skip speed', None) is unknown.
+While loading <renpy.display.im.Image object ('images/headshot_anne.png') at 0x0000000005265730>:
+OSError: Couldn't find file 'images/headshot_anne.png'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\bootstrap.py", line 277, in bootstrap
-    renpy.main.main()
-  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\main.py", line 660, in main
-    run(restart)
-  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\main.py", line 95, in run
-    renpy.display.screen.prepare_screens()
-  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\display\screen.py", line 976, in prepare_screens
-    s.ast.prepare_screen()
-  File "game/Settings.rpy", line 15, in prepare_screen
-    screen bigMenu(mtype, subtype):
-  File "game/Settings.rpy", line 15, in prepare
-    screen bigMenu(mtype, subtype):
-  File "game/Settings.rpy", line 50, in prepare
-    if mtype == "Settings":
-  File "game/Settings.rpy", line 50, in prepare
-    if mtype == "Settings":
-  File "game/Settings.rpy", line 96, in prepare
-    hbox:
-  File "game/Settings.rpy", line 96, in prepare
-    hbox:
-  File "game/Settings.rpy", line 100, in prepare
-    vbox:
-  File "game/Settings.rpy", line 100, in prepare
-    vbox:
-  File "game/Settings.rpy", line 105, in prepare
-    bar value Preference("skip speed")
-  File "game/Settings.rpy", line 105, in prepare
-    bar value Preference("skip speed")
-  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\python.py", line 1085, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/Settings.rpy", line 105, in <module>
-    bar value Preference("skip speed")
-  File "renpy/common/00preferences.rpy", line 570, in Preference
-    rv = get()
-  File "renpy/common/00preferences.rpy", line 568, in get
-    raise Exception("Preference(%r, %r) is unknown." % (name , value))
-Exception: Preference('skip speed', None) is unknown.
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
+    python hide:
+  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\ast.py", line 1131, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\python.py", line 1061, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
+    python hide:
+  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in _execute_python_hide
+    ui.interact()
+  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\display\core.py", line 3377, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\display\core.py", line 3912, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\display\core.py", line 2602, in draw_screen
+    surftree = renpy.display.render.render_screen(
+  File "render.pyx", line 495, in renpy.display.render.render_screen
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\display\screen.py", line 704, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\display\behavior.py", line 885, in render
+    rv = super(Button, self).render(width, height, st, at)
+  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\display\layout.py", line 1334, in render
+    surf = render(child,
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\display\im.py", line 627, in render
+    return cache.get(self, render=True)
+  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\display\im.py", line 295, in get
+    surf = image.load()
+  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\display\im.py", line 720, in load
+    raise e
+  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\display\im.py", line 685, in load
+    filelike = renpy.loader.load(self.filename)
+  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\loader.py", line 820, in load
+    raise IOError("Couldn't find file '%s'." % name)
+OSError: Couldn't find file 'images/headshot_anne.png'.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.0.3.22090809
 The House On Limbo Lane 1.0
-Sun Oct  1 12:00:11 2023
+Sun Oct  1 14:36:49 2023
