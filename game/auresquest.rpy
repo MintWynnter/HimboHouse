@@ -1,6 +1,8 @@
 default killPath = False
 default selfish = 0
 default goodness = 0
+default auresQuestState = 1
+default hasTeleporter = False
 
 
 label auresIntro:
@@ -12,7 +14,8 @@ label auresIntro:
     #voice au_hap3
     show aures neutral
     au "Actually, allow me to introduce myself. I am Aures Bellis. It is a pleasure to make your acquaintance; I am sure that we will get along swimmingly."
-    jump auresHub
+    $auresQuestState += 1
+    call screen minimap()
 
 label auresScene2:
     "You sit with Aures and start sipping some type of tea that she prepared. It tastes very floral."
@@ -27,15 +30,20 @@ label auresScene2:
     "She speaks slightly more hurriedly with the last sentence."
     menu:
         "I'm always happy to help when needed!":
+            $goodness += 5
+            $selfish -= 5
             #voice au_hap3
             au "I'm elated to know you feel that way; let us begin preparations as soon as you are ready!"
         "Well, I guess I do need to figure out what's going on.":
+            $selfish += 5
             #voice au_ann2
             au "As long as the task gets done, I care not why you do it."
         "I'd really rather not, but I probably have to.":
+            $goodness -= 5
             #voice au_ann2
             au "Well, as long as you help, I do not care whether you want to or not."
-    jump auresHub
+    $auresQuestState += 1
+    call screen minimap()
 
 label auresScene3:
 
@@ -48,6 +56,7 @@ label auresScene3:
     "You look at the papers and notice that some are a bit unsavory"
     menu:
         "Pick up the one depicting a tied up person.":
+            $goodness -= 5
             "The picture is of a person tied up and stuffed into the trunk of a car."
             #voice au_hap3
             show aures laughing
@@ -58,6 +67,8 @@ label auresScene3:
             show aures neutral
             au "I quite like this one, as it would let me see My Dear. I do not remember if any of the other residents have an object like this that they would allow me to borrow, though."
         "Pick up the one depicting some flowers.":
+            $goodness += 5
+            $selfish -= 5
             "The picture has what appears to be a bouquet of flowers and a note."
             #voice auq4-04
             au "This one is nice, but I would have to get the address of My Little Pet before we could send it, so it may not work."
@@ -74,6 +85,7 @@ label auresScene3:
     "Aures starts scribbling on some pieces of paper, each portraying a different means of murder."
     menu:
         "I don't know if murder is the best option here.":
+            $goodness += 10
             #voice au_dis1
             show aures soulless
             au "Oh. Well, I suppose if you believe so. I did ask for your opinion."
@@ -82,6 +94,7 @@ label auresScene3:
             show aures yandere
             au "Actually, if we want to go with a non-murderous option, we can just pick one of the others. This one requires a bit more planning, so let us contemplate it more."
         "Maybe a guillotine would work.":
+            $goodness -= 10
             #voice au_lhe1
             show aures yandere
             au "Oh, how noble of you! I like that one. I wouldn't want to cause My Treasure any unnecessary pain."
@@ -109,15 +122,18 @@ label auresScene3:
             #voice au_dis1
             au "Oh, what a shame. Well, we can still consider it. My Sweetie Pie can handle a bit of pain if it means we can be together forever."
         "There's no way I'm letting you cut my throat.":
+            $selfish += 5
             #voice au_dis1
             au "Why not?! I thought you were going to help me!"
             "She looks disappointed but does back off after a bit."
         "I guess if it helps, you can slice my throat.":
+            $selfish -= 10
             #voice au_lhe1
             show aures laughing
             au "Splendid! Let us see how much pain My Lovebug will feel if we slit his throat!"
             "Aures brandishes the knife and lunges towards you."
-    jump auresHub
+    $auresQuestState += 1
+    call screen minimap()
 
 label auresScene4:
 
@@ -134,7 +150,8 @@ label auresScene4:
     au "Maybe something a bit more scientific… Do we have a teleporter? There must be something we can use somewhere around here…"
     #voice au_puz1
     au "Maybe you could go ask Lysander. I do not know if you have met him yet. He is the groundskeeper here. If anyone would know where something is, it would be him."
-    jump auresHub
+    $auresQuestState += 1
+    call screen minimap()
 
 label auresScene5:
 
@@ -148,7 +165,7 @@ label auresScene5:
     #voice 
     au "I suppose I can leave the decision to you. What do you think would be best?"
     menu:
-        "Teleport Aures to him - neutral":
+        "Teleport Aures to him":
             $killPath = False
             #voice auq4-11
             show aures yandere
@@ -176,7 +193,7 @@ label auresScene5:
             #voice auq4-15
             show aures neutral
             au "You may not have noticed because it all happened so suddenly, but I am a ghost. I will have to kill you before we can truly be together. But not to worry, I will kill you with love."
-        "Teleport him to the mansion - neutral":
+        "Teleport him to the mansion":
             $killPath = False
             #voice au_hap3
             show aures neutral
@@ -206,7 +223,7 @@ label auresScene5:
             #voice auq4-17
             show aures yandere
             au "Don't worry, My Teddy Bear, when I make it so that we can be together forever, it will be as painless as possible."
-        "Kill him - -- to good meter":
+        "Kill him":
             $killPath = True
             #voice auq4-18
             show aures yandere
@@ -254,7 +271,8 @@ label auresScene5:
             "Aures clings to Minoru."
             #voice au_hap3
             au "Come back later. I'm sure I will require your assistance again."
-            jump auresHub
+            $auresQuestState += 1
+            call screen minimap()
     #voice miq4-11
     show minoru neutral
     mi "You're gonna kill me?!"
@@ -267,10 +285,11 @@ label auresScene5:
     #voice au_hap3
     show aures soulless
     au "Fine, I will do as you wish for now. But whenever you are ready to enter the loving embrace of death, tell me."
-    jump auresHub
+    $auresQuestState += 1
+    call screen minimap()
 
 
-label auresScene5K:
+label auresScene6K:
     "Aures is holding tightly onto Minoru's arm, and he is subtly trying to get away from her."
     #voice au_puz5
     show aures neutral
@@ -287,14 +306,17 @@ label auresScene5K:
     mi "To make it even worse, she killed me! And she keeps calling me these weird names..."
     menu:
         "I'm here to help the ghosts that were here when I arrived. That doesn't include you.":
+            $selfish += 15
             #voice miq4-15
             mi "I can't believe it. You're the reason I'm stuck here, and you won't even try to help me?"
             #voice miq4-16
             mi "Well, I guess there isn't really anything you could do anyway. But just know that you're a jerk."
         "I wish I could help you, but I don't think I can do much now.":
+            $selfish -= 10
             #voice mi_ner1
             mi "I guess you're right. At least you're willing to help. If I think of anything, I'll let you know."
         "I'm sorry for how things turned out, but why don't you give Aures a chance?":
+            $selfish -= 5
             #voice miq4-17
             mi "Why don't I 'give her a chance?!' Because she killed me, that's why! She's absolutely insane!"
             #voice miq4-18
@@ -320,9 +342,10 @@ label auresScene5K:
     au "You probably just don't remember how much you love me. But worry not; I will make sure you do."
     #voice auq4-28
     au "I will make sure that you remember that you are mine."
-    jump auresHub
+    $auresQuestState += 1
+    call screen minimap()
 
-label auresScene6K:
+label auresScene7K:
     #voice au_mad5
     show aures heartbroken
     au "I'm so glad you are here! I need your help!"
@@ -380,10 +403,12 @@ label auresScene6K:
     "Minoru looks at you pleadingly."
     menu:
         "Why don't you think of how Minoru feels?":
+            $selfish -= 10
             #voice au_sad4
             show aures soulless
             au "He doesn't remember how he feels. He just can't remember how much he loves me."
         "Just go along with her. If not, it'll be a pain for me.":
+            $selfish += 15
             #voice mi_mad2
             show minoru neutral
             mi "I can't believe you! You let her kill me, now this! How selfish can one person be?!"
@@ -393,8 +418,10 @@ label auresScene6K:
     #voice auq4-38
     show aures yandere
     au "You may not see this now, My Reason For Being, but this is what's best for you. You must stay with me forever."
+    $auresQuestState += 1
+    call screen minimap()
 
-label auresScene5NK:
+label auresScene6NK:
     "Aures is holding tightly onto Minoru's arm, and he is subtly trying to get away from her."
     #voice au_sad4
     show aures neutral
@@ -411,11 +438,13 @@ label auresScene5NK:
     mi "To make it even worse, she wants to kill me! And she keeps calling me these weird names..."
     menu:
         "I'm here to help the ghosts that were here when I arrived. That doesn't include you.":
+            $selfish += 10
             #voice miq4-15
             mi "I can't believe it. You're the reason I'm stuck here, and you won't even try to help me?"
             #voice miq4-16
             mi "Well, I guess there isn't really anything you could do anyway. But just know that you're a jerk."
         "I wish I could help you, but I don't think I can do much now.":
+            $selfish -= 10
             #voice mi_ner1
             mi "I guess you're right. At least you're willing to help. If I think of anything, I'll let you know."
         "I'm sorry for how things turned out, but why don't you give Aures a chance?":
@@ -443,8 +472,10 @@ label auresScene5NK:
     au "You probably just don't remember how much you love me. But worry not; I will make sure you do."
     #voice auq4-28
     au "I will make sure that you remember that you are mine."
+    $auresQuestState += 1
+    call screen minimap()
 
-label auresScene6NK:
+label auresScene7NK:
     #voice au_sad3
     show aures heartbroken
     au "I'm so glad you are here! I need your help!"
@@ -489,9 +520,11 @@ label auresScene6NK:
     "Aures stabs Minoru in the stomach. He slumps over, dead, and his spirit rises out of his corpse."
     #voice auq4-44
     au "Now we can be together forever. Now you are finally all mine."
+    $auresQuestState += 1
+    call screen minimap()
 
 
-label auresScene7:
+label auresScene8:
     #voice miq4-22
     mi "Let me leave! You killed me, chained me up in this room, and you expect me to marry you! That's insane!"
     #voice au_sad3
@@ -519,6 +552,7 @@ label auresScene7:
     au "Why am I on the floor? It doesn't matter; I need your help. My World wants to leave. Please help me keep him here."
     menu:
         "Why don't you think about how Minoru feels?":
+            $selfish -= 10
             #voice au_eww1
             show aures soulless
             au "Think about how he feels? Do you intend to say that I should let him leave?! Ridiculous!"
@@ -530,6 +564,7 @@ label auresScene7:
             "It is clear that Aures will burst into tears again if Minoru decides to leave. She may even snap and chain him up if that happens."
             jump auresHappyEnd
         "I think you should just keep him here.":
+            $selfish += 15
             #voice auq4-50
             show aures yandere
             au "I think you are right. I should just keep him here. He doesn't know what he wants."
@@ -564,7 +599,8 @@ label auresHappyEnd:
     #voice miq4-26
     mi "I think we should get to know each other a bit more. I don't really know anything about you."
     "You leave as they start a conversation over tea that Aures makes."
-    jump auresHub
+    $auresQuestState += 1
+    call screen minimap()
 
 label auresChainEnd:
     #voice auq4-53
@@ -575,3 +611,5 @@ label auresChainEnd:
     show minoru neutral
     mi "Wait, what are you doing? You can't keep me here! This isn't right! {insert scream of agony here}"
     "You leave the room as Minoru cries out in vain for help."
+    $auresQuestState += 1
+    call screen minimap()
