@@ -1,3 +1,114 @@
+image blink:
+    "blink0.png"
+    pause 0.5
+    "blink1.png"
+    pause 0.5
+    "blink2.png"
+    pause 0.5
+    "blink3.png"
+    pause 0.5
+    "blink4.png"
+    pause 0.5
+    "blink5.png"
+    pause 0.5
+    repeat
+
+image chand:
+    "chand1.png"
+    pause 0.5
+    "chand2.png"
+    pause 0.5
+    "chand3.png"
+    pause 0.5
+    "chand4.png"
+    pause 0.5
+    repeat
+
+image curtain:
+    "curtain1.png"
+    pause 0.5
+    "curtain2.png"
+    pause 0.5
+    "curtain3.png"
+    pause 0.5
+    "curtain4.png"
+    pause 0.5
+    "curtain5.png"
+    pause 0.5
+    "curtain6.png"
+    pause 0.5
+    repeat
+
+image drink:
+    "drink1.png"
+    pause 0.5
+    "drink2.png"
+    pause 0.5
+    "drink3.png"
+    pause 0.5
+    "drink4.png"
+    pause 0.5
+    "drink5.png"
+    pause 0.5
+    "drink6.png"
+    pause 0.5
+    "drink7.png"
+    pause 0.5
+    "drink8.png"
+    pause 0.5
+    "drink9.png"
+    pause 0.5
+    "drink10.png"
+    pause 0.5
+    "drink11.png"
+    pause 0.5
+    "drink12.png"
+    pause 0.5
+    repeat
+
+image fire:
+    "fire1.png"
+    pause 0.5
+    "fire2.png"
+    pause 0.5
+    "fire3.png"
+    pause 0.5
+    repeat
+
+image lab:
+    "lab1.png"
+    pause 0.5
+    "lab2.png"
+    pause 0.5
+    "lab3.png"
+    pause 0.5
+    "lab4.png"
+    pause 0.5
+    repeat
+
+image light:
+    "light1.png"
+    pause 0.5
+    "light2.png"
+    pause 0.5
+    "light3.png"
+    pause 0.5
+    "light4.png"
+    pause 0.5
+    repeat
+
+image out:
+    "out7.png"
+    pause 0.5
+    "out9.png"
+    pause 0.5
+    "out11.png"
+    pause 0.5
+    "out12.png"
+    pause 0.5
+    "out13.png"
+    pause 0.5
+    repeat
 
 default questsdone = 0 # how many quests have you completed?
 
