@@ -1,5 +1,8 @@
 label arabella_hub:
 
+    show arabella neutral
+    with dissolve
+
     # custom greeting
 
 label arabella_convohub:
@@ -14,6 +17,18 @@ label arabella_convohub:
         "\"We need to talk about Elizabeth again.\"" if elizabeth_queststate is 4 and q5_location is 0:
             jump arabella_elizabeth2
 
+        "\"I have questions about you, Arabella.\"":
+            jump arabella_aboutyou
+
+
+
+        "Leave.":
+            # custom goodbye
+            call screen minimap()
+
+label arabella_aboutyou:
+
+    menu:
         "\"This mansion seems to hold centuries of history. Can you tell me more about its origins and your connection to it?\"":
             show arabella melancholic
             #voice "arht-01"
@@ -23,15 +38,15 @@ label arabella_convohub:
             ar "My earliest memories are of playing in these halls, the echo of my laughter juxtaposed against the house's solemn silence."
             #voice "arht-03"
             ar "Every stone, every tapestry tells a tale, some of which I yearn to remember fully."
-            jump arabella_convohub
+            jump arabella_aboutyou
 
-        "\"Your need to remember your lost memories is interesting to me. Is there anything you can recall of your life before everything became hazy?\"":
+        "\"Is there anything you can recall of your life before everything became hazy?\"":
             show arabella melancholic
             #voice "arht-04"
             ar "There are moments, fleeting like the embers of a dying fire, that I clutch onto. I remember a pendant, the scent of roses in the garden, and the shadow of my Uncle Lysander always close by."
             #voice "arht-05"
             ar "Yet, there's a barrier... like a thick mist... obscuring deeper memories. I often wonder if there's a reason some moments remain veiled."
-            jump arabella_convohub
+            jump arabella_aboutyou
 
         "\"You’re not the only other spirit here, are you? Have you encountered others bound to this place?\"":
             show arabella contemplative
@@ -41,23 +56,21 @@ label arabella_convohub:
             ar "Some are mere whispers, transient and evasive... Others, like Lysander, hold a more dominant presence."
             #voice "arht-08"
             ar "While our stories differ, our shared fate binds us to this timeless mansion..."
-            jump arabella_convohub
+            jump arabella_aboutyou
 
         "\"Can you tell me, how did you die?\"":
             if q3_death_convo_trigger:
                 "Arabella refuses to speak any more about this."
-                jump arabella_convohub
+                jump arabella_aboutyou
             else:
                 show arabella melancholic
                 #voice "arht-09"
                 ar "... That... is a topic that I would rather not indulge in... Would the truth of my death make a difference on this quest?"
                 $ q3_death_convo_trigger = True
-                jump arabella_convohub
+                jump arabella_aboutyou
 
-        "Leave.":
-            # custom goodbye
-            call screen minimap()
-
+        "\"That's all for now, Arabella.\"":
+            jump arabella_convohub
 
 
 label arabella_elizabeth:
@@ -134,20 +147,23 @@ label arabella_elizabeth2:
     ar "In ways that will lead to her becoming hurt more than she has already been, in life and in death..."
     ar "So I am sorry, but we cannot help you this time..."
     mc "How are you so sure that the information you have will hurt her?"
-    ar "How do you plan to 'help' the poor child? By forcing her to remember one of the single most painful things one can ask another to recall?"
+    ar "How do you plan to 'help' the poor child?"
+    ar "By forcing her to remember one of the single most painful things one can ask another to recall?"
     ar "And for what? To help a child's resolve that she cannot possibly grasp the reality of?"
     ar "I urge you, since you want to know the truth so bad... Take a look at these."
     "Arabella hands you a couple of newspaper clippings."
     # HEY IT'S THE HAVE YOU SEEN ME ICON LMAO
-    "On the first paper you see, it was the exact face of Elizabeth, with slightly longer hair, more lively expressions, and less water dripping from her entire being."
-    "Under the picture, a sentence 'HAVE YOU SEEN ME?' printed big on the paper."
-    "You take out the second paper. On it, in the middle of crowding police, a picture of a woman in her 30s is seen holding a children's jacket."
+    "On the first paper you see, is a clear picture of Elizabeth, with slightly longer hair, more lively expressions, and less water dripping from her entire being."
+    "Under the picture, a sentence ‘HAVE YOU SEEN ME?’ is printed large on the paper."
+    "You take out the second paper. On it, in the middle of crowding police, a picture of a woman in her thirties is seen holding a child's jacket."
     "She was entirely disheveled with dried tears and dark circles under her eyes."
     "\"—Was last seen going out of the house at 4 p.m., walking towards the bridge.\""
-    "\"It is reported that there was a slight argument between her and the mother before the time she was last seen. Police are currently investigating—\""
-    "The third paper, there was no picture this time, only a big headline 'SEARCH CALLED OFF'."
-    "\"—Being discontinued, due to insufficient leads regarding the whereabouts of the missing person.\""
-    "\"'I hope you're happy and safe, I love you so much, and I'm sorry I can't be a better mother for you,' The mother of the little girl told our editor, a small message we all hope Elizabeth will read.\""
+    "\"It is reported that there was a slight argument between her and the mother before the time she was last seen.\""
+    "\"Police are currently investigating—\""
+    "The third paper has no picture, only a big headline: ‘SEARCH CALLED OFF’."
+    "\"—Being discontinued. The reason is insufficient leads or clues regarding the whereabouts of the missing person.\""
+    "\"'I hope you’re happy and safe, I love you so much, and I’m sorry I can’t be a better mother for you,' The mother of the little girl told our editor.\""
+    "\"A small message we all hope Elizabeth will read.\""
     "\"The family has decided to move away from their residence but will keep close contact with the police.\""
     "\"The police will still receive any information regarding the missing Elizabeth—\""
     "You read them all carefully."
@@ -186,7 +202,8 @@ label arabella_elizabeth2:
     "Something… doesn't feel right with her. She seems on edge."
     mc "Well, I think we should stick with the facts instead of going off of a hunch or any assumptions."
     mc "Look, we have the newspaper articles right here, but I don't feel like we have the whole story here."
-    ar "What if… the stories had been fabricated? By the mother, the police… anybody… to try to paint the mother in a light that made her stand out to be something that she was not...?"
+    ar "What if… the stories had been fabricated? By the mother, the police… anybody…"
+    ar "To try to paint the mother in a light that made her stand out to be something that she was not...?"
     ar "If what I believe is to be reality... how... would you be able to help Elizabeth then... without hurting her...?"
     menu:
         "I will still tell her the truth.":
@@ -200,10 +217,12 @@ label arabella_elizabeth2:
             "She doesn't look at you. Her resolve seems to have shattered."
 
         "I won't show her this, it's too much for her.":
-            "Arabella seems to visibly relax, but only slightly. She doesn't answer you, but she gives you the smallest nod in acknowledgment."
+            "Arabella seems to visibly relax, but only slightly."
+            "She doesn't answer you, but she gives you the smallest nod in acknowledgment."
 
         "Maybe it's better for her to stay here.":
-            "Arabella sighs in obvious relief and visibly relaxes, as if a huge weight had been lifted off of her shoulders. She doesn't answer you, but she gives a small smile beaming with contentedness."
+            "Arabella sighs in obvious relief and visibly relaxes, as if a huge weight had been lifted off of her shoulders."
+            "She doesn't answer you, but she gives a small smile that hints at contentment."
 
     ar "Do you think she will be okay with that?"
     menu:
@@ -218,7 +237,7 @@ label arabella_elizabeth2:
     "Holding the newspaper clippings in your hand, you sigh deeply, thinking of the choice you're about to make."
     "You shove the papers into your pocket."
 
-    $ q5_state = 5
+    $ elizabeth_queststate = 5
     jump arabella_convohub
 
 

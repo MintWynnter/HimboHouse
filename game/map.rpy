@@ -23,12 +23,12 @@ screen minimap():
     imagebutton:
         idle "chibi_aures.png"
         pos (.7, .5)
-        action [Hide("minimap"), Jump("testing")]
+        action [Hide("minimap"), Jump("aures")]
         at chibizoom
     imagebutton:
         idle "chibi_herman.png"
         pos (.5, .3)
-        action [Hide("minimap"), Jump("testing")]
+        action [Hide("minimap"), Jump("herman")]
         at chibizoom
     imagebutton:
         idle "chibi_arabella.png"

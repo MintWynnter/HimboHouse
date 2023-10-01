@@ -1,3 +1,130 @@
+default blink_pause = 0.25
+
+image blink:
+    "blink0.png"
+    pause blink_pause
+    "blink1.png"
+    pause blink_pause
+    "blink2.png"
+    pause blink_pause
+    "blink3.png"
+    pause blink_pause
+    "blink4.png"
+    pause blink_pause
+    "blink5.png"
+    pause blink_pause
+    repeat
+
+default chand_pause = 0.25
+
+image chand:
+    "chand1.png"
+    pause chand_pause
+    "chand2.png"
+    pause chand_pause
+    "chand3.png"
+    pause chand_pause
+    "chand4.png"
+    pause chand_pause
+    repeat
+
+default curtain_pause = 0.25
+
+image curtain:
+    "curtain1.png"
+    pause curtain_pause
+    "curtain2.png"
+    pause curtain_pause
+    "curtain3.png"
+    pause curtain_pause
+    "curtain4.png"
+    pause curtain_pause
+    "curtain5.png"
+    pause curtain_pause
+    "curtain6.png"
+    pause curtain_pause
+    repeat
+
+default drink_pause = 0.25
+
+image drink:
+    "drink1.png"
+    pause drink_pause
+    "drink2.png"
+    pause drink_pause
+    "drink3.png"
+    pause drink_pause
+    "drink4.png"
+    pause drink_pause
+    "drink5.png"
+    pause drink_pause
+    "drink6.png"
+    pause drink_pause
+    "drink7.png"
+    pause drink_pause
+    "drink8.png"
+    pause drink_pause
+    "drink9.png"
+    pause drink_pause
+    "drink10.png"
+    pause drink_pause
+    "drink11.png"
+    pause drink_pause
+    "drink12.png"
+    pause drink_pause
+    repeat
+
+default fire_pause = 0.25
+
+image fire:
+    "fire1.png"
+    pause fire_pause
+    "fire2.png"
+    pause fire_pause
+    "fire3.png"
+    pause fire_pause
+    repeat
+
+default lab_pause = 0.25
+
+image lab:
+    "lab1.png"
+    pause lab_pause
+    "lab2.png"
+    pause lab_pause
+    "lab3.png"
+    pause lab_pause
+    "lab4.png"
+    pause lab_pause
+    repeat
+
+default light_pause = 0.25
+
+image light:
+    "light1.png"
+    pause light_pause
+    "light2.png"
+    pause light_pause
+    "light3.png"
+    pause light_pause
+    "light4.png"
+    pause light_pause
+    repeat
+
+default out_pause = 0.25
+
+image out:
+    "out7.png"
+    pause out_pause
+    "out9.png"
+    pause out_pause
+    "out11.png"
+    pause out_pause
+    "out12.png"
+    pause out_pause
+    "out13.png"
+    pause out_pause
+    repeat
 
 default questsdone = 0 # how many quests have you completed?
 
@@ -32,8 +159,21 @@ define ab = Character("abbe_name", dynamic = True, color = "#e3f0ff", what_color
 #$ abbe_name = "Abbé Maurice"
 
 # the everyone else corner so i can do the midpoint scene
-default arabella_queststate = 0
+#default arabella_queststate = 0
+
+#the herman corner
 default herman_queststate = 0
+default herman_attitude = 0
+define he = Character("Herman", color="#ffffff",what_color="#ffffff")
+default herman_justgotfetch = False
+default herman_date = False
+default herman_newspaper = False
+default herman_justgotrebuffed = False
+default herman_playedpoker = False
+default herman_vorvodossmentioned = False
+default herman_questjustfinished = False
+default vorvodoss_name = "???"
+define vo = Character("vorvodoss_name", dynamic = True, color="#ffffff",what_color="#ffffff")
 
 default elizabeth_queststate = 0
 define el = Character("Elizabeth", color="#ffffff",what_color="#ffffff")
@@ -67,5 +207,6 @@ default q3_state = 0
 default q3_ending_trigger = False
 default q3_death_convo_trigger = False #did you try to ask arabella about her death?
 default q3_ending_points = 0
+default q3_keyneeded = False
 
 #default elizabeth_queststate = 0 already declared in michaeldefines

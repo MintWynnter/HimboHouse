@@ -1,5 +1,7 @@
 label postquest:
 
+    $questsdone = questsdone + 1
+
     # you just had a reflection, so figure out how you decompose and what exposition gets told
 
     if questsdone is 1:
@@ -43,7 +45,8 @@ label decomp2:
     "You press your tongue to the roof of your mouth in thought."
     "The roof does not push back. Instead, the tongue melts into the roof, disintegrating into an almost gelatinous paste."
     "You can feel the paste abrade against your gums and fill the gaps between your remaining teeth."
-    "A bit emerges onto your lip. It is of an inconsistent texture and hue — shades of green and brown and red correspond to chunkier or more fluid consistencies."
+    "A bit emerges onto your lip."
+    "It is of an inconsistent texture and hue — shades of green and brown and red correspond to chunkier or more fluid consistencies."
     "It dribbles down your lip, and onto your chin."
     #voice
     ab "Oh my."
@@ -75,7 +78,8 @@ label decomp4:
     "You pause for just a moment, to capture the new perception, tilting your head back and forth."
     "One side feels lighter than the other."
     "You press your hand to your left ear — and find it missing."
-    "Instead, you press against the exposed flesh. The squelch of shifting tissue bounds off your eardrum, which your finger is just short of punching through altogether."
+    "Instead, you press against the exposed flesh."
+    "The squelch of shifting tissue bounds off your eardrum, which your finger is just short of punching through altogether."
     #voice abq0-17
     ab "I suppose the cartilage was always going to go."
     #voice
@@ -88,7 +92,9 @@ label decomp5:
     "Suddenly, you are disrupted by a smell — somehow more vile than the stench you’ve been carrying thus far."
     "Finding the source is not easy. The smell is pervasive, everywhere. It follows you from place to place."
     "If it is another of your ghastly smells, then it is new and it is intense."
-    "Searching your person yields the answer: A deep brown-green fluid seeps out of a small hole in your torso. Swiping a drop on your finger, you find it not to be viscous like blood. Rather, it rolls rather easily down your finger, filling in the grooves of your fingerprint as it descends."
+    "Searching your person yields the answer: A deep brown-green fluid seeps out of a small hole in your torso."
+    "Swiping a drop on your finger, you find it not to be viscous like blood."
+    "Rather, it rolls rather easily down your finger, filling in the grooves of your fingerprint as it descends."
     "It smells of excrement, and is highly concentrated."
     #voice abq0-18
     ab "Bile, I’m sure of it."
@@ -185,6 +191,7 @@ label exposition2:
     ab "I’d rather not think about it. Squeamish and all."
     #voice
     ab "Still, I think you deserve an introduction. To me."
+    $ abbe_name = "Abbé Maurice"
     #voice abq0-s906
     ab "I am Abbé Maurice Lachaise, owner and proprietor of this mansion."
     #voice
@@ -251,9 +258,107 @@ label exposition3:
 
 label exposition4:
 
+    "The levity is short-lived."
+    #voice
+    ab "So. Presper. The scientist. Doctor. However he brandishes himself."
+    #voice abq0-127
+    ab "Antoine. I knew him."
+    #voice
+    ab "I built this mansion 200 years ago to seclude myself from the world."
+    #voice
+    ab "And when I grew old, I hired him to tend to me."
+    #voice abq0-128
+    ab "He failed, and it seems to have gotten to his head."
+    #voice
+    menu:
+        ab "What he’s doing alive and… well 200 years later is beyond me."
+
+        "\"Sounds like he’s gone off the deep end.\"":
+            #voice
+            ab "Quite. And it doesn’t seem he’ll be out of the proverbial pool any time soon."
+        "\"Sounds like he’s trying to bring you back.\"":
+            #voice
+            ab "That is kind of him. But I don’t think his means are the kind one ought to be comfortable with."
+            #voice
+            ab "And as far as the ends go, who knows if they’re that clear-cut."
+        "\"Sounds like you and he have a lot in common.\"":
+            #voice
+            ab "Don’t remind me. I went isolationist before he did, let it be known."
+
+    #voice abq0-129
+    ab "Antoine is responsible for both our predicaments. Let us keep the little worm under scrutiny until we know more."
+
+    call screen minimap()
+
 label exposition5:
+    "His voice sharpens. You can feel his hypothetical teeth clench."
+    #voice abq0-130
+    ab "Presper."
+    #voice abq0-131
+    ab "That good for nothing little scoundrel."
+    #voice
+    ab "He was always so eager to please. A shame he was no good at it."
+    #voice abq0-132
+    ab "I was an old man. I needed help. He promised it."
+    #voice
+    menu:
+        ab "And the ungrateful, lazy bastard got me killed instead."
+
+        "\"For all his morbidity, he doesn’t seem like the killing type.\"":
+            #voice
+            ab "What, you think this vessel we’re walking around in came from a morgue or something?"
+            #voice
+            ab "You’ve got a slice cut deep into your head, for crying out loud."
+            #voice
+            ab "He must have swiped you with a shovel, the cretin."
+
+        "\"Did he experiment on you like he did me?\"":
+            #voice
+            ab "Considering I’m a disembodied spirit now, I suspect he did toy with some part of my metaphysics."
+            #voice
+            ab "Not that I asked for it. The miserable little twerp must have thought he was doing a speck of good."
+        "\"Sounds like you were old, you were going to die anyway.\"":
+            #voice
+            ab "That’s why I brought the idiot here in the first place, don’t you understand?"
+
+    "Maurice’s anger grows sharper."
+    #voice
+    ab "Presper, that bumbling buffoon."
+    #voice abq0-133
+    ab "I gave him the world, every kind of amenity you could imagine."
+    #voice abq0-134
+    ab "And he still let me die."
+    #voice
+    menu:
+        ab "A spoiled brat who’s only further spoiled since my departure."
+
+        "\"Settle, Maurice. You’re getting awfully riled up.\"":
+            pass
+        "\"How did he let you die? Did he do something to you?\"":
+            pass
+        "\"Some people just don’t know how good they have it.\"":
+            pass
+
+    #voice
+    ab "The more I think about the negligent malpractitioner, the more I remember how he betrayed me."
+    #voice
+    ab "No, he didn’t outright kill me. He was too much a coward for that."
+    #voice
+    ab "He tried to save me, to keep me alive and well."
+    #voice
+    ab "But no matter how hard a blustering nincompoop tries…"
+    #voice abq0-135
+    ab "No matter how many years he spends tinkering in a basement with the powers of a demigod —"
+    #voice abq0-136
+    ab "He will always be a failure."
+    #voice abq0-137
+    ab "I will speak no more of it. Let’s move on."
+
+    call screen minimap()
 
 label exposition6:
+
+    jump gameend
 
 label marianne_reflection:
 
@@ -524,3 +629,340 @@ label lysander_reflection_end:
 
     ab "Anyhow, that is that, as they say. Onward."
     jump postquest
+
+label herman_reflection:
+
+    $ herman_questjustfinished = False
+
+    "Now that Herman has disregarded you, per usual, the voice in your head finally eeks out a response."
+
+    if herman_queststate is 7:
+        jump herman_reflection_gave
+    if herman_queststate is 8:
+        jump herman_reflection_threw
+
+label herman_reflection_end:
+
+    ab "Well, never mind that. There is more to this mansion. Let us venture forth."
+    jump postquest
+
+label herman_reflection_gave:
+
+    #voice abq0-067
+    ab "You saw that, uh, thing as well, right?"
+    #voice
+    ab "Nothing against the crooked Dixie lad, but —"
+    #voice abq0-068
+    menu:
+        ab "Surely, it was unwise to hand that ring over to him, right?"
+        "\"I didn’t expect that ring to actually have any power!\"":
+            #voice abq0-069
+            ab "Yes, well, perhaps the supernatural nature of everything you’ve seen tonight would clue you in on that fact."
+            #voice abq0-070
+            ab "Then again, maybe that was all just a trick of the light."
+            #voice
+            ab "Here’s hoping, at least."
+        "\"I just did as I was told.\"":
+            #voice abq0-071
+            ab "I cannot argue with that."
+            #voice abq0-072
+            ab "Actually, I could. But, I see no benefit."
+            #voice
+            ab "What’s done is done."
+            #voice
+            ab "Hopefully this newfound power of his doesn’t come back to bite us."
+        "\"Nah, it’s cool. I wanted him to have eldritch power.\"":
+            #voice abq0-073
+            ab "You did?"
+            #voice
+            ab "I mean, of course you did."
+            #voice abq0-074
+            ab "What’s one more undead monstrosity roaming the house?"
+            #voice
+            ab "Hopefully this newfound power of his doesn’t come back to bite us."
+            #voice
+            ab "It’s not as if that never happens in horror stories…"
+
+    jump herman_reflection_end
+
+label herman_reflection_threw:
+
+    #voice abq0-075
+    ab "You know, I expected him to handle that refusal with less… grace."
+    #voice
+    ab "But, clearly he doesn’t see you as much of an obstacle."
+    #voice abq0-076
+    menu:
+        ab "That concerns you at least a little, does it not?"
+
+        "\"I suppose I had better watch my back…\"":
+            #voice abq0-077
+            ab "That might be wise, given his history of… stubbornness."
+            #voice
+            ab "Still, perhaps he’s bluffing. We won’t know till we know."
+            #voice
+            ab "And here’s to hoping we never know."
+        "\"Herman is welcome to underestimate me.\"":
+            #voice abq0-078
+            ab "I will say, Herman has been around the undead block."
+            #voice
+            ab "But perhaps you bring something to the table that neither of us recognize."
+            #voice
+            ab "Not that I underestimate you, I simply…"
+            #voice
+            ab "... I need not worry."
+        "\"He’s an oaf. How he feels does not concern me.\"":
+            #voice abq0-079
+            ab "I do not believe Herman is one to share in your apathy."
+            #voice
+            ab "Not that I disagree with you on the first count. He is not bright."
+            #voice
+            ab "But he is ambitious. And, at least for that, you might show some concern."
+
+    jump herman_reflection_end
+
+label aures_reflection_end:
+
+    #voice abq0-094
+    ab "Well, that’s enough of that."
+    jump postquest
+
+label aures_reflection:
+
+    "As you part from the two, the voice in your head makes his presence known."
+
+    if aures_good:
+        jump aures_reflection_good
+    else:
+        jump aures_reflection_bad
+
+label aures_reflection_good:
+
+    #voice
+    ab "I, erm… hmm."
+    #voice abq0-083
+    ab "I must say I was averse to all of this."
+    #voice
+    ab "But, despite your methods, it is sweet."
+    #voice abq0-084
+    menu:
+        ab "Something about her makes me quite uncomfortable, though I can’t quite put a name to it."
+        "\"She hyperfixates to an unnerving degree,that’s for sure.\"":
+            #voice abq0-085
+            ab "Yes, to an extent that zeal of hers is charming, but…"
+            #voice
+            ab "Perhaps that level of militant fervor is best left in the Middle Ages."
+            #voice
+            ab "Still, she managed to make do."
+        "\"The word you're looking for is ‘yandere.’\"":
+            #voice abq0-086
+            ab "I beg your pardon?"
+            #voice
+            ab "Sounds either foreign or newfangled to me."
+            #voice abq0-087
+            ab "What did you say? Yawn-duh-ray?"
+            #voice
+            ab "Well, if that’s what you say she is, that’s what she is."
+            #voice
+            ab "I’m in no position to argue."
+        "\"I didn’t notice anything wrong with her.\"":
+            #voice
+            ab "I… hmm…"
+            #voice abq0-088
+            ab "No, of course you didn’t. Why would you?"
+            #voice
+            ab "Just a standup young girl she is, obnoxious laugh and all."
+            #voice
+            ab "I won’t cast judgment. To each their own."
+
+    jump aures_reflection_end
+
+label aures_reflection_bad:
+
+    #voice abq0-089
+    ab "That poor lad…"
+    #voice
+    ab "That Aures girl has really flown off the handle."
+    #voice
+    ab "And now, he’s hers. Bit of a downer for him, I imagine."
+    #voice abq0-090
+    menu:
+        ab "Did he really deserve this fate?"
+        "\"Surely he did something to draw her attention in the first place.\"":
+            #voice abq0-091
+            ab "I suppose you are right. We don’t know him like she does."
+            #voice
+            ab "Although, I’d be hard-pressed to say anything warrants being at her beck and call."
+            #voice
+            ab "I know of many insidious men who have performed deeply insidious deeds."
+            ab "I would introduce none of them to Aures."
+        "\"No, but it’s out of our hands, now.\"":
+            #voice
+            ab "Yes, I suppose so."
+            #voice abq0-092
+            ab "And besides,this was always going to be the logical conclusion to things."
+            #voice
+            ab "She wants, and now she has. Who are we to intervene?"
+        "\"He’s got a hot undead girlfriend, he’ll be fine.\"":
+            #voice
+            ab "Perhaps we have differing tastes."
+            #voice abq0-093
+            ab "She might be a looker, but I prefer my partners a little less… possessive."
+            #voice
+            ab "Luckily, I’ll never be in a position to have to turn her down, now."
+            #voice
+            ab "Minoru has solved that problem for us, at least."
+    jump aures_reflection_end
+
+
+label elizabeth_reflection_end:
+
+    #voice abq0-036
+    ab "Come. There is more to do."
+    jump postquest
+
+
+label elizabeth_reflection:
+
+    if elizabeth_queststate is 6:
+        jump elizabeth_reflection_truth
+    if elizabeth_queststate is 7:
+        jump elizabeth_reflection_lie
+
+label elizabeth_reflection_truth:
+
+        "You can sense the voice in your head watching the young girl."
+        #voice abq0-033
+        ab "That must have been… difficult."
+        #voice
+        ab "She took it quite well, all things considered…"
+        #voice abq0-034
+        ab "But do you really think the truth was worth the turmoil?"
+        menu:
+            "\"Of course. She deserved to know.\"":
+                #voice abq0-035
+                ab "Is that a testament to your compassion or your pity?"
+                #voice
+                ab "It does not matter to me, I suppose."
+                #voice
+                ab "But, chew on that, won’t you."
+            "\"The truth is always worth knowing.\"":
+                #voice abq0-037
+                ab "I admire your commitment to such absolutes."
+                #voice
+                ab "I agree quite firmly."
+                #voice
+                ab "Still, I don’t think that made the look on her face any easier to stomach."
+            "\"Turmoil was the point, actually.\"":
+                #voice abq0-038
+                ab "I see."
+                #voice
+                ab "It builds character, I suppose."
+                #voice
+                ab "She’s a bit young for that kind of… harsh reality."
+                #voice abq0-039
+                ab "But, start them early, as they say."
+
+        jump elizabeth_reflection_end
+
+
+label elizabeth_reflection_lie:
+
+    "You can sense the voice in your head watching the young girl."
+    #voice abq0-040
+    ab "Ignorant bliss, if I’ve ever seen it."
+    #voice
+    ab "Your secret is safe with me, but…"
+    #voice abq0-041
+    ab "You don’t think you should have told her the truth?"
+    menu:
+        "\"It would have been too much for her.\"":
+            #voice
+            ab "Perhaps."
+            #voice abq0-042
+            ab "She’s so temperamental now — I can only imagine how much worse it could get."
+            #voice
+            ab "Keeping it to yourself was, in that way, wise."
+        "\"She’ll find out on her own, eventually.\"":
+            #voice
+            ab "‘Eventually’ could be another century, seeing as all she wants to do is warm herself by the fire."
+            #voice abq0-043
+            ab "But, what is time to a ghost? Perhaps there is no harm in it."
+        "\"She’s a brat. I don’t owe her anything.\"":
+            #voice abq0-044
+            ab "You are… not incorrect. On both counts, I suppose."
+            #voice
+            ab "Still, I would not equate her temperament with vitriol."
+            #voice
+            ab "She will need help, but I admit it needn’t be from us."
+
+    jump elizabeth_reflection_end
+
+
+label arabella_reflection_end:
+
+    ab "Now, let’s leave this girl be."
+    jump postquest
+
+label arabella_reflection:
+
+    "Although it has none, the voice in your head clears its throat."
+
+    if q3_state is 2 or q3_state is 3:
+        jump arabella_reflection_bad
+
+    if q3_state is 4:
+        jump arabella_reflection_good
+
+
+label arabella_reflection_bad:
+    #voice abq0-028
+    ab "This mansion is, in many ways, labyrinthian."
+    #voice
+    ab "There hide a great many more secrets than could be found in one evening."
+    #voice
+    ab "I think she sensed how much more there is to find."
+    #voice abq0-029
+    ab "But surely, to dig through this decrepit place is asking much of you, is it not?"
+    menu:
+        "\"I cannot spare the time.\"":
+            #voice abq0-030
+            ab "I suppose you cannot. You’ve been a very busy zombie thus far, I will say."
+        "\"What I found is what I gave her. I did my part.\"":
+            #voice abq0-031
+            ab "She seems to have a bit more self-awareness than before, yes."
+            #voice
+            ab "I suppose that’s a tall ask for a ghost, so good on you."
+        "\"I am not her servant. She should be grateful I heard her out at all.\"":
+            #voice abq0-032
+            ab "That you did, and she sounded grateful enough."
+            #voice
+            ab "Although I find gratitude so, so hollow. I prefer results."
+
+    jump arabella_reflection_end
+
+label arabella_reflection_good:
+
+    #voice abq0-023
+    ab "You went through an awful lot of trouble for this girl."
+    #voice
+    ab "She was mistreated at every turn, and even still she finds it in her heart to forgive."
+    #voice abq0-024
+    ab "Is that strength of character, or naivety?"
+    menu:
+        "\"It takes a lot of courage to forgive those who hurt you.\"":
+            #voice abq0-025
+            ab "‘Courage’ is perhaps not the word I’d use… But I see your point."
+            #voice
+            ab "I shall dwell on that."
+        "\"She is a child, all she can do is accept what comes at her.\"":
+            #voice abq0-026
+            ab "She has certainly played the part."
+            #voice
+            ab "It might do her good. Anything to get her out of this place."
+        "\"Worse, it’s folly.\"":
+            #voice abq0-027
+            ab "I was always of the mind that to forgive is to forget."
+            #voice
+            ab "If that is true, though. then I must say I quite envy her."
+    jump arabella_reflection_end

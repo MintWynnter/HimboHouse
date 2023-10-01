@@ -1,5 +1,8 @@
 label marianne_hub:
 
+    show marianne smile
+    with dissolve
+
     # custom greeting
 
 label marianne_convohub:
@@ -11,6 +14,9 @@ label marianne_convohub:
 
         "\"I have the camcorder you were asking for.\"" if marianne_queststate is 3:
             jump marianne_gotcamcorder
+
+        "Check the bedroom for something dated to show Herman." if herman_queststate is 10 and not herman_newspaper:
+            jump herman_bedroom
 
         "\"What do you know about this mansion?\"":
             #voice mar-ht01

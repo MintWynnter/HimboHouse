@@ -1,5 +1,7 @@
 label midpoint:
 
+    scene bg basement
+
     "The decomposition, however, does not stop with your knee."
     "Before you can fully acclimate to the reshuffling of your leg, you feel a splatter on your arm."
     "Gray matter is oozing out of your ear, down your neck, and pooling in the cavity on your shoulder."
@@ -112,7 +114,7 @@ label midpoint:
     #voice drq7-30
     dr "See, you could be one of three people."
     #voice drq7-31
-    dr "You could be Abbe Maurice Lachaise with a bad case of amnesia."
+    dr "You could be Abbé Maurice Lachaise with a bad case of amnesia."
     #voice drq7-32
     dr "You could be the crooked gravedigger your vessel is made of, waking up to a new consciousness."
     #voice drq7-33
@@ -166,13 +168,13 @@ label midpoint:
     dr "Still, you are making waves in this mansion, if I can call them that."
 
     # this is where presper reacts to the quest outcomes, check these variables are right
-    if arabella_queststate is 4:
+    if q3_state is 4:
         #voice drq7-46
         dr "That girl in the foyer seems brighter than ever."
-    if arabella_queststate is 3:
+    if q3_state is 3:
         #voice drq7-47
         dr "That girl in the foyer seems more dour than ever."
-    if arabella_queststate is 2:
+    if q3_state is 2:
         #voice drq7-47
         dr "That girl in the foyer seems more dour than ever."
     if elizabeth_queststate is 6:
@@ -396,6 +398,13 @@ label midpoint:
     "In a flash, you black out again."
     # screen to mansion exterior
     "… and find yourself back on the front porch of the great mansion."
+    #voice
+    ab "I have recalled a great many things just now."
+    #voice abq0-126
+    ab "You may not have memories, but I do. They are harrowing."
+    #voice
+    ab "Do not make me speak of them now. I need time."
+
 
     # add the question mark to the map screen!
 

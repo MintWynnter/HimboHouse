@@ -18,7 +18,9 @@ label start:
 
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
+    # images directory to show it.\
+    $config.allow_skipping = True
+    $config.keymap["dismiss"].extend(['mouseup_1', 'K_RETURN', 'K_SPACE', 'K_KP_ENTER', 'K_SELECT'])
 
 
 
@@ -65,6 +67,7 @@ label aures:
     show minoru neutral at spritezoom
     $config.allow_skipping = True
     $config.keymap["dismiss"].extend(['mouseup_1', 'K_RETURN', 'K_SPACE', 'K_KP_ENTER', 'K_SELECT'])
+    jump aures_ballroom
     w "This is where Aures's stuff will be."
     call screen hubScreen("Aures")
     return
@@ -74,7 +77,7 @@ label herman:
     show minoru neutral at spritezoom
     $config.allow_skipping = True
     $config.keymap["dismiss"].extend(['mouseup_1', 'K_RETURN', 'K_SPACE', 'K_KP_ENTER', 'K_SELECT'])
-    w "This is where Herma's stuff will be."
+    jump herman_lounge
     call screen hubScreen("Herman")
     return
 
@@ -102,5 +105,3 @@ label pres:
     $config.keymap["dismiss"].extend(['mouseup_1', 'K_RETURN', 'K_SPACE', 'K_KP_ENTER', 'K_SELECT'])
     jump presper_hub
     call screen minimap()
-
-
