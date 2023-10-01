@@ -2,10 +2,9 @@
 errors listed below, and try again.
 
 
-The label presper_hub is defined twice, at File "game/michaelpresperhub.rpyc", line 1:
-
-and File "game/presperhub.rpy", line 1:
-label presper_hub:
-
+File "game/screens.rpy", line 357: style property px is not known.
+    size 64px
+             ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
+Sun Oct  1 00:57:45 2023
