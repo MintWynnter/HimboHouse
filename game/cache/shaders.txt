@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 renpy.dissolve renpy.dissolve
 renpy.alpha renpy.geometry renpy.texture
 >>>>>>> 8ecd7770cf96fdf9be79f62e9e8499956a955215
@@ -12,3 +13,12 @@ renpy.texture
 >>>>>>> Herman
 <<<<<<< HEAD
 renpy.geometry renpy.texture
+=======
+renpy.geometry renpy.texture
+renpy.solid
+renpy.texture
+renpy.dissolve renpy.dissolve
+renpy.dissolve renpy.geometry
+renpy.geometry renpy.solid
+renpy.ftl
+>>>>>>> aures

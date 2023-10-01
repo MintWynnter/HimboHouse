@@ -101,3 +101,5 @@ label pres:
     $config.keymap["dismiss"].extend(['mouseup_1', 'K_RETURN', 'K_SPACE', 'K_KP_ENTER', 'K_SELECT'])
     jump presper_hub
     call screen minimap()
+
+
