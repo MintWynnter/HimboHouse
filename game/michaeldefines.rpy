@@ -32,8 +32,21 @@ define ab = Character("abbe_name", dynamic = True, color = "#e3f0ff", what_color
 #$ abbe_name = "Abbé Maurice"
 
 # the everyone else corner so i can do the midpoint scene
-default arabella_queststate = 0
+#default arabella_queststate = 0
+
+#the herman corner
 default herman_queststate = 0
+default herman_attitude = 0
+define he = Character("Herman", color="#ffffff",what_color="#ffffff")
+default herman_justgotfetch = False
+default herman_date = False
+default herman_newspaper = False
+default herman_justgotrebuffed = False
+default herman_playedpoker = False
+default herman_vorvodossmentioned = False
+default herman_questjustfinished = False
+default vorvodoss_name = "???"
+define vo = Character("vorvodoss_name", dynamic = True, color="#ffffff",what_color="#ffffff")
 
 default elizabeth_queststate = 0
 define el = Character("Elizabeth", color="#ffffff",what_color="#ffffff")

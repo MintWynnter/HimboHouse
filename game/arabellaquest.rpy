@@ -85,7 +85,7 @@ label arabella_intro:
             mc "If there is anything I can do, whatever it takes, I will help you be freed of your past."
             "She looks at you hesitantly for a few moments, and then speaks slowly and softly."
             "Her voice carries a subtle glimmer of hope, one that she has perhaps been holding on to for many years:"
-            show arabella_contemplative
+            show arabella contemplative
             #voice "arq3-10"
             ar "Okay… If you are willing, I accept your offer."
             "Arabella closes her eyes and takes a deep breath, steeling herself for what is to come next."

@@ -25,7 +25,7 @@ label arabella_convohub:
             ar "Every stone, every tapestry tells a tale, some of which I yearn to remember fully."
             jump arabella_convohub
 
-        "\"Your need to remember your lost memories is interesting to me. Is there anything you can recall of your life before everything became hazy?\"":
+        "\"Is there anything you can recall of your life before everything became hazy?\"":
             show arabella melancholic
             #voice "arht-04"
             ar "There are moments, fleeting like the embers of a dying fire, that I clutch onto. I remember a pendant, the scent of roses in the garden, and the shadow of my Uncle Lysander always close by."
