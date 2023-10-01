@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 357: style property px is not known.
-    size 64px
-             ^
+File "game/Settings.rpy", line 58: 'Preference' is not a keyword argument or valid child for the textbutton statement.
+    action action Preference("display", "fullscreen")
+                            ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Sun Oct  1 00:57:45 2023
+Sun Oct  1 11:41:11 2023

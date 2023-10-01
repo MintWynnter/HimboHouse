@@ -387,7 +387,7 @@ screen main_menu():
         text_style "mmbuttons"
         xpos .4119792
         ypos .8925926
-        action ShowMenu("preferences")
+        action ShowMenu("bigMenu", "Settings", "Graphics")
 
     textbutton "EXTRAS":
         text_style "mmbuttons"
