@@ -1,113 +1,129 @@
+default blink_pause = 0.25
+
 image blink:
     "blink0.png"
-    pause 0.5
+    pause blink_pause
     "blink1.png"
-    pause 0.5
+    pause blink_pause
     "blink2.png"
-    pause 0.5
+    pause blink_pause
     "blink3.png"
-    pause 0.5
+    pause blink_pause
     "blink4.png"
-    pause 0.5
+    pause blink_pause
     "blink5.png"
-    pause 0.5
+    pause blink_pause
     repeat
+
+default chand_pause = 0.25
 
 image chand:
     "chand1.png"
-    pause 0.5
+    pause chand_pause
     "chand2.png"
-    pause 0.5
+    pause chand_pause
     "chand3.png"
-    pause 0.5
+    pause chand_pause
     "chand4.png"
-    pause 0.5
+    pause chand_pause
     repeat
+
+default curtain_pause = 0.25
 
 image curtain:
     "curtain1.png"
-    pause 0.5
+    pause curtain_pause
     "curtain2.png"
-    pause 0.5
+    pause curtain_pause
     "curtain3.png"
-    pause 0.5
+    pause curtain_pause
     "curtain4.png"
-    pause 0.5
+    pause curtain_pause
     "curtain5.png"
-    pause 0.5
+    pause curtain_pause
     "curtain6.png"
-    pause 0.5
+    pause curtain_pause
     repeat
+
+default drink_pause = 0.25
 
 image drink:
     "drink1.png"
-    pause 0.5
+    pause drink_pause
     "drink2.png"
-    pause 0.5
+    pause drink_pause
     "drink3.png"
-    pause 0.5
+    pause drink_pause
     "drink4.png"
-    pause 0.5
+    pause drink_pause
     "drink5.png"
-    pause 0.5
+    pause drink_pause
     "drink6.png"
-    pause 0.5
+    pause drink_pause
     "drink7.png"
-    pause 0.5
+    pause drink_pause
     "drink8.png"
-    pause 0.5
+    pause drink_pause
     "drink9.png"
-    pause 0.5
+    pause drink_pause
     "drink10.png"
-    pause 0.5
+    pause drink_pause
     "drink11.png"
-    pause 0.5
+    pause drink_pause
     "drink12.png"
-    pause 0.5
+    pause drink_pause
     repeat
+
+default fire_pause = 0.25
 
 image fire:
     "fire1.png"
-    pause 0.5
+    pause fire_pause
     "fire2.png"
-    pause 0.5
+    pause fire_pause
     "fire3.png"
-    pause 0.5
+    pause fire_pause
     repeat
+
+default lab_pause = 0.25
 
 image lab:
     "lab1.png"
-    pause 0.5
+    pause lab_pause
     "lab2.png"
-    pause 0.5
+    pause lab_pause
     "lab3.png"
-    pause 0.5
+    pause lab_pause
     "lab4.png"
-    pause 0.5
+    pause lab_pause
     repeat
+
+default light_pause = 0.25
 
 image light:
     "light1.png"
-    pause 0.5
+    pause light_pause
     "light2.png"
-    pause 0.5
+    pause light_pause
     "light3.png"
-    pause 0.5
+    pause light_pause
     "light4.png"
-    pause 0.5
+    pause light_pause
     repeat
+
+default out_pause = 0.25
 
 image out:
     "out7.png"
-    pause 0.5
+    pause out_pause
     "out9.png"
-    pause 0.5
+    pause out_pause
     "out11.png"
-    pause 0.5
+    pause out_pause
     "out12.png"
-    pause 0.5
+    pause out_pause
     "out13.png"
-    pause 0.5
+    pause out_pause
     repeat
 
 default questsdone = 0 # how many quests have you completed?
@@ -191,5 +207,6 @@ default q3_state = 0
 default q3_ending_trigger = False
 default q3_death_convo_trigger = False #did you try to ask arabella about her death?
 default q3_ending_points = 0
+default q3_keyneeded = False
 
 #default elizabeth_queststate = 0 already declared in michaeldefines

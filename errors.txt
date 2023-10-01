@@ -1,0 +1,14 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/elizabethquest.rpy", line 668: expected statement.
+    ""Show her the newspaper clippings.""
+                                      ^
+
+File "game/elizabethquest.rpy", line 718: expected statement.
+    ""Lie for her own good.""
+                          ^
+
+Ren'Py Version: Ren'Py 8.1.3.23091805
+Sun Oct  1 09:53:27 2023

@@ -1,4 +1,8 @@
-label herman_lounge:#Dagon you bastard
+label herman_lounge:
+    #Dagon you bastard
+
+    scene bg lounge
+    with fade
 
     #show whatever bg i don't remember the syntax
 
@@ -676,7 +680,7 @@ label herman_polite_4:
 label herman_livingroom:
     $ herman_queststate = 4
     "You search the living room, rummaging through old books, photo albums, and other random boxes."
-    "you discover an old photo of men in dark robes with hoods covering their faces, among some other pictures of Rory."
+    "You discover an old photo of men in dark robes with hoods covering their faces, among some other pictures of Rory."
     "However, the photo is heavily faded and appears to have cup ring stains on it, so it's impossible to see what the men look like."
     "A hole in the photo, seemingly from an open flame, goes right through the face of one of the hooded men."
     "Turning the photo over, written in faded ink, you can barely make out the words \"Acolytes of The Eater of Souls\" and various names."
@@ -1120,6 +1124,7 @@ label herman_quitvorvodoss_13:
     vo "\"Terminate subroutine: Conveyance Entity Inquiry.\""
     #voice "vom-07"
     vo "\"Resume suspended. Execute subroutine: Consume and Transfer.\""
+    hide herman
     "You're blinded by a flash of light, deafened by the roar of flames."
     menu:
         "You feel as if the world suddenly vanished, then returned all in an instant."
@@ -1130,6 +1135,7 @@ label herman_quitvorvodoss_13:
 
 label herman_vorvodossgone_14:
     $ herman_questjustfinished = True
+    show herman neutral
     "As you open your eyes, you see Herman sitting in his chair, cigar in hand."
     "The room is back to its previous splendor."
     "Herman leans forward and ashes his cigar in the ashtray, looking over his booklet, pen in hand, a bottle of whiskey by a half-empty glass."

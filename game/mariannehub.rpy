@@ -1,5 +1,8 @@
 label marianne_hub:
 
+    show marianne smile
+    with dissolve
+
     # custom greeting
 
 label marianne_convohub:

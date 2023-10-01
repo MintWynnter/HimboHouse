@@ -1,5 +1,8 @@
 label elizabeth_hub:
 
+    show elizabeth neutral
+    with dissolve
+
     # custom greeting
 
 
@@ -12,6 +15,9 @@ label elizabeth_convohub:
         "\"Still looking for your pen and paper, Elizabeth.\"" if elizabeth_queststate is 2:
             el "OK! Thanks for telling me!"
             jump elizabeth_convohub
+
+        "\"I brought you what you asked for, Elizabeth.\"" if elizabeth_queststate is 3:
+                jump elizabeth_gotpaperpen
 
         "\"Be careful where you throw things, you almost hit me earlier!":
             "The little girl crosses her arms and pouts."

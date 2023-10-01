@@ -10,6 +10,9 @@ default aures_questjustfinished = False
 
 label aures_ballroom:
 
+    scene bg ballroom
+    with fade
+
     if auresQuestState is 1:
         jump auresIntro
     else:
@@ -54,7 +57,7 @@ label auresScene2:
             #voice au_ann2
             au "Well, as long as you help, I do not care whether you want to or not."
     $auresQuestState += 1
-    call screen minimap()
+    jump aures_convohub
 
 label auresScene3:
 
@@ -143,8 +146,10 @@ label auresScene3:
             show aures laughing
             au "Splendid! Let us see how much pain My Lovebug will feel if we slit his throat!"
             "Aures brandishes the knife and lunges towards you."
+            "It sinks into your chest, unsurprisngly."
+            "Your failure to meaningfully react to the puncture wound disturbs Aures, but only momentarily."
     $auresQuestState += 1
-    call screen minimap()
+    jump auresScene4
 
 label auresScene4:
 
@@ -164,7 +169,7 @@ label auresScene4:
     au "Maybe you could go ask Lysander. I do not know if you have met him yet."
     au "He is the groundskeeper here. If anyone would know where something is, it would be him."
     $auresQuestState += 1
-    call screen minimap()
+    jump aures_convohub
 
 label auresScene5:
 
@@ -298,6 +303,7 @@ label auresScene5:
     #voice au_hap3
     show aures soulless
     au "Fine, I will do as you wish for now. But whenever you are ready to enter the loving embrace of death, tell me."
+    au "In the meantime, I bid you farewell."
     $auresQuestState += 1
     call screen minimap()
 
@@ -355,6 +361,8 @@ label auresScene6K:
     au "You probably just don't remember how much you love me. But worry not; I will make sure you do."
     #voice auq4-28
     au "I will make sure that you remember that you are mine."
+    "She turns to you."
+    au "Leave us two lovers be for now, will you?"
     $auresQuestState += 1
     call screen minimap()
 
@@ -431,6 +439,8 @@ label auresScene7K:
     #voice auq4-38
     show aures yandere
     au "You may not see this now, My Reason For Being, but this is what's best for you. You must stay with me forever."
+    "Aures looks you dead in the eye."
+    au "I need some privacy, please. My Reason and I need to establish an understanding."
     $auresQuestState += 1
     call screen minimap()
 
@@ -485,6 +495,8 @@ label auresScene6NK:
     au "You probably just don't remember how much you love me. But worry not; I will make sure you do."
     #voice auq4-28
     au "I will make sure that you remember that you are mine."
+    "She turns to you."
+    au "Leave us two lovers be for now, will you?"
     $auresQuestState += 1
     call screen minimap()
 
@@ -533,6 +545,8 @@ label auresScene7NK:
     "Aures stabs Minoru in the stomach. He slumps over, dead, and his spirit rises out of his corpse."
     #voice auq4-44
     au "Now we can be together forever. Now you are finally all mine."
+    "Aures looks you dead in the eye."
+    au "I need some privacy, please. My Reason and I need to establish an understanding now that we are eternally bound."
     $auresQuestState += 1
     call screen minimap()
 

@@ -1,5 +1,8 @@
 label herman_hub:
 
+    show herman neutral
+    with dissolve
+
     #unqiue greeting
 
 label herman_convohub:
@@ -9,12 +12,15 @@ label herman_convohub:
         "\"About your death, Rory...\"" if herman_queststate is 10 and not herman_justgotfetch:
             jump herman_persuasion
 
-        "Magically get the bourbon." if herman_queststate is 1:
-            $ herman_queststate = 2
-            call screen minimap()
+        #"Magically get the bourbon." if herman_queststate is 1:
+        #    $ herman_queststate = 2
+        #    call screen minimap()
 
         "\"About Elizabeth...\"" if elizabeth_queststate is 2 and herman_queststate > 1:
             jump herman_elizabeth
+
+        "\"Herman, I could use your help with a map.\"" if elizabeth_queststate is 4 and q5_location is 2:
+            jump herman_elizabethtwo
 
         "\"I have some questions for you, Rory.\"":
             if herman_queststate is 1:
@@ -30,6 +36,9 @@ label herman_convohub:
 
         "Search the lounge for information regarding Lysander's condition." if lysander_queststate > 1 and lysander_queststate < 5:
             jump lysander_lounge
+
+        "Check the lounge for information on Arabella." if q3_state is 1 and not q3_doctor_journal:
+            jump arabella_doctorjournal
 
         "\"What the hell just happened? Why isn't the room destroyed? What happened to the weird voice?\"" if herman_queststate is 7:
             #voice "heht-06"
@@ -199,4 +208,86 @@ label herman_elizabeth:
     mc "Alright, I will be back then."
     #voice ""
     he "As you should."
+    jump herman_convohub
+
+label herman_elizabethtwo:
+    $ elizabeth_queststate = 5
+    he "Whatcha want now, can’t ya see I’m busy?"
+    mc "Are you familiar with the area around here? I need help with a... map."
+    he "Go on and hand it over, let me take’a gander at it."
+    "You give the map to Herman."
+    he "Does this map belong to that howling lil’coyote?"
+    "You nod. You can’t bear to tell him it was you, who’d actually drawn the map."
+    he "Another errand? Or..."
+    he "Ya need’n something after all?"
+    "You nod."
+    mc "Tell me everything you know about her."
+    he "Ah, straight shoot’n. I figured you’d ask for something."
+    he "Wait right’chair."
+    "Herman leaves you for a moment."
+    "He rummages through some papers and drawers."
+    "You listen as he mumbles in between the rustling and noises until he finally returns with some paper on hand."
+    he "Plop your peepers at this."
+    "Herman hands you a couple of newspaper clippings."
+    he "With a big’ol picture like that, she’d be hard to miss even for someone like yourself."
+    "On the first paper you see, is a clear picture of Elizabeth, with slightly longer hair, more lively expressions, and less water dripping from her entire being."
+    "Under the picture, a sentence ‘HAVE YOU SEEN ME?’ is printed large on the paper."
+    "You take out the second paper. On it, in the middle of crowding police, a picture of a woman in her thirties is seen holding a child's jacket."
+    "She was entirely disheveled with dried tears and dark circles under her eyes."
+    "\"—Was last seen going out of the house at 4 p.m., walking towards the bridge.\""
+    "\"It is reported that there was a slight argument between her and the mother before the time she was last seen.\""
+    "\"Police are currently investigating—\""
+    "The third paper has no picture, only a big headline: ‘SEARCH CALLED OFF’."
+    "\"—Being discontinued. The reason is insufficient leads or clues regarding the whereabouts of the missing person.\""
+    "\"'I hope you’re happy and safe, I love you so much, and I’m sorry I can’t be a better mother for you,' The mother of the little girl told our editor.\""
+    "\"A small message we all hope Elizabeth will read.\""
+    "\"The family has decided to move away from their residence but will keep close contact with the police.\""
+    "\"The police will still receive any information regarding the missing Elizabeth—\""
+    "You read them all carefully. Every gear in your head turns as you process the entire broken messages into one string of story."
+    menu:
+        he "What’cha reckon?"
+        "\"She fell into a river after running away.\"":
+            he "Well ya ain’t daft at least."
+        "\"Her mother killed her and ran away.\"":
+            he "Are you blind or just a sap?"
+            he "I reckon it was just a cover-up of an unfortunate incident."
+            he "She scampered off and got caught up in something tragic."
+            he "She washed up here already chilled off, then her folks moved away from the memories of her and everything else."
+        "\"She got lost and ended up here.\"":
+            he "Is your brain already ate through!?"
+            he "It’s obvious, you nitwit, she scampered off after riling up her folks, and something tragic led her here."
+    he "Bless’er heart, must have been like a squirrel in a hoot’s nest."
+    mc "I had a feeling about what happened to her, but I didn’t expect it to be like this."
+    menu:
+        he "So, what’cha gonna do? Not that I care, I’m just nosy."
+        "\"I will tell her the truth.\"":
+            he "Oh ho?! Now that’s quite ugly of you. I love it!."
+            mc "I don’t want to do this. But staying in that state forever will make the truth hurt her even more."
+        "\"I can’t show her this, it’s too much for her.\"":
+            he "Aw, are ya’ yella after all?"
+            mc "She still hasn’t told me the truth. She might be avoiding it or unaware of it."
+            mc "I will let her live in her peace for a little longer."
+            he "Well, it’ll all come out in the warsh eventually, with or without you meddling."
+            "You don’t answer."
+        "\"Maybe it’s better for her to stay here.\"":
+            he "I’d rather she not, I’m mighty tired of her conniption fits."
+            he "I don’t care whatcha do, but you better do somethin about all that yowling!"
+
+    he "If you poke that bear, just keep in mind she’s liable to swat your head clean off."
+    menu:
+        he "Well, go on and tell me whatcha gonna do, you know I’m just DYIN’ to hear."
+        "\"She deserves the truth.\"":
+            mc "This is for her own good."
+            he "Uh-huh? Because the truth will set you free, so on and so forth?"
+        "\"I won’t tell her, it’s too cruel.\"":
+            he "Well then why the hell have you been wastin’ my time?!"
+        "\"...I have to think this through some more.\"":
+            he "Oh don’t worry about it, you’ve got all the time in the world."
+            he "Other than you’re quite literally falling apart at the seams as we speak but, why is that anything to concern yourself with?"
+            "His voice reeks of sarcasm."
+
+    he "Ya’got choices to make, and for my flippin’ sanity I hope you make the right ones."
+    he "Far be it from me to tell ya what to do, but actions, or lack there of, ALWAYS have consequences."
+    "Holding the newspaper clippings in your hand, you sigh deeply, thinking of the choice you’re about to make."
+    "You shove the papers into your pocket."
     jump herman_convohub

@@ -1,5 +1,7 @@
 label midpoint:
 
+    scene bg basement
+
     "The decomposition, however, does not stop with your knee."
     "Before you can fully acclimate to the reshuffling of your leg, you feel a splatter on your arm."
     "Gray matter is oozing out of your ear, down your neck, and pooling in the cavity on your shoulder."
@@ -396,6 +398,13 @@ label midpoint:
     "In a flash, you black out again."
     # screen to mansion exterior
     "… and find yourself back on the front porch of the great mansion."
+    #voice
+    ab "I have recalled a great many things just now."
+    #voice abq0-126
+    ab "You may not have memories, but I do. They are harrowing."
+    #voice
+    ab "Do not make me speak of them now. I need time."
+
 
     # add the question mark to the map screen!
 

@@ -111,7 +111,7 @@ define config.end_game_transition = None
 ## After the game has started, this can be changed with the "window show",
 ## "window hide", and "window auto" statements.
 
-define config.window = "auto"
+define config.window = "show"
 
 
 ## Transitions used to show and hide the dialogue window
