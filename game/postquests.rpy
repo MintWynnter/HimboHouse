@@ -618,3 +618,96 @@ label herman_reflection_threw:
             ab "But he is ambitious. And, at least for that, you might show some concern."
 
     jump herman_reflection_end
+
+label aures_reflection_end:
+
+    #voice abq0-094
+    ab "Well, that’s enough of that."
+    jump postquest
+
+label aures_reflection:
+
+    "As you part from the two, the voice in your head makes his presence known."
+
+    if aures_good:
+        jump aures_reflection_good
+    else:
+        jump aures_reflection_bad
+
+label aures_reflection_good:
+
+    #voice
+    ab "I, erm… hmm."
+    #voice abq0-083
+    ab "I must say I was averse to all of this."
+    #voice
+    ab "But, despite your methods, it is sweet."
+    #voice abq0-084
+    menu:
+        ab "Something about her makes me quite uncomfortable, though I can’t quite put a name to it."
+        "\"She hyperfixates to an unnerving degree,that’s for sure.\"":
+            #voice abq0-085
+            ab "Yes, to an extent that zeal of hers is charming, but…"
+            #voice
+            ab "Perhaps that level of militant fervor is best left in the Middle Ages."
+            #voice
+            ab "Still, she managed to make do."
+        "\"The word you're looking for is ‘yandere.’\"":
+            #voice abq0-086
+            ab "I beg your pardon?"
+            #voice
+            ab "Sounds either foreign or newfangled to me."
+            #voice abq0-087
+            ab "What did you say? Yawn-duh-ray?"
+            #voice
+            ab "Well, if that’s what you say she is, that’s what she is."
+            #voice
+            ab "I’m in no position to argue."
+        "\"I didn’t notice anything wrong with her.\"":
+            #voice
+            ab "I… hmm…"
+            #voice abq0-088
+            ab "No, of course you didn’t. Why would you?"
+            #voice
+            ab "Just a standup young girl she is, obnoxious laugh and all."
+            #voice
+            ab "I won’t cast judgment. To each their own."
+
+    jump aures_reflection_end
+
+label aures_reflection_bad:
+
+    #voice abq0-089
+    ab "That poor lad…"
+    #voice
+    ab "That Aures girl has really flown off the handle."
+    #voice
+    ab "And now, he’s hers. Bit of a downer for him, I imagine."
+    #voice abq0-090
+    menu:
+        ab "Did he really deserve this fate?"
+        "\"Surely he did something to draw her attention in the first place.\"":
+            #voice abq0-091
+            ab "I suppose you are right. We don’t know him like she does."
+            #voice
+            ab "Although, I’d be hard-pressed to say anything warrants being at her beck and call."
+            #voice
+            ab "I know of many insidious men who have performed deeply insidious deeds."
+            ab "I would introduce none of them to Aures."
+        "\"No, but it’s out of our hands, now.\"":
+            #voice
+            ab "Yes, I suppose so."
+            #voice abq0-092
+            ab "And besides,this was always going to be the logical conclusion to things."
+            #voice
+            ab "She wants, and now she has. Who are we to intervene?"
+        "\"He’s got a hot undead girlfriend, he’ll be fine.\"":
+            #voice
+            ab "Perhaps we have differing tastes."
+            #voice abq0-093
+            ab "She might be a looker, but I prefer my partners a little less… possessive."
+            #voice
+            ab "Luckily, I’ll never be in a position to have to turn her down, now."
+            #voice
+            ab "Minoru has solved that problem for us, at least."
+    jump aures_reflection_end
