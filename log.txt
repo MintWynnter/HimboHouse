@@ -1,0 +1,372 @@
+Sun Oct  1 00:55:23 2023
+Windows-10-10.0.19045
+Ren'Py 8.0.3.22090809
+ 
+
+Bootstrap to the start of init.init took 0.09s
+Early init took 0.00s
+Loader init took 0.13s
+Loading error handling took 0.07s
+game/arabellahub.rpy:11: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"About Elizabeth...\"" if elizabeth_queststate is 2:
+game/arabellahub.rpy:14: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"We need to talk about Elizabeth again.\"" if elizabeth_queststate is 4 and q5_location is 0:
+game/arabellahub.rpy:14: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"We need to talk about Elizabeth again.\"" if elizabeth_queststate is 4 and q5_location is 0:
+game/arabellaquest.rpy:9: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if q3_state is 0:
+game/aureshub.rpy:26: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "Hand Aures the teleporter." if auresQuestState is 5 and hasTeleporter:
+game/elizabethhub.rpy:12: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"Still looking for your pen and paper, Elizabeth.\"" if elizabeth_queststate is 2:
+game/elizabethhub.rpy:22: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "Check the living room for information about Lysander's situation." if lysander_queststate is 2:
+game/elizabethhub.rpy:25: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "Check the living room for information on Arabella." if q3_state is 1 and not q3_mom_journal:
+game/elizabethquest.rpy:9: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if elizabeth_queststate is 0:
+game/hermanHub.rpy:4: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"Is there something I can do for you, Herman?\"" if marianne_queststate is 1:
+game/hermanHub.rpy:11: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if marianne_queststate is 2:
+game/hermanQuest.rpy:9: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if herman_queststate is 0:
+game/lysanderhub.rpy:13: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"OK, I'm ready to make our decision.\"" if lysander_queststate is 6:
+game/lysanderhub.rpy:16: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"I read some peculiar books in the lounge...\"" if lysander_queststate is 3:
+game/lysanderhub.rpy:19: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"I found this green book in the lounge...\"" if lysander_queststate is 4:
+game/lysanderhub.rpy:28: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"What did you want me to do, again?\"" if lysander_queststate is 2 or lysander_queststate is 3 or lysander_queststate is 4:
+game/lysanderhub.rpy:28: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"What did you want me to do, again?\"" if lysander_queststate is 2 or lysander_queststate is 3 or lysander_queststate is 4:
+game/lysanderhub.rpy:28: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"What did you want me to do, again?\"" if lysander_queststate is 2 or lysander_queststate is 3 or lysander_queststate is 4:
+game/lysanderhub.rpy:99: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 1:
+game/lysanderhub.rpy:102: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 5:
+game/lysanderquest.rpy:8: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 0:
+game/mariannehub.rpy:8: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"Is there something I can do for you, [marianne_name]?\"" if marianne_queststate is 1:
+game/mariannehub.rpy:12: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"I have the camcorder you were asking for.\"" if marianne_queststate is 3:
+game/mariannehub.rpy:58: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "Search the nearby desk for clues on Arabella's past." if q3_state is 1 and not q3_own_journal:
+game/mariannehub.rpy:62: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "Search the nightstand for clues on Arabella's past." if q3_state is 1 and not q3_pendant_encounter:
+game/mariannehub.rpy:69: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if marianne_queststate is 2:
+game/mariannequest.rpy:9: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if marianne_queststate is 0:
+game/midpoint.rpy:169: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if arabella_queststate is 4:
+game/midpoint.rpy:172: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if arabella_queststate is 3:
+game/midpoint.rpy:175: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if arabella_queststate is 2:
+game/midpoint.rpy:178: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if elizabeth_queststate is 6:
+game/midpoint.rpy:181: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if elizabeth_queststate is 7:
+game/midpoint.rpy:184: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if herman_queststate is 6:
+game/midpoint.rpy:189: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if aures_queststate is 5:
+game/midpoint.rpy:192: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if aures_queststate is 6:
+game/midpoint.rpy:195: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 5:
+game/midpoint.rpy:198: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 6:
+game/postquests.rpy:5: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if questsdone is 1:
+game/postquests.rpy:8: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if questsdone is 2:
+game/postquests.rpy:11: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if questsdone is 3:
+game/postquests.rpy:14: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if questsdone is 4:
+game/postquests.rpy:17: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if questsdone is 5:
+game/postquests.rpy:20: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if questsdone is 6:
+game/postquests.rpy:266: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if marianne_queststate is 4:
+game/postquests.rpy:268: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if marianne_queststate is 5:
+game/postquests.rpy:270: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if marianne_queststate is 6:
+game/postquests.rpy:389: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 7:
+game/postquests.rpy:392: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 8:
+game/postquests.rpy:395: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 9:
+game/postquests.rpy:398: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 10:
+game/presperhub.rpy:11: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"Have you seen a camcorder around here?\"" if marianne_queststate is 10:
+Loading script took 0.64s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'D:\\Ren'Py\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.13s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Dump and make backups. took 0.08s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.73s
+Cleaning stores took 0.00s
+Init translation took 0.11s
+Build styles took 0.01s
+Load screen analysis took 0.09s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.12s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.04s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.21s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1650/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 528.52'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1724, 970) drawable=(1724, 970)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 123.98s
+Early init took 0.00s
+Loader init took 0.17s
+Loading error handling took 0.08s
+Loading script took 1.01s
+Loading save slot metadata. took 0.04s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'D:\\Ren'Py\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.14s
+Loading analysis data took 0.05s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\sosul\\AppData\\Roaming/RenPy/backups\\The House on Limbo Lane':
+Dump and make backups. took 0.20s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.07s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.86s
+Cleaning stores took 0.00s
+Init translation took 0.10s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.04s
+Save screen analysis took 0.05s
+Prepare screens took 0.23s
+Save pyanalysis. took 0.06s
+Save bytecode. took 0.08s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.20s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1650/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 528.52'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1724, 970) drawable=(1724, 970)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
+    python hide:
+  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\ast.py", line 1131, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\python.py", line 1061, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
+    python hide:
+  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in _execute_python_hide
+    ui.interact()
+  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\display\core.py", line 3377, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\display\core.py", line 3912, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\display\core.py", line 2602, in draw_screen
+    surftree = renpy.display.render.render_screen(
+  File "render.pyx", line 495, in renpy.display.render.render_screen
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\display\screen.py", line 704, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\display\behavior.py", line 885, in render
+    rv = super(Button, self).render(width, height, st, at)
+  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\display\layout.py", line 1334, in render
+    surf = render(child,
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\text\text.py", line 2109, in render
+    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
+  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\text\text.py", line 656, in __init__
+    glyphs = ts.glyphs(s, self)
+  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\text\text.py", line 255, in glyphs
+    fo = font.get_font(self.font, self.size, self.bold, self.italic, 0, self.antialias, self.vertical, self.hinting, layout.oversample)
+  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\text\font.py", line 718, in get_font
+    rv = ftfont.FTFont(face, int(size * scale), bold, italics, outline, antialias, vertical, hinting) # @UndefinedVariable
+TypeError: can't multiply sequence by non-int of type 'float'
+
+While running game code:
+TypeError: can't multiply sequence by non-int of type 'float'
+Resetting cache.
+Bootstrap to the start of init.init took 141.09s
+Early init took 0.00s
+Loader init took 0.13s
+Loading error handling took 0.05s
+Loading script took 0.68s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/screens.rpy", line 357: style property px is not known.
+    size 64px
+             ^
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 1.11s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1650/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 528.52'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1724, 970) drawable=(1724, 970)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 149.60s
+Early init took 0.00s
+Loader init took 0.26s
+Loading error handling took 0.05s
+Loading script took 0.74s
+Loading save slot metadata. took 0.02s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'D:\\Ren'Py\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.09s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\sosul\\AppData\\Roaming/RenPy/backups\\The House on Limbo Lane':
+Dump and make backups. took 0.13s
+Cleaning cache took 0.00s
+Making clean stores took 0.01s
+Initial gc. took 0.12s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 1.08s
+Cleaning stores took 0.00s
+Init translation took 0.15s
+Build styles took 0.02s
+Load screen analysis took 0.00s
+Analyze screens took 0.06s
+Save screen analysis took 0.07s
+Prepare screens took 0.24s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.06s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.13s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1650/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 528.52'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1724, 970) drawable=(1724, 970)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 1639.20s
+Early init took 0.00s
+Loader init took 0.08s
+Loading error handling took 0.02s
+Loading script took 0.46s
+Loading save slot metadata. took 0.02s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'D:\\Ren'Py\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.06s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\sosul\\AppData\\Roaming/RenPy/backups\\The House on Limbo Lane':
+Dump and make backups. took 0.07s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.07s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.50s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.12s
+Save pyanalysis. took 0.02s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.11s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1650/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 528.52'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1724, 970) drawable=(1724, 970)
+Maximum texture size: 4096x4096
