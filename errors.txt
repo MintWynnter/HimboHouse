@@ -1,0 +1,8 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/Settings.rpy", line 139: Indentation mismatch.
+
+Ren'Py Version: Ren'Py 8.0.3.22090809
+Sun Oct  1 15:17:56 2023

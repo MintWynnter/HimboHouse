@@ -45,6 +45,11 @@ screen bigMenu(mtype, subtype):
         ypos .935185
         action Return()
     
+    if mtype == "Save":
+        use file_slots(_("Save"))
+    if mtype == "Load":
+        use file_slots(_("Load"))
+    
     if mtype == "Settings":
         textbutton "GRAPHICS":
             text_style "bbmbuttons"
@@ -102,20 +107,12 @@ screen bigMenu(mtype, subtype):
                 xpos .194792
                 ypos .472222
                 vbox:
-                    if variableName == 1:
-                        label "Weak"
-                    if variableName == 2:
-                        label "Normal"
                     bar value Preference("text speed")
             hbox:
                 style_prefix "slider"
                 xpos .194792
                 ypos .626852
                 vbox:
-                    if variableName == 1:
-                        label "Weak"
-                    if variableName == 2:
-                        label "Normal"
                     bar value Preference("auto-forward time")
         if subtype == "Audio":
             text "Music Volume" xpos .121354 ypos .213889 size 48
@@ -137,30 +134,18 @@ screen bigMenu(mtype, subtype):
                 xpos .191146
                 ypos .290741
                 vbox:
-                    if variableName == 1:
-                        label "Weak"
-                    if variableName == 2:
-                        label "Normal"
                     bar value Preference("music volume")
             hbox:
                 style_prefix "slider"
                 xpos .191146
                 ypos .445370
                 vbox:
-                    if variableName == 1:
-                        label "Weak"
-                    if variableName == 2:
-                        label "Normal"
                     bar value Preference("sound volume")
             hbox:
                 style_prefix "slider"
                 xpos .191146
                 ypos .6
                 vbox:
-                    if variableName == 1:
-                        label "Weak"
-                    if variableName == 2:
-                        label "Normal"
                     bar value Preference("voice volume")
 
         
