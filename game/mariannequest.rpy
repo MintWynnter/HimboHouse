@@ -1,5 +1,8 @@
 label marianne_bedroom:
 
+    scene bg bedroom
+    with fade
+
     #show whatever bg i don't remember the syntax
 
     if marianne_queststate > 0:

@@ -1,5 +1,8 @@
 label lysander_garden:
 
+    scene bg garden
+    with fade
+
     #show whatever bg i don't remember the syntax
 
     if lysander_queststate > 0:

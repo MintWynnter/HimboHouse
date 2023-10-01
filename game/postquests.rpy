@@ -45,7 +45,8 @@ label decomp2:
     "You press your tongue to the roof of your mouth in thought."
     "The roof does not push back. Instead, the tongue melts into the roof, disintegrating into an almost gelatinous paste."
     "You can feel the paste abrade against your gums and fill the gaps between your remaining teeth."
-    "A bit emerges onto your lip. It is of an inconsistent texture and hue — shades of green and brown and red correspond to chunkier or more fluid consistencies."
+    "A bit emerges onto your lip."
+    "It is of an inconsistent texture and hue — shades of green and brown and red correspond to chunkier or more fluid consistencies."
     "It dribbles down your lip, and onto your chin."
     #voice
     ab "Oh my."
@@ -77,7 +78,8 @@ label decomp4:
     "You pause for just a moment, to capture the new perception, tilting your head back and forth."
     "One side feels lighter than the other."
     "You press your hand to your left ear — and find it missing."
-    "Instead, you press against the exposed flesh. The squelch of shifting tissue bounds off your eardrum, which your finger is just short of punching through altogether."
+    "Instead, you press against the exposed flesh."
+    "The squelch of shifting tissue bounds off your eardrum, which your finger is just short of punching through altogether."
     #voice abq0-17
     ab "I suppose the cartilage was always going to go."
     #voice
@@ -90,7 +92,9 @@ label decomp5:
     "Suddenly, you are disrupted by a smell — somehow more vile than the stench you’ve been carrying thus far."
     "Finding the source is not easy. The smell is pervasive, everywhere. It follows you from place to place."
     "If it is another of your ghastly smells, then it is new and it is intense."
-    "Searching your person yields the answer: A deep brown-green fluid seeps out of a small hole in your torso. Swiping a drop on your finger, you find it not to be viscous like blood. Rather, it rolls rather easily down your finger, filling in the grooves of your fingerprint as it descends."
+    "Searching your person yields the answer: A deep brown-green fluid seeps out of a small hole in your torso."
+    "Swiping a drop on your finger, you find it not to be viscous like blood."
+    "Rather, it rolls rather easily down your finger, filling in the grooves of your fingerprint as it descends."
     "It smells of excrement, and is highly concentrated."
     #voice abq0-18
     ab "Bile, I’m sure of it."
@@ -254,9 +258,107 @@ label exposition3:
 
 label exposition4:
 
+    "The levity is short-lived."
+    #voice
+    ab "So. Presper. The scientist. Doctor. However he brandishes himself."
+    #voice abq0-127
+    ab "Antoine. I knew him."
+    #voice
+    ab "I built this mansion 200 years ago to seclude myself from the world."
+    #voice
+    ab "And when I grew old, I hired him to tend to me."
+    #voice abq0-128
+    ab "He failed, and it seems to have gotten to his head."
+    #voice
+    menu:
+        ab "What he’s doing alive and… well 200 years later is beyond me."
+
+        "\"Sounds like he’s gone off the deep end.\"":
+            #voice
+            ab "Quite. And it doesn’t seem he’ll be out of the proverbial pool any time soon."
+        "\"Sounds like he’s trying to bring you back.\"":
+            #voice
+            ab "That is kind of him. But I don’t think his means are the kind one ought to be comfortable with."
+            #voice
+            ab "And as far as the ends go, who knows if they’re that clear-cut."
+        "\"Sounds like you and he have a lot in common.\"":
+            #voice
+            ab "Don’t remind me. I went isolationist before he did, let it be known."
+
+    #voice abq0-129
+    ab "Antoine is responsible for both our predicaments. Let us keep the little worm under scrutiny until we know more."
+
+    call screen minimap()
+
 label exposition5:
+    "His voice sharpens. You can feel his hypothetical teeth clench."
+    #voice abq0-130
+    ab "Presper."
+    #voice abq0-131
+    ab "That good for nothing little scoundrel."
+    #voice
+    ab "He was always so eager to please. A shame he was no good at it."
+    #voice abq0-132
+    ab "I was an old man. I needed help. He promised it."
+    #voice
+    menu:
+        ab "And the ungrateful, lazy bastard got me killed instead."
+
+        "\"For all his morbidity, he doesn’t seem like the killing type.\"":
+            #voice
+            ab "What, you think this vessel we’re walking around in came from a morgue or something?"
+            #voice
+            ab "You’ve got a slice cut deep into your head, for crying out loud."
+            #voice
+            ab "He must have swiped you with a shovel, the cretin."
+
+        "\"Did he experiment on you like he did me?\"":
+            #voice
+            ab "Considering I’m a disembodied spirit now, I suspect he did toy with some part of my metaphysics."
+            #voice
+            ab "Not that I asked for it. The miserable little twerp must have thought he was doing a speck of good."
+        "\"Sounds like you were old, you were going to die anyway.\"":
+            #voice
+            ab "That’s why I brought the idiot here in the first place, don’t you understand?"
+
+    "Maurice’s anger grows sharper."
+    #voice
+    ab "Presper, that bumbling buffoon."
+    #voice abq0-133
+    ab "I gave him the world, every kind of amenity you could imagine."
+    #voice abq0-134
+    ab "And he still let me die."
+    #voice
+    menu:
+        ab "A spoiled brat who’s only further spoiled since my departure."
+
+        "\"Settle, Maurice. You’re getting awfully riled up.\"":
+            pass
+        "\"How did he let you die? Did he do something to you?\"":
+            pass
+        "\"Some people just don’t know how good they have it.\"":
+            pass
+
+    #voice
+    ab "The more I think about the negligent malpractitioner, the more I remember how he betrayed me."
+    #voice
+    ab "No, he didn’t outright kill me. He was too much a coward for that."
+    #voice
+    ab "He tried to save me, to keep me alive and well."
+    #voice
+    ab "But no matter how hard a blustering nincompoop tries…"
+    #voice abq0-135
+    ab "No matter how many years he spends tinkering in a basement with the powers of a demigod —"
+    #voice abq0-136
+    ab "He will always be a failure."
+    #voice abq0-137
+    ab "I will speak no more of it. Let’s move on."
+
+    call screen minimap()
 
 label exposition6:
+
+    jump gameend
 
 label marianne_reflection:
 
@@ -711,3 +813,156 @@ label aures_reflection_bad:
             #voice
             ab "Minoru has solved that problem for us, at least."
     jump aures_reflection_end
+
+
+label elizabeth_reflection_end:
+
+    #voice abq0-036
+    ab "Come. There is more to do."
+    jump postquest
+
+
+label elizabeth_reflection:
+
+    if elizabeth_queststate is 6:
+        jump elizabeth_reflection_truth
+    if elizabeth_queststate is 7:
+        jump elizabeth_reflection_lie
+
+label elizabeth_reflection_truth:
+
+        "You can sense the voice in your head watching the young girl."
+        #voice abq0-033
+        ab "That must have been… difficult."
+        #voice
+        ab "She took it quite well, all things considered…"
+        #voice abq0-034
+        ab "But do you really think the truth was worth the turmoil?"
+        menu:
+            "\"Of course. She deserved to know.\"":
+                #voice abq0-035
+                ab "Is that a testament to your compassion or your pity?"
+                #voice
+                ab "It does not matter to me, I suppose."
+                #voice
+                ab "But, chew on that, won’t you."
+            "\"The truth is always worth knowing.\"":
+                #voice abq0-037
+                ab "I admire your commitment to such absolutes."
+                #voice
+                ab "I agree quite firmly."
+                #voice
+                ab "Still, I don’t think that made the look on her face any easier to stomach."
+            "\"Turmoil was the point, actually.\"":
+                #voice abq0-038
+                ab "I see."
+                #voice
+                ab "It builds character, I suppose."
+                #voice
+                ab "She’s a bit young for that kind of… harsh reality."
+                #voice abq0-039
+                ab "But, start them early, as they say."
+
+        jump elizabeth_reflection_end
+
+
+label elizabeth_reflection_lie:
+
+    "You can sense the voice in your head watching the young girl."
+    #voice abq0-040
+    ab "Ignorant bliss, if I’ve ever seen it."
+    #voice
+    ab "Your secret is safe with me, but…"
+    #voice abq0-041
+    ab "You don’t think you should have told her the truth?"
+    menu:
+        "\"It would have been too much for her.\"":
+            #voice
+            ab "Perhaps."
+            #voice abq0-042
+            ab "She’s so temperamental now — I can only imagine how much worse it could get."
+            #voice
+            ab "Keeping it to yourself was, in that way, wise."
+        "\"She’ll find out on her own, eventually.\"":
+            #voice
+            ab "‘Eventually’ could be another century, seeing as all she wants to do is warm herself by the fire."
+            #voice abq0-043
+            ab "But, what is time to a ghost? Perhaps there is no harm in it."
+        "\"She’s a brat. I don’t owe her anything.\"":
+            #voice abq0-044
+            ab "You are… not incorrect. On both counts, I suppose."
+            #voice
+            ab "Still, I would not equate her temperament with vitriol."
+            #voice
+            ab "She will need help, but I admit it needn’t be from us."
+
+    jump elizabeth_reflection_end
+
+
+label arabella_reflection_end:
+
+    ab "Now, let’s leave this girl be."
+    jump postquest
+
+label arabella_reflection:
+
+    "Although it has none, the voice in your head clears its throat."
+
+    if q3_state is 2 or q3_state is 3:
+        jump arabella_reflection_bad
+
+    if q3_state is 4:
+        jump arabella_reflection_good
+
+
+label arabella_reflection_bad:
+    #voice abq0-028
+    ab "This mansion is, in many ways, labyrinthian."
+    #voice
+    ab "There hide a great many more secrets than could be found in one evening."
+    #voice
+    ab "I think she sensed how much more there is to find."
+    #voice abq0-029
+    ab "But surely, to dig through this decrepit place is asking much of you, is it not?"
+    menu:
+        "\"I cannot spare the time.\"":
+            #voice abq0-030
+            ab "I suppose you cannot. You’ve been a very busy zombie thus far, I will say."
+        "\"What I found is what I gave her. I did my part.\"":
+            #voice abq0-031
+            ab "She seems to have a bit more self-awareness than before, yes."
+            #voice
+            ab "I suppose that’s a tall ask for a ghost, so good on you."
+        "\"I am not her servant. She should be grateful I heard her out at all.\"":
+            #voice abq0-032
+            ab "That you did, and she sounded grateful enough."
+            #voice
+            ab "Although I find gratitude so, so hollow. I prefer results."
+
+    jump arabella_reflection_end
+
+label arabella_reflection_good:
+
+    #voice abq0-023
+    ab "You went through an awful lot of trouble for this girl."
+    #voice
+    ab "She was mistreated at every turn, and even still she finds it in her heart to forgive."
+    #voice abq0-024
+    ab "Is that strength of character, or naivety?"
+    menu:
+        "\"It takes a lot of courage to forgive those who hurt you.\"":
+            #voice abq0-025
+            ab "‘Courage’ is perhaps not the word I’d use… But I see your point."
+            #voice
+            ab "I shall dwell on that."
+        "\"She is a child, all she can do is accept what comes at her.\"":
+            #voice abq0-026
+            ab "She has certainly played the part."
+            #voice
+            ab "It might do her good. Anything to get her out of this place."
+        "\"Worse, it’s folly.\"":
+            #voice abq0-027
+            ab "I was always of the mind that to forgive is to forget."
+            #voice
+            ab "If that is true, though. then I must say I quite envy her."
+    jump arabella_reflection_end

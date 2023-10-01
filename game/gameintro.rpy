@@ -1,9 +1,8 @@
 label gameintro:
 
-    show bg mansion exterior
+    show bg outside
     $config.allow_skipping = True
     $config.keymap["dismiss"].extend(['mouseup_1', 'K_RETURN', 'K_SPACE', 'K_KP_ENTER', 'K_SELECT'])
-    show curtain
     "A mansion stands before you."
     menu:
         "It beckons you in."
@@ -88,4 +87,4 @@ label gameintro:
     "The door swings open. The mansion looms larger."
     "It beckons you in."
 
-    call screen minimap()
+    jump arabella_foyer

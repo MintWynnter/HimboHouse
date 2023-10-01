@@ -1,8 +1,13 @@
 label lysander_hub:
 
+
+
     # custom greeting if not and not lysander_ded
     if lysander_ded:
         "Lysander is no longer in the garden."
+    else:
+        show lysander neutral
+        with dissolve
 
 label lysander_convohub:
 
@@ -52,6 +57,13 @@ label lysander_convohub:
             ly "Anyway, Aures my regards."
             "Lysander's voice fades back into the ring."
             jump lysander_convohub
+
+        "\"About Arabella...\"" if q3_state is 1 and not lysander_ded and not q3_lysander_convo and (q3_priest_journal or q3_mom_journal or q3_doctor_journal or q3_own_journal):
+            jump lysander_arabellalore
+
+        "Conjure Lysander from his ring. \"About Arabella...\"" if q3_state is 1 and lysander_ded and not q3_lysander_convo and (q3_priest_journal or q3_mom_journal or q3_doctor_journal or q3_own_journal):
+            "His voice is hoarse, but clear."
+            jump lysander_arabellalore
 
         "\"What did you want me to do, again?\"" if lysander_queststate is 2 or lysander_queststate is 3 or lysander_queststate is 4:
             #voice ly_hap1
@@ -435,3 +447,105 @@ label lysander_convohub_losing_rather_arabella:
     show lysander disappointed
     ly "...I just didn't see how dire things had become. I didn't see another way."
     jump lysander_convohub
+
+label lysander_arabellalore:
+    "Lysander laughs softly to himself."
+    #voice ly_dis2
+    show lysander neutral
+    ly "Arabella… too long since I’ve been blessed by her beauty. Indeed, she was coming into her own in life…"
+    #voice ly_sad1
+    show lysander disappointed
+    ly "But, unfortunately, she was unable to outrun her demons in the end. I was—and remain—her uncle."
+    #voice ly_dis4
+    show lysander grateful
+    ly "I loved Arabella very much; I held her as dear to me as I would my own daughter. Had I not already given everything to protect her mother…"
+    "He sighs."
+    #voice ly_dis3
+    show lysander unique
+    ly "I would’ve done anything for that child."
+
+label lysander_arabellalore_questions:
+    $ q3_lysander_convo = True
+    menu:
+        "\"You would have done anything for her?\"":
+            #voice ly_sad4
+            show lysander thinking
+            ly "To make a long story short, I made a vow…an eternal promise allowing me to protect my dear sister, Evangeline, even in death…"
+            "Lysander trails off for a moment, seemingly lost in thought."
+            #voice ly_dis5
+            show lysander unique
+            ly "That, however, is a story for an entirely different day…"
+            jump lysander_arabellalore_questions
+        "\"Can you tell me more about your sister, Evangeline?\"":
+            #voice ly_sad5
+            show lysander disappointed
+            ly "Ah, my dear sister, Evangeline…"
+            "Lysander gives a weak but reflective smile."
+            #voice ly_hap1
+            show lysander neutral
+            ly "She was a woman of grace and boundless love."
+            ly "From our youngest days, she always had a nurturing spirit, looking out for those weaker or smaller than herself."
+            #voice
+            mc "What kind of relationship did she have with Arabella?"
+            #voice ly_lch3
+            show lysander grateful
+            ly "Evangeline and Arabella shared a bond that was unlike any other. A mother's love, yes, but also a profound understanding of each other."
+            #voice ly_hap4
+            show lysander neutral
+            ly "My sister often said Arabella was her mirror, reflecting both her strengths and vulnerabilities. They were inseparable."
+            #voice
+            mc "Why did she decide to keep Arabella confined to this mansion?"
+            #voice ly_puz2
+            show lysander distraught2
+            ly "It wasn't a decision made lightly, I assure you—nor was it something I had a complete grasp of until recently."
+            ly "Evangeline's heart broke every day she had to keep Arabella inside, away from the world…"
+            #voice ly_mad1
+            show lysander disappointed
+            ly "But she believed it was for the best, to protect her. There were...complications."
+            #voice ly_sad1
+            show lysander distraught2
+            ly "Evangeline feared that if Arabella's unique nature was discovered, she might be taken away or treated in ways we couldn't bear to imagine."
+            #voice
+            mc "It must have been difficult for Evangeline."
+            #voice ly_dis4
+            show lysander disappointed
+            ly "More than you could ever know… She grappled with guilt and worry constantly, praying she was making the right choice for her beloved daughter."
+            #voice ly_mad2
+            show lysander unique
+            ly "But through it all, her love for Arabella never wavered, and she did everything in her power to give her a life filled with warmth and happiness."
+            "Lysander doesn’t respond to you, seemingly lost in his own thoughts, and in his own memories, but he nods his head to you in acknowledgment of your words."
+            jump lysander_arabellalore_questions
+        "\"What’s the significance of the pendant you gave Arabella?\"":
+            #voice ly_sad2
+            show lysander thinking
+            ly "Ah, yes, the pendant…"
+            "He clears his throat gently."
+            #voice ly_hap2
+            show lysander neutral
+            ly "It's a significant piece of our family's past, you know. According to family legend, it was crafted centuries ago by a forebear skilled in protection magic."
+            #voice ly_hap5
+            show lysander grateful
+            ly "If the stories are to be believed, its very essence is interwoven with the energy of a midsummer moon."
+            #voice ly_puz2
+            show lysander disappointed
+            ly "When Arabella's episodes began, I gave it to her, hoping its protective qualities might shield her from the more…malevolent forces she seemed to encounter."
+            #voice ly_dis2
+            show lysander neutral
+            ly "It also helped her discern between spirits, distinguishing those that meant harm from the benign."
+            "Lysander looks more deeply at you, and something in his gaze turns harsher and more solemn."
+            #voice ly_sad4
+            show lysander distraught2
+            ly "But remember, its power is not limitless. Over time, even such a potent artifact can weaken."
+            #voice
+            mc "What do you mean its power can weaken? Are there consequences?"
+            #voice ly_dis5
+            show lysander disappointed
+            ly "All things, even those magical, have their limits. It's best not to dwell on such matters."
+            #voice ly_dis4
+            show lysander unique
+            ly "The pendant has served its purpose thus far, and that's what truly matters."
+            jump lysander_arabellalore_questions
+        "\"That's all I need to know, Lysander.\"":
+            if lysander_ded:
+                "Lysander's voice fades back into the ring."
+            jump lysander_convohub
