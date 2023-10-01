@@ -1,8 +1,0 @@
-﻿I'm sorry, but an uncaught exception occurred.
-
-
--- Full Traceback ------------------------------------------------------------
-
-Full traceback:
-  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\bootstrap.py", line 277, in bootstrap
-    renpy.main.main()

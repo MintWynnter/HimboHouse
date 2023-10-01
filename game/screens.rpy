@@ -352,6 +352,10 @@ init:
     transform logozoom:
         zoom 0.428
 
+style mmbuttons:
+    hover_color "#FF90F4"
+    size 64
+
 screen main_menu():
 
 
@@ -367,32 +371,32 @@ screen main_menu():
         at logozoom
         action [Hide("main_menu"), Show("devChoice")]
 
-    imagebutton:
-        idle "gui/button/Start.png"
+    textbutton "START":
+        text_style "mmbuttons"
         xpos .0208333
         ypos .8925926
         action Start()
 
-    imagebutton:
-        idle "gui/button/Load.png"
+    textbutton "LOAD":
+        text_style "mmbuttons"
         xpos .2151042
         ypos .8925926
         action ShowMenu("load")
 
-    imagebutton:
-        idle "gui/button/Settings.png"
+    textbutton "SETTINGS":
+        text_style "mmbuttons"
         xpos .4119792
         ypos .8925926
         action ShowMenu("preferences")
 
-    imagebutton:
-        idle "gui/button/Extras.png"
+    textbutton "EXTRAS":
+        text_style "mmbuttons"
         xpos .6072917
         ypos .8925926
         #action ShowMenu("extras")
 
-    imagebutton:
-        idle "gui/button/Exit.png"
+    textbutton "EXIT":
+        text_style "mmbuttons"
         xpos .8015625
         ypos .8925926
         action Quit()
@@ -628,6 +632,9 @@ screen load():
 
 
 screen file_slots(title):
+    if title == "Load":
+        $config.allow_skipping = True
+        $config.keymap["dismiss"].extend(['mouseup_1', 'K_RETURN', 'K_SPACE', 'K_KP_ENTER', 'K_SELECT'])
 
     default page_name_value = FilePageNameInputValue(pattern=_("Page {}"), auto=_("Automatic saves"), quick=_("Quick saves"))
 

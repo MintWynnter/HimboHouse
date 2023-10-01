@@ -112,7 +112,7 @@ label midpoint:
     #voice drq7-30
     dr "See, you could be one of three people."
     #voice drq7-31
-    dr "You could be Abbe Maurice Lachaise with a bad case of amnesia."
+    dr "You could be Abbé Maurice Lachaise with a bad case of amnesia."
     #voice drq7-32
     dr "You could be the crooked gravedigger your vessel is made of, waking up to a new consciousness."
     #voice drq7-33
@@ -166,13 +166,13 @@ label midpoint:
     dr "Still, you are making waves in this mansion, if I can call them that."
 
     # this is where presper reacts to the quest outcomes, check these variables are right
-    if arabella_queststate is 4:
+    if q3_state is 4:
         #voice drq7-46
         dr "That girl in the foyer seems brighter than ever."
-    if arabella_queststate is 3:
+    if q3_state is 3:
         #voice drq7-47
         dr "That girl in the foyer seems more dour than ever."
-    if arabella_queststate is 2:
+    if q3_state is 2:
         #voice drq7-47
         dr "That girl in the foyer seems more dour than ever."
     if elizabeth_queststate is 6:

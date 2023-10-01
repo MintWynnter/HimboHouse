@@ -10,7 +10,7 @@ label marianne_bedroom:
         jump marianne_intro
 
 
-#label marianne_intro:
+label marianne_intro:
     "As you approach the bedroom, the crackle of a radio peaks over the sound of soulful jazz."
 
     menu:
@@ -888,6 +888,5 @@ label marianne_lmfao:
 
     $ marianne_questdone = True
     $ marianne_questjustfinished = True
-    $ questsdone = questsdone + 1
 
     jump marianne_hub

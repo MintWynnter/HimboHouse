@@ -11,6 +11,9 @@ label presper_convohub:
         "\"Have you seen a camcorder around here?\"" if marianne_queststate is 10:
             jump marianne_presper
 
+        "Search for Herman's signet ring." if herman_queststate is 5:
+            jump herman_basement
+
         "\"How are you still alive?\"":
             #voice drht-01
             dr "Truth be told, I couldn’t tell you with certainty."

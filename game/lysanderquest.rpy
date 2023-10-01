@@ -163,7 +163,8 @@ label lysander_livingroom:
     "The final illustration in the sketchbook appears much more recent. It depicts a rabbit viewed from afar, sitting next to the pond where you first encountered Lysander."
     "Iris petals are scattered around it, and it looks as though an iris petal is in the process of being consumed in the illustration."
     "You smile and shut the sketchbook, sliding it back onto its place on the shelf."
-    "You doubt that this is the location Lysander wanted you to check—after all, didn't he send you on this knowledge-hunting quest because he was unable to access the location in which that information was held?"
+    "You doubt that this is the location Lysander wanted you to check."
+    "After all, didn't he send you on this knowledge-hunting quest because he was unable to access the location in which that information was held?"
     jump elizabeth_convohub
 
 label lysander_lounge:
@@ -172,9 +173,11 @@ label lysander_lounge:
     "The entire experience of the room seems to feel more overwhelming than you can previously recall."
     "You rest a hand on the curved entryway to the lounge in a bid to steady yourself and adjust to the space, only for something to catch your eye."
     "In the corner to your left—seemingly as far away from the lounge bar and fireplace as possible—is a tiny and peculiarly-shaped wooden table."
-    "Although the surface area of the table is very small, it contains what appears to be a series of drawers. As you examine the table structure, you notice that each drawer is designed to pull outward in a different direction."
+    "Although the surface area of the table is very small, it contains what appears to be a series of drawers."
+    "As you examine the table structure, you notice that each drawer is designed to pull outward in a different direction."
     "When all are fanned out, they form a diamond, with the peculiarly-shaped tabletop surface filling in the central gap created at their center."
-    "Without giving it a second thought, you pull each of the four drawers outward in their respective directions. Each contains an impressively large tome, their vibrant leather covers emblazoned in extravagant and beautifully-preserved embossed artwork."
+    "Without giving it a second thought, you pull each of the four drawers outward in their respective directions."
+    "Each contains an impressively large tome, their vibrant leather covers emblazoned in extravagant and beautifully-preserved embossed artwork."
 
 label lysander_lounge_books:
 
@@ -202,8 +205,10 @@ label lysander_lounge_books:
             "You pull the red tome from its drawer, gazing at the strange, interlinking symbols shaped to form a circle upon its cover."
             "The book reeks of smoke, alcohol, and something vaguely metallic."
             "As you tentatively pull open the pages of the book, you see that each of its pages are bordered in incredibly detailed illustrations, albeit with one disconcerting theme."
-            "While half of the border is filled with scenes of nature, contented animals, and sometimes even children playing, the other half quickly fades into grotesque distortions of those same moments of levity."
-            "You try to ignore the illustrations, but one recurring character continuously catches your eye—a portly and good-natured king, bearded and extravagantly-dressed, whose mirror image becomes emaciated and haggard, screaming as blood drips from his gouged-out eyes."
+            "While half of the border is filled with scenes of nature, contented animals, and sometimes even children playing..."
+            "...the other half quickly fades into grotesque distortions of those same moments of levity."
+            "You try to ignore the illustrations, but one recurring character continuously catches your eye:"
+            "A portly and good-natured king, bearded and extravagantly-dressed, whose mirror image becomes emaciated and haggard, screaming as blood drips from his gouged-out eyes."
             "You do your best to turn your attention away from the tortured king and onto the text."
             "It reads almost like a prophecy or book of guidelines, continuously speaking about \"The One Who Waiteth in the Outer Dark.\""
             "There are abstract mentions of subroutines and other passages in a script you cannot hope to understand."
@@ -222,7 +227,9 @@ label lysander_lounge_books:
             "Looking down at the bindings of the book, you realize that this tome's weight is likely not a product of its initial composition."
             "Rather, it is two separate titles stitched together at the tome's midpoint."
             "You try to read more into the latter section of the tome, but the highly technical language and almost disorganized flow of thought makes your mind swim."
-            "You skim through the sections and realize that, although the book details the construction of artificial bodies in detail and granting them the ability to move, it completely skips over the concept of imbuing them with any kind of metaphysical essence."
+            "You skim through the sections."
+            "Although the book details the construction of artificial bodies in detail and granting them the ability to move..."
+            "...it completely skips over the concept of imbuing them with any kind of metaphysical essence."
             "Begrudgingly, you accept that this book may not be particularly helpful to you or Lysander at the moment, and place it back into its drawer."
             jump lysander_lounge_books
 
@@ -232,21 +239,29 @@ label lysander_lounge_books:
             "Looking down at the book, you notice that this volume seems slightly more faded than the others within the drawers, as if it had once sat directly in the path of the sun"
             "On its cover is an etched illustration depicting two finches."
             "Curiously, this book lacks a traditional cover page or table of contents."
-            "Instead, it starts with a note from the author cautioning the reader that the topics contained within the tome are detailed purely for use in the realms of the theoretical and academic, rather than practical application."
-            "\"In fact,\" concludes one paragraph, \"to apply these principles and techniques within one's own life would almost guarantee a profound degree of suffering for oneself and all that they love.\""
-            "As you continue to flip through the book, you realize it is a highly detailed breakdown of philosophical and practical approaches to metaphysics and the scientific structure of supernatural phenomena."
-            "Much of the information contained within comes from a place of supposition rather than hard science, but you take special note of a chapter titled \"The Shackling of the Soul: Theories Regarding Perpetuation.\""
+            "Instead, it starts with a note from the author: a warning."
+            " It cautionins the reader that the topics contained within the tome are detailed purely for use in the realms of the theoretical and academic, rather than practical application."
+            "\"In fact,\" concludes one paragraph, \"to apply these principles and techniques within one's own life...\""
+            "\"...would almost guarantee a profound degree of suffering for oneself and all that they love.\""
+            "It is a highly detailed breakdown of philosophical and practical approaches to metaphysics and the scientific structure of supernatural phenomena."
+            "Much of the information contained within comes from a place of supposition rather than hard science."
+            "You take special note of a chapter titled \"The Shackling of the Soul: Theories Regarding Perpetuation.\""
             "While much of the chapter's contents elude you due to their highly technical language and presumption of existing knowledge on the topic, a certain subsection catches your eye:"
-            "\"After nearly a century of continued research, it is the belief of this author that a mechanism through which an individual may release themselves from this plane by sheer force of will does, in fact, exist.\""
-            "\"Putting an end to one's perpetuated existence unaided, and without the presence of a being or object firmly shackled to the plane upon which they are bound, remains inadvisable on a number of counts—but, contrary to my previous findings, it does appear to be possible.\""
+            "\"After nearly a century of continued research, it is the belief of this author...\""
+            "\"...that a mechanism through which an individual may release themselves from this plane by sheer force of will does, in fact, exist.\""
+            "\"Putting an end to one's perpetuated existence unaided, and without the presence of a being or object firmly shackled to the plane upon which they are bound...\""
+            "\"...remains inadvisable on a number of counts—but, contrary to my previous findings, it does appear to be possible.\""
             "\"Consider the canine Archibald (detailed previously in the fourth chapter of this volume), whose essence was asserted to remain in proximity to his master for the remainder of that man's life.\""
             "\"Upon the death of the human Archibald held in such high esteem, all metaphysical phenomena related to the dog also ceased.\""
             "\"As we discovered in the writings of Qaribah al-Saqr, indefinite perpetuation of the spirit is not guaranteed an attachment to the physical or energetic definite perpetuation of a person, object, or entity...\""
-            "\"Therefore, we can postulate that Archibald's decision to depart alongside his master signifies that he was not bound to the man's physical body or to their mutual home, but instead either to the man's essence or nothing at all.\""
-            "\"The latter case is of special interest to me; my own state was brought about by a passion for research, and thus (to my knowledge) exists independently from a physical or metaphysical source.\""
+            "\"Therefore, we can postulate that Archibald's decision to depart alongside his master signifies that he was not bound to the man's physical body or to their mutual home...\""
+            "\"...but instead either to the man's essence or nothing at all.\""
+            "\"The latter case is of special interest to me; my own state was brought about by a passion for research...\""
+            "\"...and thus (to my knowledge) exists independently from a physical or metaphysical source.\""
             "\"In any event, more research will be needed.\""
             "The chapter goes on to describe other observations on the nature of metaphysical bindings."
-            "Their intensity can be amplified, de-amplified, or even transferred between beings—but that these actions cannot be taken in rapid succession, or too frequently, without the effort failing."
+            "Their intensity can be amplified, de-amplified, or even transferred between beings."
+            "But these actions cannot be taken in rapid succession, or too frequently, without the effort failing."
             "For as detailed as the book is, its design is surprisingly nondescript."
             "The pages are left unadorned, and the only notes or markings left behind are occasional spots of sun-bleaching or page weathering."
             "Its final section reads almost like a confessional from the author, once again cautioning the reader against applying any of the principles or techniques detailed within the tome."
@@ -257,7 +272,7 @@ label lysander_lounge_books:
         "I'm done reading.":
             "You slide each portion of the diamond back into place underneath the central tabletop. You shudder momentarily; what strange books."
             "Despite the more bizarre qualities of your recent reading material, you recognize that Lysander might be interested in some of your findings."
-            #JUMP BACK TO THE LOUNGE'S CONVO HUB
+            jump herman_convohub
 
 
 label lysander_ballroom:
@@ -450,7 +465,8 @@ label lysander_bigdecision:
             "As he nears you once more, you see that their retreat is gradual—almost like the rising or setting of the sun."
             "By the time he touches back down upon the ground, only a small orb of light remains within the hole in his jacket."
             "With a soft but surprisingly sharp crack and the scent of sulfur, the orb shatters, its ephemeral remains fading into nothingness in the space between Lysander and yourself. "
-            "You are once again standing in front of Lysander, and can't help but notice that — although his physical appearance looks largely unchanged — his brown eye somehow looks both less vibrant and more joyful."
+            "You are once again standing in front of Lysander, and can't help but notice:"
+            "Although his physical appearance looks largely unchanged — his brown eye somehow looks both less vibrant and more joyful."
             "His entire essence seems to carry a sense of relief."
             #voice lyq1-91
             show lysander neutral
@@ -487,7 +503,8 @@ label lysander_bigdecision:
             show lysander distraught
             ly "What is… Something's…very wrong…"
             "As if in response, another resounding {i}CRACK{\i} fills the air around you. "
-            "As Lysander's right hand darts to his left shoulder, you realize you can see a faint amber glow spreading across his body—starting from his left shoulder and running steadily down his arm, across his torso, and down his abdomen."
+            "As Lysander's right hand darts to his left shoulder, you realize you can see a faint amber glow spreading across his body:"
+            "Starting from his left shoulder and running steadily down his arm, across his torso, and down his abdomen."
             "When Lysander looks at you again, you see that his left eye is engulfed in light of the same color, as if being consumed by some silent flame."
             "His expression is one of horrified agony."
             "With a faster, more resonant {i}CRACK{\i}, Lysander's right hand twists unnaturally and slams its palm into his left shoulder — an involuntary motion contrary to the previous grasping at the spreading glow. "
@@ -528,14 +545,17 @@ label lysander_bigdecision:
             #voice lyq1-98
             show lysander neutral
             ly "I'd like to hold onto your forearm…if you'd be so kind."
-            "He extends his left hand, which you mirror with your right. He nods with an unusually brisk politeness and clasps his left hand firmly onto your arm, just below the elbow." "The pressure is not uncomfortable, but also feels unyielding."
+            "He extends his left hand, which you mirror with your right. He nods with an unusually brisk politeness and clasps his left hand firmly onto your arm, just below the elbow."
+            "The pressure is not uncomfortable, but also feels unyielding."
             "You hear a moderately loud CRACK that seems to come from both everywhere and nowhere around you, accompanied by the smell of sulfur."
             "Lysander's body tenses, and he smiles at you apologetically."
             #voice lyq1-99
             show lysander distraught2
             ly "I'm sorry. I…don't want to hurt you."
-            "With a markedly softer crack and only a mild flinch from Lysander, you realize you can see a faint amber glow spreading across his body—starting from the wound within his left shoulder and running steadily down his arm, across his torso, and down his abdomen. "
-            "The light descends like tiny tree roots running through his veins, and as Lysander continues clasping onto your arm, you realize that the light is beginning to migrate across his body, the tendrils seeming to snake laterally across his frame and down his right side."
+            "With a markedly softer crack and only a mild flinch from Lysander, you realize you can see a faint amber glow spreading across his body:"
+            "Starting from the wound within his left shoulder and running steadily down his arm, across his torso, and down his abdomen. "
+            "The light descends like tiny tree roots running through his veins. Lysander continues clasping onto your arm."
+            "You realize that the light is beginning to migrate across his body, the tendrils seeming to snake laterally across his frame and down his right side."
             "The glow within his left iris grows more intense, its quality more akin to flame than a mere glow."
             "For the first time, you realize that the irregularity of the light is not a byproduct of Lysander's eye, but instead…"
             "As if on cue, you feel a profound tearing deep within the tissues of your own left eye. You grimace and nearly fall to your knees, only for Lysander to hold you firmly upright."
@@ -545,7 +565,8 @@ label lysander_bigdecision:
             ly "I-It's alright. We'll be…done soon…"
             "The unknowable script carving its way into your retina burns intensely, but not quite enough to mask the burning sensation steadily making its way across your body."
             "You look down at your torso to see that the amber light from Lysander's body has flowed seamlessly into your own, steadily making its way back to its previous placement."
-            "The sensation is what you imagine it would be like if your veins were to suddenly start writhing through your body, though whatever pain this part of the process would cause is drowned out entirely by the agony within your eye."
+            "The sensation is what you imagine it would be like if your veins were to suddenly start writhing through your body."
+            "But whatever pain this part of the process would cause is drowned out entirely by the agony within your eye."
             "Lysander looks at you in a mixture of bewilderment and horror, but says nothing."
             "You suspect he is unable to speak from the pain."
             "As suddenly as it began, the agony within your body ceases."
@@ -569,7 +590,8 @@ label lysander_bigdecision:
             "You nod and quickly wipe your soiled hand upon one of your legs."
             "What else were you meant to do with it?"
             "Lysander helps you back up to your feet and offers a brief explanation of how his eye typically functions."
-            "How to differentiate objects bound to the same entity versus objects that entity had recently interacted with, how to tune out certain energetic signals, and even how to utilize the signals to easily locate other ghosts within the mansion."
+            "How to differentiate objects bound to the same entity versus objects that entity had recently interacted with:"
+            "How to tune out certain energetic signals, and even how to utilize the signals to easily locate other ghosts within the mansion."
             "As Lysander explains the mechanics of his prior abilities, you can't help but notice that, although his appearance remains largely unchanged, his own left eye seems both less vibrant and more joyous than you remember."
             "After concluding his explanation, Lysander looks at you with a warmth that has grown strangely familiar to you."
             #voice lyq1-104
@@ -603,10 +625,12 @@ label lysander_bigdecision:
             show lysander distraught
             ly "What…did you…do…?"
             "As if in response, another resounding CRACK fills the air around you.  "
-            "As Lysander's right hand darts to his left shoulder, you realize you can see a faint amber glow spreading across his body—starting from his left shoulder and running steadily down his arm, across his torso, and down his abdomen."
+            "As Lysander's right hand darts to his left shoulder, you realize you can see a faint amber glow spreading across his body:"
+            "Starting from his left shoulder and running steadily down his arm, across his torso, and down his abdomen."
             "When Lysander looks at you again, you see that his left eye is engulfed in light of the same color, as if being consumed by some silent flame."
             "His expression is one of horrified, furious agony."
-            "With a faster, more resonant CRACK, Lysander's right hand twists unnaturally and slams its palm into his left shoulder—an involuntary motion contrary to the previous grasping at the spreading glow."
+            "With a faster, more resonant CRACK, Lysander's right hand twists unnaturally and slams its palm into his left shoulder:"
+            "An involuntary motion contrary to the previous grasping at the spreading glow."
             "The sound recurs, and his left hand mirrors the path of his right, the fingers on each hand straining as they remain curled inward."
             "Lysander averts his gaze from you and looks down."
             "His breathing is ragged, and as he slowly stops struggling, you realize that you can see something dark sitting at the center of his illuminated ghostly form."
