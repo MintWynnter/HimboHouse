@@ -17,11 +17,13 @@ label start:
 
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
+    # images directory to show it.\
+    $config.allow_skipping = True
+    $config.keymap["dismiss"].extend(['mouseup_1', 'K_RETURN', 'K_SPACE', 'K_KP_ENTER', 'K_SELECT'])
 
 
 
-    #jump gameintro
+    jump gameintro
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
@@ -73,7 +75,7 @@ label herman:
     show minoru neutral at spritezoom
     $config.allow_skipping = True
     $config.keymap["dismiss"].extend(['mouseup_1', 'K_RETURN', 'K_SPACE', 'K_KP_ENTER', 'K_SELECT'])
-    w "This is where Herma's stuff will be."
+    jump herman_lounge
     call screen hubScreen("Herman")
     return
 

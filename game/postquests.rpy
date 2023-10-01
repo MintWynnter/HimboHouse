@@ -1,5 +1,7 @@
 label postquest:
 
+    $questsdone = questsdone + 1
+
     # you just had a reflection, so figure out how you decompose and what exposition gets told
 
     if questsdone is 1:
@@ -185,6 +187,7 @@ label exposition2:
     ab "I’d rather not think about it. Squeamish and all."
     #voice
     ab "Still, I think you deserve an introduction. To me."
+    $ abbe_name = "Abbé Maurice"
     #voice abq0-s906
     ab "I am Abbé Maurice Lachaise, owner and proprietor of this mansion."
     #voice
@@ -524,3 +527,94 @@ label lysander_reflection_end:
 
     ab "Anyhow, that is that, as they say. Onward."
     jump postquest
+
+label herman_reflection:
+
+    $ herman_questjustfinished = False
+
+    "Now that Herman has disregarded you, per usual, the voice in your head finally eeks out a response."
+
+    if herman_queststate is 7:
+        jump herman_reflection_gave
+    if herman_queststate is 8:
+        jump herman_reflection_threw
+
+label herman_reflection_end:
+
+    ab "Well, never mind that. There is more to this mansion. Let us venture forth."
+    jump postquest
+
+label herman_reflection_gave:
+
+    #voice abq0-067
+    ab "You saw that, uh, thing as well, right?"
+    #voice
+    ab "Nothing against the crooked Dixie lad, but —"
+    #voice abq0-068
+    menu:
+        ab "Surely, it was unwise to hand that ring over to him, right?"
+        "\"I didn’t expect that ring to actually have any power!\"":
+            #voice abq0-069
+            ab "Yes, well, perhaps the supernatural nature of everything you’ve seen tonight would clue you in on that fact."
+            #voice abq0-070
+            ab "Then again, maybe that was all just a trick of the light."
+            #voice
+            ab "Here’s hoping, at least."
+        "\"I just did as I was told.\"":
+            #voice abq0-071
+            ab "I cannot argue with that."
+            #voice abq0-072
+            ab "Actually, I could. But, I see no benefit."
+            #voice
+            ab "What’s done is done."
+            #voice
+            ab "Hopefully this newfound power of his doesn’t come back to bite us."
+        "\"Nah, it’s cool. I wanted him to have eldritch power.\"":
+            #voice abq0-073
+            ab "You did?"
+            #voice
+            ab "I mean, of course you did."
+            #voice abq0-074
+            ab "What’s one more undead monstrosity roaming the house?"
+            #voice
+            ab "Hopefully this newfound power of his doesn’t come back to bite us."
+            #voice
+            ab "It’s not as if that never happens in horror stories…"
+
+    jump herman_reflection_end
+
+label herman_reflection_threw:
+
+    #voice abq0-075
+    ab "You know, I expected him to handle that refusal with less… grace."
+    #voice
+    ab "But, clearly he doesn’t see you as much of an obstacle."
+    #voice abq0-076
+    menu:
+        ab "That concerns you at least a little, does it not?"
+
+        "\"I suppose I had better watch my back…\"":
+            #voice abq0-077
+            ab "That might be wise, given his history of… stubbornness."
+            #voice
+            ab "Still, perhaps he’s bluffing. We won’t know till we know."
+            #voice
+            ab "And here’s to hoping we never know."
+        "\"Herman is welcome to underestimate me.\"":
+            #voice abq0-078
+            ab "I will say, Herman has been around the undead block."
+            #voice
+            ab "But perhaps you bring something to the table that neither of us recognize."
+            #voice
+            ab "Not that I underestimate you, I simply…"
+            #voice
+            ab "... I need not worry."
+        "\"He’s an oaf. How he feels does not concern me.\"":
+            #voice abq0-079
+            ab "I do not believe Herman is one to share in your apathy."
+            #voice
+            ab "Not that I disagree with you on the first count. He is not bright."
+            #voice
+            ab "But he is ambitious. And, at least for that, you might show some concern."
+
+    jump herman_reflection_end

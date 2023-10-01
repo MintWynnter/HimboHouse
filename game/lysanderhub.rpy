@@ -25,6 +25,9 @@ label lysander_convohub:
             ly "Certainly. What would you like to know?"
             jump lysander_convohub_myself
 
+        "Check the garden for something dated to show Herman." if herman_queststate is 10 and not herman_date:
+            jump herman_garden
+
         "\"What did you want me to do, again?\"" if lysander_queststate is 2 or lysander_queststate is 3 or lysander_queststate is 4:
             #voice ly_hap1
             show lysander neutral
@@ -91,7 +94,7 @@ label lysander_convohub:
             jump lysander_convohub
 
 
-        "\"Tell me about the other ghosts.\"" if not lysander_ded:
+        "\"Tell me about the other ghosts.\"" if not lysander_ded and marianne_queststate + elizabeth_queststate + herman_queststate + q3_state + aures_queststate > 0:
             jump lysander_convohub_ghosts
 
         "\"I should be going.\"":
@@ -166,13 +169,13 @@ label lysander_convohub_ghosts:
 
     menu:
 
-        "\"About Herman…\"":
+        "\"About Herman…\"" if herman_queststate > 0:
             #voice lyht-09
             ly "He’s an amicable enough fellow, at least on the surface. His time in the mansion was accompanied by…well, I’m not exactly sure what."
             #voice lyht-10
             ly "I would caution you that Mr. Grover may not be all that he seems."
             jump lysander_convohub_ghosts
-        "\"About Arabella…\"":
+        "\"About Arabella…\"" if q3_state > 0:
             #voice lyht-11
             ly "Ah. I didn’t have much of a chance to watch her grow up before my duel, and afterward—well, I thought it was safest for her and Evangeline if I kept what distance I could."
             #voice lyht-12
@@ -185,7 +188,7 @@ label lysander_convohub_ghosts:
             #voice lyht-15
             ly "I’d like to mend that wound as best I can, but I leave the impetus to her. People have forced her to comply with their wishes far too much already."
             jump lysander_convohub_ghosts
-        "\"About Elizabeth…\"":
+        "\"About Elizabeth…\"" if elizabeth_queststate > 0:
             #voice lyht-16
             ly "Elizabeth? …Oh! The little girl trapped in perpetual cold."
             #voice lyht-17
