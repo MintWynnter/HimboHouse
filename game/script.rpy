@@ -66,6 +66,7 @@ label aures:
     show minoru neutral at spritezoom
     $config.allow_skipping = True
     $config.keymap["dismiss"].extend(['mouseup_1', 'K_RETURN', 'K_SPACE', 'K_KP_ENTER', 'K_SELECT'])
+    jump aures_ballroom
     w "This is where Aures's stuff will be."
     call screen hubScreen("Aures")
     return
@@ -103,5 +104,3 @@ label pres:
     $config.keymap["dismiss"].extend(['mouseup_1', 'K_RETURN', 'K_SPACE', 'K_KP_ENTER', 'K_SELECT'])
     jump presper_hub
     call screen minimap()
-
-

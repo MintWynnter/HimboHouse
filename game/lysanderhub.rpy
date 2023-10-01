@@ -28,6 +28,31 @@ label lysander_convohub:
         "Check the garden for something dated to show Herman." if herman_queststate is 10 and not herman_date:
             jump herman_garden
 
+        "\"Aures said you might have some kind of teleportation device.\"" if not lysander_ded and not hasTeleporter and auresQuestState is 5:
+            $ hasTeleporter = True
+            ly "A teleportation device? I believe I've seen something like that around here. Give me a moment to find it."
+            "Lysander goes off somewhere, and you hear a bit of rustling. He returns with something cradled in his hands."
+            ly "Here it is. It seemed interesting, so I messed around with it for a bit. Let me show you how it works."
+            "Lysander explains what each button does and demonstrates how the device works."
+            ly "Wherever this came from, and whoever made this, it's a great feat of science."
+            ly "How strange that it ended up in a decrepit old place like this."
+            ly "Anyway, Aures my regards."
+            jump lysander_convohub
+
+        "Conjure Lysander from his ring and ask him about a teleportation device." if lysander_ded and not hasTeleporter and auresQuestState is 5:
+            $ hasTeleporter = True
+            "His voice is hoarse, but clear."
+            ly "A teleportation device? I believe I've seen something like that around here."
+            ly "Check the rubbish bin at the corner, there."
+            "Sure enough, you find a strange device buried deep in the bin."
+            ly "I experimented with it briefly before I deemed it too powerful for me. Let me show you how it works."
+            "Lysander explains what each button does and demonstrates how the device works."
+            ly "Wherever this came from, and whoever made this, it's a great feat of science."
+            ly "How strange that it ended up in a decrepit old place like this."
+            ly "Anyway, Aures my regards."
+            "Lysander's voice fades back into the ring."
+            jump lysander_convohub
+
         "\"What did you want me to do, again?\"" if lysander_queststate is 2 or lysander_queststate is 3 or lysander_queststate is 4:
             #voice ly_hap1
             show lysander neutral
@@ -204,7 +229,7 @@ label lysander_convohub_ghosts:
             #voice lyht-21
             ly "She occasionally comes to walk the garden paths at sunset. The light reflects beautifully on her dress."
             jump lysander_convohub_ghosts
-        "\"About Aures…\"":
+        "\"About Aures…\"" if auresQuestState > 1:
             #voice lyht-22
             ly "I’ve… never been particularly comfortable around landed gentry. I would describe our interactions as ‘tolerable’ rather than something I actively seek out."
             #voice lyht-23
