@@ -1,0 +1,22 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/auresquest.rpy", line 214, in script
+    mi "Where am I?! Who are you?! Why are you not opaque?!"
+Exception: Sayer 'mi' is not defined.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/auresquest.rpy", line 214, in script
+    mi "Where am I?! Who are you?! Why are you not opaque?!"
+  File "C:\Users\Owner\Desktop\renpy-8.1.3-sdk\renpy\ast.py", line 890, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "C:\Users\Owner\Desktop\renpy-8.1.3-sdk\renpy\ast.py", line 783, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'mi' is not defined.
+
+Windows-10-10.0.19045 AMD64
+Ren'Py 8.1.3.23091805
+The House On Limbo Lane 1.0
+Sun Oct  1 02:28:02 2023
