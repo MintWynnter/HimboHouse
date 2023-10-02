@@ -614,6 +614,8 @@ label elizabeth_finale:
     mc "Elizabeth, listen to me closely."
     menu:
         "Tell her the truth.":
+            stop music fadeout 1.0
+            play music m_sad if_changed fadein 1.0
             $ elizabeth_queststate = 6
             #voice ""
             mc "Elizabeth is looking at you anxiously."

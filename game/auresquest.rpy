@@ -188,6 +188,8 @@ label auresScene5:
     au "Now, on to the specifics. We have three options: teleport me over to him, teleport him here, or, my personal favorite, kill him so he is here with me forever."
     #voice
     au "I suppose I can leave the decision to you. What do you think would be best?"
+    stop music fadeout 1.0
+    play music m_spook if_changed fadein 1.0
     menu:
         "Teleport Aures to him.":
             $killPath = False
@@ -199,7 +201,7 @@ label auresScene5:
             au "I have the rope. I will return with My Snuggle Bunny soon."
             "You wait a few minutes, and Aures returns with another person in a flash of blue light."
             voice "miq4-01"
-            show minoru neutral
+            show minoru neutral at minoru_spot
             mi "What's going on?! Who are you?!"
             voice "auq4-12"
             au "I'm sure you are just panicking, but you must remember me, yes? I am your future wife. I went through all of this effort just so that we could be together for eternity."
@@ -220,7 +222,7 @@ label auresScene5:
         "Teleport him to the mansion.":
             $killPath = False
             voice "au_hap3"
-            show aures neutral
+            show aures neutral at minoru_spot
             au "So you think that we should bring him here? I should prepare some tea! You power up the device while I do that."
             "You set the machine the way Lysander taught you; a pale blue light emits from it, and a person appears after a few moments."
             voice "miq4-04"
@@ -265,7 +267,7 @@ label auresScene5:
             voice "auq4-21"
             au "Hello, My Sunshine! Look at me, and we will be bound together for all eternity!"
             voice "miq4-07"
-            show minoru neutral
+            show minoru neutral at minoru_spot
             mi "Augh! "
             "Minoru's corpse slumps to the floor. After a few minutes, his spirit begins to rise from the body."
             voice "miq4-08"
