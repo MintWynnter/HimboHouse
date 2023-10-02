@@ -17,26 +17,26 @@ label marianne_hub:
 
     if ma_greeting_1:
         $ ma_greeting_1 = False
-        #voice "mag-01"
+        voice "mag-01"
         ma "How ya faring, hon?"
     elif ma_greeting_2:
         $ ma_greeting_2 = False
-        #voice "mag-02"
+        voice "mag-02"
         ma "Welcome back, darlin'."
     elif ma_greeting_3 and not marianne_questdone:
         $ ma_greeting_3 = False
-        #voice "mag-03"
+        voice "mag-03"
         ma "What can Marianne do for you, huh?"
     elif ma_greeting_4:
         $ ma_greeting_4 = False
-        #voice "mag-04"
+        voice "mag-04"
         ma "Why, hello-there-howdy!"
     else:
         $ ma_greeting_1 = True
         $ ma_greeting_2 = True
         $ ma_greeting_3 = True
         $ ma_greeting_4 = True
-        #voice "mag-05"
+        voice "mag-05"
         ma "Looking fresh, zombiepie!"
 
 label marianne_convohub:
@@ -77,26 +77,26 @@ label marianne_convohub:
 
             if ma_farewell_1:
                 $ ma_farewell_1 = False
-                #voice "maf-01"
+                voice "maf-01"
                 ma "Come on back around sometime soon, alright?"
             elif ma_farewell_2:
                 $ ma_farewell_2 = False
-                #voice "maf-02"
+                voice "maf-02"
                 ma "I'll be counting petals till you're back, don't keep me waiting!"
             elif ma_farewell_3:
                 $ ma_farewell_3 = False
-                #voice "maf-03"
+                voice "maf-03"
                 ma "Oh, go on, then. Take the time it takes, I'll be right here."
             elif ma_farewell_4:
                 $ ma_farewell_4 = False
-                #voice "maf-04"
+                voice "maf-04"
                 ma "Ta-ta for now!"
             else:
                 $ ma_farewell_1 = True
                 $ ma_farewell_2 = True
                 $ ma_farewell_3 = True
                 $ ma_farewell_4 = True
-                #voice "maf-05"
+                voice "maf-05"
                 ma "Keep it peachy, sugar."
             scene black
             call screen minimap()
@@ -110,7 +110,7 @@ label marianne_herself:
             ma "I know it’s old, it’s full of ghosts like me —"
             #voice
             ma "— and I hear a few too many bloodcurdling noises to ever get a real good night’s sleep."
-            #voice mar-ht02
+            voice "mar-ht02"
             ma "Still, I’ve settled into quite the comfy nook here. It suits me just fine."
             #voice
             ma "Livin’ my best life, as far as the undead go."
@@ -119,9 +119,9 @@ label marianne_herself:
             jump marianne_herself
 
         "\"What do you think of the other ghosts?\"":
-            #voice mar-ht03
+            voice "mar-ht03"
             ma "I try not to tangle with too many of the others, but they’re kindly enough."
-            #voice mar-ht04
+            voice "mar-ht04"
             ma "Arabella, Elizabeth, Lysander… all real sweet, a real sweet bunch."
             #voice
             ma "Aures might have more glitz and glamor than me, color me a little bit jealous."
@@ -130,11 +130,11 @@ label marianne_herself:
             jump marianne_herself
 
         "\"How did you die?\"":
-            #voice mar-ht05
+            voice "mar-ht05"
             ma "No beating around the bush with you, huh?"
-            #voice mar-ht06
+            voice "mar-ht06"
             ma "Well, your brazen britches ain’t doing you any good this time."
-            #voice mar-ht07
+            voice "mar-ht07"
             ma "Mostly because I don’t entirely know what happened to me."
             #voice
             ma "I remember climbing down into the basement for some liquor."

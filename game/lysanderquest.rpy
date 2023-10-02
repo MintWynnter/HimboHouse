@@ -2,6 +2,8 @@ label lysander_garden:
 
     scene bg garden
     with fade
+    stop music fadeout 1.0
+    play music m_ly if_changed fadein 1.0
 
     #show whatever bg i don't remember the syntax
 
@@ -29,10 +31,10 @@ label lysander_intro:
             "With a slight start, the noises from the figure cease, and their work on the ground comes to an end."
             "As if by habit, they move to dust off their hands as they stand up, only to laugh softly to themself."
             "While turning to face you, they briefly expose their palms, revealing that — perhaps predictably for a ghost — no dirt has lingered on them."
-            #voice lyq1-01
-            show lysander neutral
+            voice "lyq1-01"
+            show lysander neutral at lysander_spot
             ly "Apologies if I’ve disturbed you; I was just replanting this iris. "
-            #voice lyq1-02
+            voice "lyq1-02"
             show lysander neutral
             ly "But... it’s a rare gift that I get visitors to this garden, and I don’t believe we’ve met. My name is Lysander."
         "Try to tap the figure on the shoulder.":
@@ -42,37 +44,37 @@ label lysander_intro:
             "Touching their form sends a cold shiver through your body."
             "But just as you begin to lose your balance, the figure whirls around to face you and steadies your wrist with their hand."
             "Despite the speed of their movement and the strength of their grip, the figure does not appear angry or even overly surprised."
-            #voice lyq1-03
-            show lysander grateful
+            voice "lyq1-03"
+            show lysander grateful at lysander_spot
             ly "Are you alright? I’m sorry if I grabbed you too firmly. I just didn’t want you to fall into the water."
             "The figure floats upward rather than standing in the typical fashion, taking pains to maintain your balance throughout your mutual ascent."
-            #voice lyq1-04
+            voice "lyq1-04"
             show lysander neutral
             ly "Now that we’ve ensured that you stay comfortable and dry... I don’t believe we’ve met before. My name is Lysander."
         "Walk away from the figure.":
             "As you begin walking away from the figure, you notice a grave marker shaped like a strange, four-legged beast."
             "A dim sense of recognition twitches at the periphery of your subconscious; something about this headstone makes you laugh."
-            #voice lyq1-05
-            show lysander grateful
+            voice "lyq1-05"
+            show lysander grateful at lysander_spot
             ly "Ah, I see you’ve met this garden’s most amusing resident already!"
-            #voice lyq1-06
+            voice "lyq1-06"
             show lysander neutral
             ly "I may be less fun company, but I’d like to think I’m more talkative. My name is Lysander."
     menu:
 
         "\"You’re a ghost…\"":
-            #voice lyq1-07
+            voice "lyq1-07"
             show lysander neutral
             ly "I am. I’ve been here for a long time, too, so please feel free to ask me any questions you might have. I’ll do my best to answer them."
         "\"It’s nice to meet you.\"":
-            #voice lyq1-08
+            voice "lyq1-08"
             show lysander grateful
             ly "Likewise! And please, don’t hesitate to ask any questions you might have. I know these grounds can be a bit much to take in."
         "\"This is an impressive garden.\"":
-            #voice lyq1-09
+            voice "lyq1-09"
             show lysander neutral
             ly "Thank you. I’ve developed something of a horticultural habit in my time here, so I do my best to keep all the plants healthy and happy."
-            #voice lyq1-10
+            voice "lyq1-10"
             show lysander grateful
             ly "That said, I doubt you’ve come to this mansion in pursuit of plant-tending knowledge, so please… If you have any questions, don’t feel as though you need to shy away from asking them."
 
@@ -81,56 +83,56 @@ label lysander_intro:
 
 label lysander_abouttoleave:
     $ lysander_queststate = 2
-    #voice lyq1-26
+    voice "lyq1-26"
     show lysander neutral
     ly "I understand. But, before you depart… I’d like to ask something of you, if you don’t mind."
-    #voice lyq1-27
+    voice "lyq1-27"
     show lysander neutral
     ly "You may be aware that there are other spirits bound to this place—as I am. I don’t know why all of them linger, but I do know the cause of my persistence."
-    #voice lyq1-28
+    voice "lyq1-28"
     show lysander distraught2
     ly "I…made a vow to always protect my sister. I knew I’d be engaged in a duel the next morning, and though I proved victorious, I had no way of predicting that outcome at the time."
     "Lysander’s hand goes to the bloodstained portion of his jacket as if reflexively."
     "He looks at you with a certain level of pained embarrassment."
-    #voice lyq1-29
+    voice "lyq1-29"
     show lysander unique
     ly "I’m not sure who or what heard my plea and decided to take pity on me, but my wish was granted. I was simply granted a bit more time before this…"
     "Lysander makes a short gesture toward the sickly discoloration on the left side of his neck."
-    #voice lyq1-30
+    voice "lyq1-30"
     show lysander disappointed
     ly "Although the infection ended my life, I was allowed to persist in this form — following alongside my sister, protecting her from what threats I could. "
-    #voice lyq1-31
+    voice "lyq1-31"
     show lysander neutral
     ly "I did my duty as well as I could manage."
-    #voice lyq1-32
+    voice "lyq1-32"
     show lysander distraught2
     ly "But, there was always one threat I knew I could never stave off…one existential inevitability. And so, as all humans must, Evangeline eventually died."
-    #voice lyq1-33
+    voice "lyq1-33"
     show lysander unique
     ly "She departed. I could not. And it was only then that I realized the truth of the vow I had made—the cosmic joke I had failed to see."
-    #voice lyq1-34
+    voice "lyq1-34"
     show lysander disappointed
     ly "My desperate request to serve as her perpetual guardian had been applied to her physical form alone. Her essence could transcend this world, but her body could not. "
-    #voice lyq1-35
+    voice "lyq1-35"
     show lysander neutral
     ly "And, thus… Here I remain."
     "Lysander smiles, shaking his head slightly."
-    #voice lyq1-36
+    voice "lyq1-36"
     show lysander neutral
     ly "Really, I got what I asked for. When you know the possibility of death is staring you in the face… I can’t say that I considered the specifics."
-    #voice lyq1-37
+    voice "lyq1-37"
     show lysander grateful
     ly "My request to you is not grave-robbing, nor profane desecration of a person I still hold very dear."
-    #voice lyq1-38
+    voice "lyq1-38"
     show lysander grateful
     ly "All that I burden you with is a request for information: data or documentation regarding the nature of the bindings currently tethering me to Evangeline and this world as a whole."
-    #voice lyq1-39
+    voice "lyq1-39"
     show lysander neutral
     ly "I’ve been fortunate to access a good deal of the mansion over the years, but there is a collection of knowledge I have never been able to reach."
-    #voice lyq1-40
+    voice "lyq1-40"
     show lysander neutral
     ly "I strongly suspect whatever that stash of literature contains is otherworldly in nature and may provide me with the means to alter the ties that bind me here…but I need your help in acquiring it."
-    #voice lyq1-41
+    voice "lyq1-41"
     show lysander grateful
     menu:
         ly "Could I trouble you for this kindness?"
@@ -285,41 +287,41 @@ label lysander_ballroom:
     "Although these structures could certainly hold books or notes of some variety, they seem to be designed much more for gaudy display pieces."
     "Even if such things were of interest to Lysander, he'd still be out of luck."
     "With the exception of one unusually dusty and roughly-whittled sculpture of a small bird sitting on a shelf in the case nearest you, the displays are completely vacant."
-    #JUMP BACK TO THE BALLROOM'S CONVO HUB
+    jump aures_convohub
 
 
 label lysander_readsome:
 
-    #voice lyq1-72
+    voice "lyq1-72"
     show lysander neutral
     ly "So, have you found anything of note?"
     "You tell Lysander about the books in the lounge. He looks more than a bit surprised."
-    #voice lyq1-73
+    voice "lyq1-73"
     show lysander grateful
     ly "You're far braver than I; while I admittedly try to avoid that place when possible, I also would've never considered it as a potential place to store literature."
-    #voice lyq1-76
+    voice "lyq1-76"
     show lysander grateful
     ly "That being said, I'm afraid none of those books sound as though they'd be particularly helpful for my…situation. Out of curiosity, were there other books available to you?"
     "You smile sheepishly and admit that you may not have read all the books at your disposal."
-    #voice lyq1-77
+    voice "lyq1-77"
     show lysander distraught2
     ly "If you felt as though you needed to leave that space before reviewing everything, I don't blame you. …nor would I hold it against you if returning to that place seems too unpleasant at the moment. Please, erm, do what feels manageable."
     jump lysander_convohub
 
 label lysander_gottome:
     $ lysander_queststate = 5
-    #voice lyq1-72
+    voice "lyq1-72"
     show lysander neutral
     ly "So, have you found anything of note?"
     "You tell Lysander about the books in the lounge. He looks more than a bit surprised."
-    #voice lyq1-73
+    voice "lyq1-73"
     show lysander grateful
     ly "You're far braver than I; while I admittedly try to avoid that place when possible, I also would've never considered it as a potential place to store literature."
     "You mention the green tome to Lysander and summarize the contents of what you read from the chapter regarding theories of perpetuation. His eyes light up at the description, then grow wide and joyful when you retrieve Frederik Anderssen's book and pass it to him."
-    #voice lyq1-74
+    voice "lyq1-74"
     show lysander grateful
     ly "What an incredible discovery! I never would've guessed that any scholarly research had been done into my condition, let alone by someone who experienced it for themselves!"
-    #voice lyq1-75
+    voice "lyq1-75"
     show lysander neutral
     ly "This will be of immense help to me. Thank you, truly."
     jump lysander_convohub
@@ -327,7 +329,7 @@ label lysander_gottome:
 label lysander_quest2intro:
     $ lysander_queststate = 6
 
-    #voice lyq1-78
+    voice "lyq1-78"
     show lysander neutral
     ly "I'm sorry to trouble you with this, but could you stay awhile longer? I'd like a moment to look over the book you've brought me."
     "You shrug, then find a comfortable patch of grass to lie down in."
@@ -336,14 +338,14 @@ label lysander_quest2intro:
     #black screen, and back to garden
     "You awake to find Lysander nudging you extremely gently on the shoulder."
     "His expression of concern relaxes considerably when you open your eyes."
-    #voice lyq1-79
+    voice "lyq1-79"
     show lysander distraught
     ly "Ah! Did I disturb your nap? That wasn't my intention; I was worried you might've collapsed and hurt yourself, or…"
     menu:
         "He trails off and looks away for a moment."
 
         "\"I guess I did fall asleep.\"":
-        #voice ly_lch3
+            voice "ly_lch3"
             show lysander grateful
             ly "I admittedly don't recall the sensation of sleep—well, not in the traditional sense, anyway—but I know it's extremely important to be well-rested! I'm truly sorry if I disrupted you."
 
@@ -359,10 +361,10 @@ label lysander_quest2intro:
 
 
     "Lysander perks up a bit and looks back at you, his enthusiasm palpable."
-    #voice lyq1-80
+    voice "lyq1-80"
     show lysander grateful
     ly "Thank you for your patience with me during my reading. I think I've largely gotten a handle on the sections regarding metaphysical bindings and what the author refers to as ‘indefinite perpetuation' — that is, existing in a state of immortality."
-    #voice ly_puz2
+    voice "ly_puz2"
     show lysander neutral
     ly "If my understanding is correct, it sounds as though I might be able to alter the nature and intensity of my bindings to Evangeline—and to this manor—with or without the rituals described in the foremost chapters of this tome."
     #voice ly_hap5
@@ -372,49 +374,56 @@ label lysander_quest2intro:
     show lysander thinking
     ly "After we make a decision as to how to proceed and begin our…ritual, for lack of a better word…I will gladly yield my will to yours. At that point, we should combine our efforts and willpower, both physical and metaphysical, and execute our choice."
 
-    #voice lyq1-81
+    voice "lyq1-81"
     show lysander grateful
     ly "We have two options, with one of them carrying a condition that I'd like to propose after detailing them both."
-    #voice lyq1-82
+    voice "lyq1-82"
     show lysander neutral
     ly "The first is to essentially duplicate the process by which Mr. Anderssen released himself from the bonds tying him to this world. We would simply…"
     "Lysander stops and brings a hand to his face for a moment before sighing and addressing you once more."
-    #voice lyq1-83
+    voice "lyq1-83"
     show lysander disappointed
     ly "We would break the vow I made to Evangeline."
-    #voice lyq1-84
+    voice "lyq1-84"
     show lysander unique
     ly "…even speaking that phrase feels like a violation, but it gets to the heart of the process."
-    #voice lyq1-85
+    voice "lyq1-85"
     show lysander neutral
     ly "The other option is something I bring up only if it might be of scientific or personal curiosity to you. If you'd like, I could exchange my current bindings with yours."
-    #voice ly_dis2
+    voice "ly_dis2"
     show lysander neutral
     ly "For me, this would serve the same purpose as releasing the bonds, but it would allow for you to persist indefinitely—even without being a ghost."
-    #voice ly_sad4
+    voice "ly_sad4"
     show lysander neutral
     ly "Additionally, there are… Other perks. I'll warn you now, though: they are accompanied by a certain level of pain to establish."
 
     # OY THIS IS WHERE THE EFFING CG GOES PUT IT IN YOU PUT IT IN AHAHA
+    show cg_lysander
+    hide lysander
+    with dissolve
 
     "Lysander points to his left eye."
     #voice ly_hap3
-    show lysander grateful
+    #show lysander grateful
     ly "The most notable feature of my eye is the ability to detect metaphysical and magical bindings upon other objects or entities."
     #voice ly_puz3
-    show lysander neutral
+    #show lysander neutral
     ly "It's a situationally useful quality. Certain parts of the mansion may become more overwhelming with it, but it will at least give you insight as to why."
     #voice ly_hap4
-    show lysander neutral
+    #show lysander neutral
     ly "Whether or not you wish to pursue that path lies entirely with you. But there is one detail within the first option that I'd…"
     "Lysander's expression grows almost wistful for a moment, then settles into a state of concerned contentment."
     "He gestures to the book you brought him."
     #voice ly_sad5
-    show lysander neutral
+    #show lysander neutral
     ly "Please, if you find anything—whether in this tome or in any literature spread throughout the mansion—that would eliminate the risk of losing myself, my sense of myself, during the ritual… Please tell me."
 
-    #voice lyq1-86
-    show lysander neutral
+    hide cg_lysander
+    show lysander at lysander_spot
+    with dissolve
+
+    voice "lyq1-86"
+    #show lysander neutral
     ly "I completely understand if you'd like some more time to weigh these options, but I also know that I'm far from the only resident of this mansion. If you'd like for us to make and execute our choice now, I wouldn't be offended."
 
     menu:
@@ -436,7 +445,7 @@ label lysander_bigdecision:
 
     "After a brief period of preparation and a final walkthrough of the mansion, Lysander stands before you, a determined smile upon his face."
     "Using a piece of chalk procured from some obscure cupboard in the living room, he draws a moderately sized circle—its interior completely plain—and stands at its center."
-    #voice lyq1-87
+    voice "lyq1-87"
     show lysander grateful
     ly "I'm doubtful that this distance between us will actually be necessary, but I'd hate to see you hurt on my account."
     "Lysander closes his eyes and exhales deeply."
@@ -447,7 +456,7 @@ label lysander_bigdecision:
     "Within his left iris, you can see a faint, amber glow."
     "When he speaks to you, his voice is soft, but amplified almost as if emanating from within your own body."
     $lysander_questdone = True
-    #voice lyq1-88
+    voice "lyq1-88"
     show lysander disappointed
     menu:
         ly "Now."
@@ -459,10 +468,10 @@ label lysander_bigdecision:
             "Despite the brilliance of the light, the amber glow from Lysander's eye is still visible, as are tendrils of amber beneath his clothing, snaking down his left arm and across his abdomen."
             "They seem to fan outward from the wound on his shoulder, like tiny tree roots running through his veins."
             "Lysander looks down to you and then up at the sky, smiling gently."
-            #voice lyq1-89
+            voice "lyq1-89"
             show lysander grateful
             ly "I'd…prefer not to depart right at this moment, if that's alright."
-            #voice lyq1-90
+            voice "lyq1-90"
             show lysander grateful
             ly "After all, it's a beautiful night, and I'd like to be sure my friend still has me here for as long as they need."
             "Lysander descends slowly, as if being gingerly lowered, and you notice that the tendrils of light running up and down the left side of body have retracted slightly."
@@ -472,18 +481,18 @@ label lysander_bigdecision:
             "You are once again standing in front of Lysander, and can't help but notice:"
             "Although his physical appearance looks largely unchanged — his brown eye somehow looks both less vibrant and more joyful."
             "His entire essence seems to carry a sense of relief."
-            #voice lyq1-91
+            voice "lyq1-91"
             show lysander neutral
             ly "Saying that I'm thankful for your help frankly feels ill-fitting for this moment, but I… Frankly, I'm a bit lost for words."
             "Lysander takes a step closer to you and places a hand on the side of your right shoulder, squeezing it gently."
-            #voice lyq1-92
+            voice "lyq1-92"
             show lysander unique
             ly "I know I don't deserve the kindness you've shown me, but I'll never forget it. So, as long as you remain here…"
-            #voice lyq1-93
+            voice "lyq1-93"
             show lysander neutral
             ly "If you ever need anything, know that I would be honored to be by your side. Whatever it is, I'll be there through it all."
             "The man before you takes in the garden he has spent nearly two centuries cultivating, and laughs more heartily than you've heard at any moment before."
-            #voice lyq1-94
+            voice "lyq1-94"
             show lysander grateful
             ly "...well, let's say that I can be there in fifteen minutes. It looks as though, in all our excitement, I completely forgot to trim the roses."
             "You nod in understanding at Lysander and begin walking back toward the mansion, as if out of habit."
@@ -503,7 +512,7 @@ label lysander_bigdecision:
             $ lysander_queststate = 8
             $ lysander_ded = True
             "With a sharp CRACK and faint scent of sulfur, you witness Lysander's entire body grow tense, then nearly double over as if struck in the abdomen. He covers his left eye with his opposite hand, breathing raggedly."
-            #voice lyq1-95
+            voice "lyq1-95"
             show lysander distraught
             ly "What is… Something's…very wrong…"
             "As if in response, another resounding {i}CRACK{\i} fills the air around you. "
@@ -514,13 +523,13 @@ label lysander_bigdecision:
             "With a faster, more resonant {i}CRACK{\i}, Lysander's right hand twists unnaturally and slams its palm into his left shoulder — an involuntary motion contrary to the previous grasping at the spreading glow. "
             "The sound recurs and his left hand mirrors the path of his right, the fingers on each hand straining as they remain curled inward. "
             "Lysander's ragged breathing gradually slows, and as his struggling ceases, you see the light upon his skin slowly overtake the entire left half of his face. You take a few steps forward, only for him to call out to you."
-            #voice lyq1-96
+            voice "lyq1-96"
             show lysander distraught2
             ly "No! This is… Done."
             "Lysander stands unmoving in the center of the circle, his body contorted and tense."
             "At the center of his illuminated, ghostly form, you notice a small object, its shape comparatively dark in relation to the rest of his body."
             "He looks at you with a smile, tears in his eyes."
-            #voice lyq1-97
+            voice "lyq1-97"
             show lysander grateful
             ly "I know we were… Simply doing what we thought was best…"
             "With two ear-splitting {i}CRACKS{\i} and an overwhelming flash of light, the figure before you vanishes."
@@ -546,14 +555,14 @@ label lysander_bigdecision:
             "Lysander gestures for you to approach him."
             "You step into the chalk circle and walk up to Lysander."
             "You can clearly see a dim glow within the entirety of his left iris, the irregularly-shaped amber light flickering softly."
-            #voice lyq1-98
+            voice "lyq1-98"
             show lysander neutral
             ly "I'd like to hold onto your forearm…if you'd be so kind."
             "He extends his left hand, which you mirror with your right. He nods with an unusually brisk politeness and clasps his left hand firmly onto your arm, just below the elbow."
             "The pressure is not uncomfortable, but also feels unyielding."
             "You hear a moderately loud CRACK that seems to come from both everywhere and nowhere around you, accompanied by the smell of sulfur."
             "Lysander's body tenses, and he smiles at you apologetically."
-            #voice lyq1-99
+            voice "lyq1-99"
             show lysander distraught2
             ly "I'm sorry. I…don't want to hurt you."
             "With a markedly softer crack and only a mild flinch from Lysander, you realize you can see a faint amber glow spreading across his body:"
@@ -564,7 +573,7 @@ label lysander_bigdecision:
             "For the first time, you realize that the irregularity of the light is not a byproduct of Lysander's eye, but instead…"
             "As if on cue, you feel a profound tearing deep within the tissues of your own left eye. You grimace and nearly fall to your knees, only for Lysander to hold you firmly upright."
             "You feel his grip begin slightly shaking."
-            #voice lyq1-100
+            voice "lyq1-100"
             show lysander disappointed
             ly "I-It's alright. We'll be…done soon…"
             "The unknowable script carving its way into your retina burns intensely, but not quite enough to mask the burning sensation steadily making its way across your body."
@@ -576,19 +585,19 @@ label lysander_bigdecision:
             "As suddenly as it began, the agony within your body ceases."
             "Lysander's grip breaks from your arm and he stumbles backward, only to resume his typical floating posture in a bid to catch his balance."
             "You are not quite so lucky, and instead fall backward, landing in a disheveled—but more or less seated—position."
-            #voice lyq1-101
+            voice "lyq1-101"
             show lysander distraught2
             ly "Are you…did we…"
             "You gaze up at Lysander and blink hard, aware of a change to your field of vision."
             "Reaching up to the left side of your face, you feel something warm and wet. Lysander grimaces."
-            #voice lyq1-102
+            voice "lyq1-102"
             show lysander disappointed
             ly "Your eye didn't make it."
             "You pull your hand away from your face and gaze down at it, noting the shine of aqueous and vitreous humor upon its surface."
             "As you continue looking at the material, you sense a dim awareness from the left side of your face."
             "Even without sight, you know that this material carries the same sensation as the fiery pain that spread through your body."
             "Sensing your confusion, Lysander closes the distance between the two of you."
-            #voice lyq1-103
+            voice "lyq1-103"
             show lysander neutral
             ly "The remaining tissues of your left eye should still be able to detect the nature of whatever bindings exist on a given object or substance. Is that what you're feeling?"
             "You nod and quickly wipe your soiled hand upon one of your legs."
@@ -598,22 +607,22 @@ label lysander_bigdecision:
             "How to tune out certain energetic signals, and even how to utilize the signals to easily locate other ghosts within the mansion."
             "As Lysander explains the mechanics of his prior abilities, you can't help but notice that, although his appearance remains largely unchanged, his own left eye seems both less vibrant and more joyous than you remember."
             "After concluding his explanation, Lysander looks at you with a warmth that has grown strangely familiar to you."
-            #voice lyq1-104
+            voice "lyq1-104"
             show lysander neutral
             ly "Saying that I'm thankful for your help frankly feels ill-fitting for this moment, but I… Truly, I'm a bit lost for words."
             "Lysander gently extends a hand, then pulls you in for a hug."
             "Predictably, although he can hug you, your arms simply pass through him."
-            #voice lyq1-105
+            voice "lyq1-105"
             show lysander grateful
             ly "I know I don't deserve the kindness you've shown me, but I'll never forget it. So, as long as you remain here…"
-            #voice lyq1-106
+            voice "lyq1-106"
             show lysander neutral
             ly "If you ever need anything, know that I would be honored to be by your side. Whatever it is, I'll be there through it all."
             "Lysander pulls back and laughs to himself."
-            #voice lyq1-107
+            voice "lyq1-107"
             show lysander grateful
             ly "Though, saying that… I realize that I should probably give you some time to tinker with seeing the world in a new way."
-            #voice lyq1-108
+            voice "lyq1-108"
             show lysander grateful
             ly "Please, don't hesitate to find me should you need anything. Truly."
             "You begin to carefully walk back toward the mansion, taking pains not to stumble over any irregular stones upon the path."
@@ -625,7 +634,7 @@ label lysander_bigdecision:
             $ lysander_ded = True
             "With a sharp CRACK and faint scent of sulfur, you witness Lysander's entire body grow tense, then nearly double over as if struck in the abdomen. "
             "He covers his left eye with his opposite hand, breathing raggedly."
-            #voice lyq1-109
+            voice "lyq1-109"
             show lysander distraught
             ly "What…did you…do…?"
             "As if in response, another resounding CRACK fills the air around you.  "
@@ -638,13 +647,13 @@ label lysander_bigdecision:
             "The sound recurs, and his left hand mirrors the path of his right, the fingers on each hand straining as they remain curled inward."
             "Lysander averts his gaze from you and looks down."
             "His breathing is ragged, and as he slowly stops struggling, you realize that you can see something dark sitting at the center of his illuminated ghostly form."
-            #voice lyq1-110
+            voice "lyq1-110"
             show lysander disappointed
             ly "You would not grant me reprieve… So, instead, you make me into this facsimile of a corpse…"
             "Lysander looks up at you for a final time."
             "The entire left half of his face has been consumed by light."
             "He smiles weakly."
-            #voice lyq1-111
+            voice "lyq1-111"
             show lysander disappointed
             ly "I hope it brought you… Some familiarity…"
             # white screen and hide lysander

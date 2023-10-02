@@ -16,37 +16,37 @@ label herman_hub:
     default he_farewell_6 = True
 
 
-    show herman neutralat herman_spot
+    show herman neutral at herman_spot
     with dissolve
 
     #unqiue greeting
     if he_greeting_1:
         $ he_greeting_1 = False
-        #voice "heg-01"
+        voice "heg-01"
         he "What can ol' Rory do for you?"
     elif he_greeting_2:
         $ he_greeting_2 = False
-        #voice "heg-02"
+        voice "heg-02"
         he "Whatcha need?"
     elif he_greeting_3:
         $ he_greeting_3 = False
-        #voice "heg-03"
+        voice "heg-03"
         he "I haven't got all day."
     elif he_greeting_4:
         $ he_greeting_4 = False
-        #voice "heg-04"
+        voice "heg-04"
         he "My drink is gettin wet, hurry it up."
     elif he_greeting_5:
         $ he_greeting_5 = False
-        #voice "heg-05"
+        voice "heg-05"
         he "In or out! I ain't made of money!"
     elif he_greeting_6:
         $ he_greeting_6 = False
-        #voice "heg-06"
+        voice "heg-06"
         he "You back to waste more of my precious time, young'n?"
     elif he_greeting_7:
         $ he_greeting_7 = False
-        #voice "heg-07"
+        voice "heg-07"
         he "Don'tcha got better things to be doin? I know I do."
     else:
         $ he_greeting_1 = True
@@ -56,7 +56,7 @@ label herman_hub:
         $ he_greeting_5 = True
         $ he_greeting_6 = True
         $ he_greeting_7 = True
-        #voice "heg-08"
+        voice "heg-08"
         he "You make me madder than a wet settin' hen, you know that?"
 
 label herman_convohub:
@@ -95,14 +95,14 @@ label herman_convohub:
             jump arabella_doctorjournal
 
         "\"What the hell just happened? Why isn't the room destroyed? What happened to the weird voice?\"" if herman_queststate is 7:
-            #voice "heht-06"
+            voice "heht-06"
             he "Young'n, I ain't got no idea whatch're on about. Are you sure you weren’t dropped on your head as a baby or something?"
             jump herman_convohub
 
         "\"Who is Vorvodoss?\"" if herman_vorvodossmentioned:
-            #voice "heht-07"
+            voice "heht-07"
             he "Oh you’ve awakened, did ya? The Eater of Souls is one of the true gods. If you’re interested I have a book right here if you’d like to talk about how to save your soul from eternal limbo by feeding the true lord and master."
-            #voice "heht-08"
+            voice "heht-08"
             he "With just the small donation of your eternal soul, you would be makin a wonderful contribution for the continuation of humanity’s existence. Act now and for the low low price of your void essence, we’ll also throw in a millennia of..."
             jump herman_convohub
 
@@ -116,27 +116,27 @@ label herman_convohub:
             # a goodbye line
             if he_farewell_1:
                 $ he_farewell_1 = False
-                #voice "hef-01"
+                voice "hef-01"
                 he "See ya soon! *under breath* Probably too soon."
             elif he_farewell_2:
                 $ he_farewell_2 = False
-                #voice "hef-02"
+                voice "hef-02"
                 he "Don't be a stranger! *under breath* Ya' nit-wit."
             elif he_farewell_3:
                 $ he_farewell_3 = False
-                #voice "hef-03"
+                voice "hef-03"
                 he "*hums*"
             elif he_farewell_4:
                 $ he_farewell_4 = False
-                #voice "hef-04"
+                voice "hef-04"
                 he "Yeah, yeah."
             elif he_farewell_5:
                 $ he_farewell_5 = False
-                #voice "hef-05"
+                voice "hef-05"
                 he "These damn cigars are dry or somethin."
             elif he_farewell_6:
                 $ he_farewell_6 = False
-                #voice "hef-06"
+                voice "hef-06"
                 he " Are'ya off on another fantastical adventure? Bless 'ur heart."
             else:
                 $ he_farewell_1 = True
@@ -145,7 +145,7 @@ label herman_convohub:
                 $ he_farewell_4 = True
                 $ he_farewell_5 = True
                 $ he_farewell_6 = True
-                #voice "hef-07"
+                voice "hef-07"
                 he "Tuck your tail and git, then."
             scene black
             call screen minimap()
@@ -166,17 +166,17 @@ label herman_questionhub:
     menu:
         "Herman is all ears."
         "\"Can you tell me more about the mansion?\"":
-            #voice "heht-01"
+            voice "heht-01"
             he "Oh, this beautiful place? This palace of life and freedom? I wish I knew who built it, so I could shake their hand and give them a box of Cubans for making this gorgeous place available to all."
-            #voice "heht-02"
+            voice "heht-02"
             he "Beyond that, I know very little."
             jump herman_questionhub
         "\"Why are you coughing so much?\"":
-            #voice "heht-03"
+            voice "heht-03"
             he "I ate a dag-blasted chicken wing, and I think I got a bone stuck. Nothing major, but gosh DARN it all it won't come out!"
             jump herman_questionhub
         "\"Why do you never leave the lounge?\"" if herman_queststate > 1:
-            #voice "heht-04"
+            voice "heht-04"
             he "Well, where else can I get a drink to try and wash down this dang blasted chicken bone?! Besides, it's comfortable here; best seats in the house, literally!"
             jump herman_questionhub
         "\"I want to talk about something else.\"":
@@ -201,7 +201,7 @@ label herman_getdunkedon:
 label herman_elizabeth:
     $ elizabeth_queststate = 3
     $ q5_location = 2
-    #voice "heq5-01"
+    voice "heq5-01"
     he "I also heard a scream. I suppose you’ve met our youngest resident here, then?"
     #voice ""
     mc "Do you know her?"
