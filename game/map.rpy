@@ -11,7 +11,7 @@ screen minimap():
             idle "question_mark.png"
         else:
             idle "chibi_elizabeth.png"
-        pos (.1, .1)
+        pos (.35, .2)
         action [Hide("minimap"), Jump("liz")]
         at chibizoom
     imagebutton:
@@ -19,7 +19,7 @@ screen minimap():
             idle "question_mark.png"
         else:
             idle "chibi_lysander.png"
-        pos (.3, .3)
+        pos (.7, .15)
         action [Hide("minimap"), Jump("lysan")]
         at chibizoom
     imagebutton:
@@ -27,7 +27,7 @@ screen minimap():
             idle "question_mark.png"
         else:
             idle "chibi_marianne.png"
-        pos (.5, .5)
+        pos (.5, .1)
         action [Hide("minimap"), Jump("mari")]
         at chibizoom
     imagebutton:
@@ -35,7 +35,7 @@ screen minimap():
             idle "question_mark.png"
         else:
             idle "chibi_aures.png"
-        pos (.7, .5)
+        pos (.6, .4)
         action [Hide("minimap"), Jump("aures")]
         at chibizoom
     imagebutton:
@@ -43,7 +43,7 @@ screen minimap():
             idle "question_mark.png"
         else:
             idle "chibi_herman.png"
-        pos (.5, .3)
+        pos (.15, .35)
         action [Hide("minimap"), Jump("herman")]
         at chibizoom
     imagebutton:
@@ -51,7 +51,7 @@ screen minimap():
             idle "question_mark.png"
         else:
             idle "chibi_arabella.png"
-        pos (.8, .3)
+        pos (.3, .5)
         action [Hide("minimap"), Jump("arabella")]
         at chibizoom
     imagebutton:

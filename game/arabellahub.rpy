@@ -21,21 +21,21 @@ label arabella_hub:
         ar "Ah, a familiar face amid these ever-whispering walls. What brings you?"
     elif ar_greeting_2:
         $ ar_greeting_2 = False
-        #voice "arg-02"
+        voice "arg-02"
         show arabella contemplative
         ar "Your presence stirs the memories of this mansion. Ready for another journey into the unknown?"
     elif ar_greeting_3:
         $ ar_greeting_3 = False
-        #voice "arg-03"
+        voice "arg-03"
         show arabella contemplative
         ar "Every return of yours feels like a step closer to the truth. How shall we proceed?"
     elif ar_greeting_4:
         $ ar_greeting_4 = False
-        #voice "arg-04"
+        voice "arg-04"
         show arabella contemplative
         ar "Between these walls, our quest continues. What stories have you come to share?"
     elif ar_greeting_5:
-        #voice "arg-05"
+        voice "arg-05"
         show arabella contemplative
         ar "The winds of time seem to pause when you're here. To what mystery shall we attend today?"
         $ ar_greeting_1 = True
@@ -110,30 +110,30 @@ label arabella_aboutyou:
     menu:
         "\"This mansion seems to hold centuries of history. Can you tell me more about its origins and your connection to it?\"":
             show arabella melancholic
-            #voice "arht-01"
+            voice "arht-01"
             ar "This mansion, as old as time itself, has been a sanctuary for many families for generations. It has witnessed joyous celebrations and mournful farewells."
             show arabella joyful
-            #voice "arht-02"
+            voice "arht-02"
             ar "My earliest memories are of playing in these halls, the echo of my laughter juxtaposed against the house's solemn silence."
-            #voice "arht-03"
+            voice "arht-03"
             ar "Every stone, every tapestry tells a tale, some of which I yearn to remember fully."
             jump arabella_aboutyou
 
         "\"Is there anything you can recall of your life before everything became hazy?\"":
             show arabella melancholic
-            #voice "arht-04"
+            voice "arht-04"
             ar "There are moments, fleeting like the embers of a dying fire, that I clutch onto. I remember a pendant, the scent of roses in the garden, and the shadow of my Uncle Lysander always close by."
-            #voice "arht-05"
+            voice "arht-05"
             ar "Yet, there's a barrier... like a thick mist... obscuring deeper memories. I often wonder if there's a reason some moments remain veiled."
             jump arabella_aboutyou
 
         "\"You’re not the only other spirit here, are you? Have you encountered others bound to this place?\"":
             show arabella contemplative
-            #voice "arht-06"
+            voice "arht-06"
             ar "You have a keen sense. Indeed, this mansion is not just my prison. Over the years, I've sensed other souls, each ensnared by their own tales."
-            #voice "arht-07"
+            voice "arht-07"
             ar "Some are mere whispers, transient and evasive... Others, like Lysander, hold a more dominant presence."
-            #voice "arht-08"
+            voice "arht-08"
             ar "While our stories differ, our shared fate binds us to this timeless mansion..."
             jump arabella_aboutyou
 
@@ -143,7 +143,7 @@ label arabella_aboutyou:
                 jump arabella_aboutyou
             else:
                 show arabella melancholic
-                #voice "arht-09"
+                voice "arht-09"
                 ar "... That... is a topic that I would rather not indulge in... Would the truth of my death make a difference on this quest?"
                 $ q3_death_convo_trigger = True
                 jump arabella_aboutyou

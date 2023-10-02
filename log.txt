@@ -1,49 +1,604 @@
-Sun Oct  1 21:14:18 2023
+Sun Oct  1 22:18:31 2023
 Windows-10-10.0.19045
-Ren'Py 8.0.3.22090809
+Ren'Py 8.1.3.23091805
  
 
-Bootstrap to the start of init.init took 0.04s
-Early init took 0.00s
-Loader init took 0.06s
-Loading error handling took 0.04s
-Loading script took 0.27s
-Loading save slot metadata. took 0.06s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'D:\\Ren'Py\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.05s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
+Bootstrap to the start of init.init. took 0.03s
+Early init. took 0.00s
+Loader init. took 0.11s
+Loading error handling. took 0.03s
+game/arabellahub.rpy:58: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"About Elizabeth...\"" if elizabeth_queststate is 2:
+game/arabellahub.rpy:61: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"We need to talk about Elizabeth again.\"" if elizabeth_queststate is 4 and q5_location is 0:
+game/arabellahub.rpy:61: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"We need to talk about Elizabeth again.\"" if elizabeth_queststate is 4 and q5_location is 0:
+game/arabellaquest.rpy:17: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if q3_state is 0:
+game/aureshub.rpy:63: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"Is there something I can do for you, Aures?\"" if auresQuestState is 2:
+game/aureshub.rpy:65: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"So, about this boy you spoke about: Minoru?\"" if auresQuestState is 3:
+game/aureshub.rpy:67: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"Is there something I can do for you, Aures?\"" if auresQuestState is 4:
+game/aureshub.rpy:69: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"Remind me, what did you need of me?\"" if auresQuestState is 5 and not hasTeleporter:
+game/aureshub.rpy:73: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"How are things with Minoru, Aures?\"" if auresQuestState is 6:
+game/aureshub.rpy:78: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"Is our new ghost doing OK, Aures?\"" if auresQuestState is 8:
+game/aureshub.rpy:80: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "Hand Aures the teleporter." if auresQuestState is 5 and hasTeleporter:
+game/aureshub.rpy:83: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"About Elizabeth...\"" if elizabeth_queststate is 2:
+game/aureshub.rpy:86: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"Aures, I could use your help with a map.\"" if elizabeth_queststate is 4 and q5_location is 1:
+game/aureshub.rpy:86: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"Aures, I could use your help with a map.\"" if elizabeth_queststate is 4 and q5_location is 1:
+game/aureshub.rpy:89: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"Would you happen to have some bourbon for Herman in here?\"" if herman_queststate is 1:
+game/aureshub.rpy:98: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "Check the ballroom for information on Arabella." if q3_state is 1 and not q3_priest_journal and not q3_keyneeded:
+game/aureshub.rpy:101: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "Open the lockbox with the key you found in the living room." if q3_state is 1 and not q3_priest_journal and q3_keyneeded and q3_mom_journal:
+game/auresquest.rpy:18: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if auresQuestState is 1:
+game/elizabethhub.rpy:59: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"Still looking for your pen and paper, Elizabeth.\"" if elizabeth_queststate is 2:
+game/elizabethhub.rpy:63: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"I brought you what you asked for, Elizabeth.\"" if elizabeth_queststate is 3:
+game/elizabethhub.rpy:75: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "Check the living room for information on Arabella." if q3_state is 1 and not q3_mom_journal:
+game/elizabethhub.rpy:78: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "Check the living room for a photograph that might pertain to Herman." if herman_queststate is 3:
+game/elizabethquest.rpy:9: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if elizabeth_queststate is 5:
+game/elizabethquest.rpy:16: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if elizabeth_queststate is 0:
+game/elizabethquest.rpy:459: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if q5_location is 0:
+game/elizabethquest.rpy:461: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if q5_location is 1:
+game/elizabethquest.rpy:463: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if q5_location is 2:
+game/finalending.rpy:40: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 7 or lysander_queststate is 9:
+game/finalending.rpy:40: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 7 or lysander_queststate is 9:
+game/finalending.rpy:62: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 7 or lysander_queststate is 9:
+game/finalending.rpy:62: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 7 or lysander_queststate is 9:
+game/finalending.rpy:447: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 7 or lysander_queststate is 9:
+game/finalending.rpy:447: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 7 or lysander_queststate is 9:
+game/finalending.rpy:466: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 7 or lysander_queststate is 9:
+game/finalending.rpy:466: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 7 or lysander_queststate is 9:
+game/finalending.rpy:522: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 7 or lysander_queststate is 9:
+game/finalending.rpy:522: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 7 or lysander_queststate is 9:
+game/finalending.rpy:548: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 7 or lysander_queststate is 9:
+game/finalending.rpy:548: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 7 or lysander_queststate is 9:
+game/finalending.rpy:570: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 7 or lysander_queststate is 9:
+game/finalending.rpy:570: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 7 or lysander_queststate is 9:
+game/finalending_5jams.rpy:33: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 7 or lysander_queststate is 9:
+game/finalending_5jams.rpy:33: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 7 or lysander_queststate is 9:
+game/finalending_5jams.rpy:52: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 7 or lysander_queststate is 9:
+game/finalending_5jams.rpy:52: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 7 or lysander_queststate is 9:
+game/finalending_5jams.rpy:107: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 7 or lysander_queststate is 9:
+game/finalending_5jams.rpy:107: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 7 or lysander_queststate is 9:
+game/finalending_5jams.rpy:132: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 7 or lysander_queststate is 9:
+game/finalending_5jams.rpy:132: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 7 or lysander_queststate is 9:
+game/finalending_5jams.rpy:154: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 7 or lysander_queststate is 9:
+game/finalending_5jams.rpy:154: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 7 or lysander_queststate is 9:
+game/gameend.rpy:96: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 8 or lysander_queststate is 10:
+game/gameend.rpy:96: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 8 or lysander_queststate is 10:
+game/gameend.rpy:103: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 8 or lysander_queststate is 10:
+game/gameend.rpy:103: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 8 or lysander_queststate is 10:
+game/gameend.rpy:399: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 8 or lysander_queststate is 10:
+game/gameend.rpy:399: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 8 or lysander_queststate is 10:
+game/gameend.rpy:410: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if marianne_queststate is 4:
+game/gameend.rpy:541: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if herman_queststate is 7:
+game/gameend2.rpy:16: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "Let Vorvodoss command the amalgam." if herman_queststate is 7:
+game/hermanHub.rpy:66: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"About your death, Rory...\"" if herman_queststate is 10 and not herman_justgotfetch:
+game/hermanHub.rpy:73: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"About Elizabeth...\"" if elizabeth_queststate is 2 and herman_queststate > 1:
+game/hermanHub.rpy:76: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"Herman, I could use your help with a map.\"" if elizabeth_queststate is 4 and q5_location is 2:
+game/hermanHub.rpy:76: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"Herman, I could use your help with a map.\"" if elizabeth_queststate is 4 and q5_location is 2:
+game/hermanHub.rpy:80: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if herman_queststate is 1:
+game/hermanHub.rpy:94: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "Check the lounge for information on Arabella." if q3_state is 1 and not q3_doctor_journal:
+game/hermanHub.rpy:97: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"What the hell just happened? Why isn't the room destroyed? What happened to the weird voice?\"" if herman_queststate is 7:
+game/hermanQuest.rpy:10: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if herman_queststate is 2:
+game/hermanQuest.rpy:13: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if herman_queststate is 4:
+game/hermanQuest.rpy:16: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if herman_queststate is 6:
+game/hermanQuest.rpy:23: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if herman_queststate is 0:
+game/lysanderhub.rpy:44: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"OK, I'm ready to make our decision.\"" if lysander_queststate is 6:
+game/lysanderhub.rpy:47: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"I read some peculiar books in the lounge...\"" if lysander_queststate is 3:
+game/lysanderhub.rpy:50: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"I found this green book in the lounge...\"" if lysander_queststate is 4:
+game/lysanderhub.rpy:59: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "Check the garden for something dated to show Herman." if herman_queststate is 10 and not herman_date:
+game/lysanderhub.rpy:62: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"Aures said you might have some kind of teleportation device.\"" if not lysander_ded and not hasTeleporter and auresQuestState is 5:
+game/lysanderhub.rpy:73: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "Conjure Lysander from his ring and ask him about a teleportation device." if lysander_ded and not hasTeleporter and auresQuestState is 5:
+game/lysanderhub.rpy:87: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"About Arabella...\"" if q3_state is 1 and not lysander_ded and not q3_lysander_convo and (q3_priest_journal or q3_mom_journal or q3_doctor_journal or q3_own_journal):
+game/lysanderhub.rpy:90: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "Conjure Lysander from his ring. \"About Arabella...\"" if q3_state is 1 and lysander_ded and not q3_lysander_convo and (q3_priest_journal or q3_mom_journal or q3_doctor_journal or q3_own_journal):
+game/lysanderhub.rpy:94: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"What did you want me to do, again?\"" if lysander_queststate is 2 or lysander_queststate is 3 or lysander_queststate is 4:
+game/lysanderhub.rpy:94: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"What did you want me to do, again?\"" if lysander_queststate is 2 or lysander_queststate is 3 or lysander_queststate is 4:
+game/lysanderhub.rpy:94: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"What did you want me to do, again?\"" if lysander_queststate is 2 or lysander_queststate is 3 or lysander_queststate is 4:
+game/lysanderhub.rpy:167: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 1:
+game/lysanderhub.rpy:170: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 5:
+game/lysanderquest.rpy:11: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 0:
+game/mariannehub.rpy:45: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"Is there something I can do for you, [marianne_name]?\"" if marianne_queststate is 1:
+game/mariannehub.rpy:49: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"I have the camcorder you were asking for.\"" if marianne_queststate is 3:
+game/mariannehub.rpy:52: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "Check the bedroom for something dated to show Herman." if herman_queststate is 10 and not herman_newspaper:
+game/mariannehub.rpy:60: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "Search the nearby desk for clues on Arabella's past." if q3_state is 1 and not q3_own_journal:
+game/mariannehub.rpy:64: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "Search the nightstand for clues on Arabella's past." if q3_state is 1 and not q3_pendant_encounter:
+game/mariannehub.rpy:71: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if marianne_queststate is 2:
+game/mariannequest.rpy:14: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if marianne_queststate is 0:
+game/midpoint.rpy:171: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if q3_state is 4:
+game/midpoint.rpy:174: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if q3_state is 3:
+game/midpoint.rpy:177: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if q3_state is 2:
+game/midpoint.rpy:180: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if elizabeth_queststate is 6:
+game/midpoint.rpy:183: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if elizabeth_queststate is 7:
+game/midpoint.rpy:186: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if herman_queststate is 6:
+game/midpoint.rpy:191: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if aures_queststate is 5:
+game/midpoint.rpy:194: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if aures_queststate is 6:
+game/midpoint.rpy:197: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 5:
+game/midpoint.rpy:200: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 6:
+game/postquests.rpy:7: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if questsdone is 1:
+game/postquests.rpy:10: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if questsdone is 2:
+game/postquests.rpy:13: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if questsdone is 3:
+game/postquests.rpy:16: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if questsdone is 4:
+game/postquests.rpy:19: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if questsdone is 5:
+game/postquests.rpy:22: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if questsdone is 6:
+game/postquests.rpy:371: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if marianne_queststate is 4:
+game/postquests.rpy:373: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if marianne_queststate is 5:
+game/postquests.rpy:375: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if marianne_queststate is 6:
+game/postquests.rpy:494: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 7:
+game/postquests.rpy:497: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 8:
+game/postquests.rpy:500: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 9:
+game/postquests.rpy:503: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if lysander_queststate is 10:
+game/postquests.rpy:639: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if herman_queststate is 7:
+game/postquests.rpy:641: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if herman_queststate is 8:
+game/postquests.rpy:827: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if elizabeth_queststate is 6:
+game/postquests.rpy:829: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if elizabeth_queststate is 7:
+game/postquests.rpy:911: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if q3_state is 2 or q3_state is 3:
+game/postquests.rpy:911: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if q3_state is 2 or q3_state is 3:
+game/postquests.rpy:914: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if q3_state is 4:
+game/presperhub.rpy:51: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "\"Have you seen a camcorder around here?\"" if marianne_queststate is 10:
+game/presperhub.rpy:53: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "Search for Herman's signet ring." if herman_queststate is 5:
+Loading script. took 0.41s
+Loading save slot metadata. took 0.10s
+Loading persistent. took 0.00s
+Running init code. took 0.06s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.04s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\sosul\\AppData\\Roaming/RenPy/backups\\The House on Limbo Lane':
 Dump and make backups. took 0.05s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.05s
-DPI scale factor: 1.250000
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Creating interface object took 0.28s
+Creating interface object. took 0.25s
 Cleaning stores took 0.00s
-Init translation took 0.04s
+Init translation took 0.03s
 Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.02s
-Prepare screens took 0.07s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.06s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
+Save bytecode. took 0.02s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.16s
+Interface start. took 0.15s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
 swap interval: 1 frames
 Windowed mode.
 Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1650/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 528.52'
+Renderer: b'NVIDIA GeForce RTX 2070/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.99'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1449, 815) drawable=(1449, 815)
+Screen sizes: virtual=(1920, 1080) physical=(1159, 652) drawable=(1159, 652)
 Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 73.77s
+Early init. took 0.00s
+Loader init. took 0.11s
+Loading error handling. took 0.02s
+Loading script. took 0.22s
+Loading save slot metadata. took 0.07s
+Loading persistent. took 0.00s
+Running init code. took 0.12s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.05s
+Index archives took 0.00s
+Dump and make backups. took 0.05s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object. took 0.24s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 2070/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.99'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1159, 652) drawable=(1159, 652)
+Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 220.58s
+Early init. took 0.00s
+Loader init. took 0.11s
+Loading error handling. took 0.02s
+Loading script. took 0.27s
+Loading save slot metadata. took 0.07s
+Loading persistent. took 0.00s
+Running init code. took 0.10s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Owner\\AppData\\Roaming/RenPy/backups\\HimboHouse':
+Dump and make backups. took 0.05s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.06s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object. took 0.24s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 2070/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.99'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1159, 652) drawable=(1159, 652)
+Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             Resetting cache.
+Bootstrap to the start of init.init. took 3827.73s
+Early init. took 0.00s
+Loader init. took 0.11s
+Loading error handling. took 0.03s
+Loading script. took 0.28s
+Loading save slot metadata. took 0.07s
+Loading persistent. took 0.00s
+Running init code. took 0.10s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.05s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Owner\\AppData\\Roaming/RenPy/backups\\HimboHouse':
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object. took 0.23s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 2070/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.99'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1159, 652) drawable=(1159, 652)
+Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 3836.03s
+Early init. took 0.00s
+Loader init. took 0.11s
+Loading error handling. took 0.02s
+Loading script. took 0.28s
+Loading save slot metadata. took 0.07s
+Loading persistent. took 0.00s
+Running init code. took 0.10s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.05s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Owner\\AppData\\Roaming/RenPy/backups\\HimboHouse':
+Dump and make backups. took 0.05s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object. took 0.24s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 2070/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.99'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1159, 652) drawable=(1159, 652)
+Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+
+Full traceback:
+  File "renpy/common/00keymap.rpy", line 485, in script
+    python hide:
+  File "C:\Users\Owner\Desktop\renpy-8.1.3-sdk\renpy\ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\Owner\Desktop\renpy-8.1.3-sdk\renpy\python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00keymap.rpy", line 485, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 509, in _execute_python_hide
+    renpy.save("_reload-1", "reload save game")
+  File "C:\Users\Owner\Desktop\renpy-8.1.3-sdk\renpy\loadsave.py", line 447, in save
+    location.save(slotname, sr)
+  File "C:\Users\Owner\Desktop\renpy-8.1.3-sdk\renpy\savelocation.py", line 458, in save
+    l.save(slotname, record)
+  File "C:\Users\Owner\Desktop\renpy-8.1.3-sdk\renpy\savelocation.py", line 161, in save
+    record.write_file(filename)
+  File "C:\Users\Owner\Desktop\renpy-8.1.3-sdk\renpy\loadsave.py", line 349, in write_file
+    raise e
+  File "C:\Users\Owner\Desktop\renpy-8.1.3-sdk\renpy\loadsave.py", line 346, in write_file
+    shutil.copyfile(self.first_filename, filename_new)
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/shutil.py", line 264, in copyfile
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\Owner\\AppData\\Roaming/RenPy/TheHouseOnLimboLane-1694475054\\_reload-1-LT1.save'
+
+While running game code:
+  File "renpy/common/00keymap.rpy", line 485, in script
+    python hide:
+  File "renpy/common/00keymap.rpy", line 485, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 509, in _execute_python_hide
+    renpy.save("_reload-1", "reload save game")
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\Owner\\AppData\\Roaming/RenPy/TheHouseOnLimboLane-1694475054\\_reload-1-LT1.save'
+Resetting cache.
+Bootstrap to the start of init.init. took 3987.18s
+Early init. took 0.00s
+Loader init. took 0.12s
+Loading error handling. took 0.02s
+Loading script. took 0.25s
+Loading save slot metadata. took 0.07s
+Loading persistent. took 0.00s
+Running init code. took 0.10s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.04s
+Index archives took 0.00s
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object. took 0.24s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 2070/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.99'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1159, 652) drawable=(1159, 652)
+Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+Resetting cache.
+Bootstrap to the start of init.init. took 3990.63s
+Early init. took 0.00s
+Loader init. took 0.11s
+Loading error handling. took 0.02s
+Loading script. took 0.24s
+Loading save slot metadata. took 0.09s
+Loading persistent. took 0.00s
+Running init code. took 0.10s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.05s
+Index archives took 0.00s
+Dump and make backups. took 0.05s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object. took 0.23s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 2070/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.99'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1159, 652) drawable=(1159, 652)
+Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1

@@ -1,0 +1,41 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "renpy/common/00keymap.rpy", line 485, in script
+    python hide:
+  File "renpy/common/00keymap.rpy", line 485, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 509, in _execute_python_hide
+    renpy.save("_reload-1", "reload save game")
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\Owner\\AppData\\Roaming/RenPy/TheHouseOnLimboLane-1694475054\\_reload-1-LT1.save'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "renpy/common/00keymap.rpy", line 485, in script
+    python hide:
+  File "C:\Users\Owner\Desktop\renpy-8.1.3-sdk\renpy\ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\Owner\Desktop\renpy-8.1.3-sdk\renpy\python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00keymap.rpy", line 485, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 509, in _execute_python_hide
+    renpy.save("_reload-1", "reload save game")
+  File "C:\Users\Owner\Desktop\renpy-8.1.3-sdk\renpy\loadsave.py", line 447, in save
+    location.save(slotname, sr)
+  File "C:\Users\Owner\Desktop\renpy-8.1.3-sdk\renpy\savelocation.py", line 458, in save
+    l.save(slotname, record)
+  File "C:\Users\Owner\Desktop\renpy-8.1.3-sdk\renpy\savelocation.py", line 161, in save
+    record.write_file(filename)
+  File "C:\Users\Owner\Desktop\renpy-8.1.3-sdk\renpy\loadsave.py", line 349, in write_file
+    raise e
+  File "C:\Users\Owner\Desktop\renpy-8.1.3-sdk\renpy\loadsave.py", line 346, in write_file
+    shutil.copyfile(self.first_filename, filename_new)
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/shutil.py", line 264, in copyfile
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\Owner\\AppData\\Roaming/RenPy/TheHouseOnLimboLane-1694475054\\_reload-1-LT1.save'
+
+Windows-10-10.0.19045 AMD64
+Ren'Py 8.1.3.23091805
+The House On Limbo Lane 1.0
+Sun Oct  1 22:19:46 2023

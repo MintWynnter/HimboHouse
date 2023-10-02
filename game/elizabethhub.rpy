@@ -11,7 +11,7 @@ label elizabeth_hub:
     default el_farewell_3 = True
     default el_farewell_4 = True
     default el_farewell_5 = True
-    
+
 
     show elizabeth neutral at elizabeth_spot
     with dissolve
@@ -19,23 +19,23 @@ label elizabeth_hub:
     # custom greeting
     if el_greeting_1:
         $ el_greeting_1 = False
-        #voice "elg-01"
+        voice "elg-01"
         el "*gasp and a small shriek*"
     elif el_greeting_2:
         $ el_greeting_2 = False
-        #voice "elg-02"
+        voice "elg-02"
         el "You're back! What took you so long?!"
     elif el_greeting_3:
         $ el_greeting_3 = False
-        #voice "elg-03"
+        voice "elg-03"
         el "*gasp* Oh it's you! Geez, don't scare me like that!"
     elif el_greeting_4:
         $ el_greeting_4 = False
-        #voice "elg-04"
+        voice "elg-04"
         el "*sniffles* I... I thought you wouldn't come back..."
     elif el_greeting_5:
         $ el_greeting_5 = False
-        #voice "elg-05"
+        voice "elg-05"
         el "Hi! Uum, I didn't touch anything, I promise."
     else:
         $ el_greeting_1 = True
@@ -43,7 +43,7 @@ label elizabeth_hub:
         $ el_greeting_3 = True
         $ el_greeting_4 = True
         $ el_greeting_5 = True
-        #voice "elg-06"
+        voice "elg-06"
         el "... Oh! Umm..."
 
 
