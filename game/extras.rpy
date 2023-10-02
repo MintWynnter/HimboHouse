@@ -12,6 +12,70 @@ init:
     transform bgzoom:
         zoom .187037
 
+define put_credits_here = """The House On Limbo Lane
+Leads
+    Team Lead: Michael Smith
+    Producer and Audio Lead: Kylie Siaw
+    Art Lead: Elina Heino
+    Programming Lead: Mint Wynnter
+
+Writers
+    Jett Barker (Lysander)
+    Eris (Elizabeth)
+    Dagon Grey (Herman)
+    Marie Minuet (Arabella)
+    Michael Smith (Marianne, Dr. Presper, Abbé Maurice Lachaise)
+    Mint Wynnter (Aures)
+
+Editors
+    Faust
+    Maya Zimmerman
+
+Artists
+    Art Lead: Elina Heino (Herman, The Lounge)
+    Animation and BGs: Candycornskull (The Garden, The Bedroom, all animations)
+    Sprites and Icons: Eufasy (Elizabeth)
+    Sprites and BGs: Olivia Jones (Dr. Presper, The Living Room)
+    Sprites, BGs, and Icons: Millasai (Aures, Minoru, Amalgam, The Foyer)
+    BGs: Kat Peterson (The Ballroom, Outside the Mansion, The Lab)
+    Sprites, Icons, and Chibis: Podlet (Arabella, all chibi icons)
+    UI Art and Design: Ruminio
+    Sprites, Icons, and CGs: Thoe (Lysander, Marianne)
+
+Audio
+    Audio Lead: Kylie Siaw
+    Audio Editor: Leon Artmann
+    Audio Editor: Ho San "Ambrose" Cheng
+    Audio Editor: Xander Grant
+    Audio Editor: Maya Zimmerman
+
+Programmers
+    Lead Programmer: Mint Wynnter
+    Scripter: Michael Smith, Maya Zimmerman
+
+Composers
+    Jan Hehr
+    James Molloy
+    Henri Tikkala
+
+Social Media
+    Rita Amparita
+    Podlet
+
+Cast
+    Arabella Kingsley: Lauren Kong
+    Herman Rory Grover: Marlon Dance-Hooi
+    Marianne Dixon: Kat Peterson
+    Elizabeth: Hannah Beard
+    Lysander Thompson: Xander Grant
+    Aures Bellis: Jett Barker
+    Minoru: Lily Yasuda
+    Dr. Antoine Presper: Max Herzfeld
+    Abbé Maurice Lachaise: Dakota Jaymes
+    The Amalgam: Jett Barker, Dagon Grey, Kat Peterson, Michael Smith
+    Voice Direction: Rita Amparita (Arabella, Elizabeth), Jett Barker (Lysander), Dagon Grey (Herman)
+"""
+
 screen extras(mtype, subtype):
     tag menu
     add "gui/setting_bg.png"
@@ -41,6 +105,19 @@ screen extras(mtype, subtype):
         xpos .768229
         ypos .038889
         action ShowMenu("main_menu")
+    if mtype == "Credits":
+        viewport:
+            #area(xstart, ystart, xend, yend)
+            area (.175, .275, .65, .525)
+            yinitial 0.0
+            scrollbars "vertical"
+            mousewheel True
+            draggable True
+            pagekeys True
+            side_yfill False
+
+            hbox:
+                text put_credits_here
     if mtype == "Art":
         textbutton "CHARACTERS":
             text_style "bembuttons"

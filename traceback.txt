@@ -1,66 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/lysanderhub.rpy", line 196, in script
-    call screen minimap()
-  File "renpy/common/000statements.rpy", line 609, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "game/map.rpy", line 5, in execute
-    screen minimap():
-  File "game/map.rpy", line 5, in execute
-    screen minimap():
-  File "game/map.rpy", line 8, in execute
-    $hide_window()
-  File "game/map.rpy", line 8, in <module>
-    $hide_window()
-NameError: name 'hide_window' is not defined
+  File "game/script.rpy", line 61, in script
+    $config.keymap['game_menu'].remove('mouseup_2')
+  File "game/script.rpy", line 61, in <module>
+    $config.keymap['game_menu'].remove('mouseup_2')
+ValueError: list.remove(x): x not in list
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/lysanderhub.rpy", line 196, in script
-    call screen minimap()
-  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\ast.py", line 2232, in execute
-    self.call("execute")
-  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\ast.py", line 2220, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\statements.py", line 281, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 609, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\exports.py", line 3181, in call_screen
-    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
-  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\ui.py", line 299, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\display\core.py", line 3377, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\display\core.py", line 3810, in interact_core
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\display\core.py", line 582, in visit_all
-    d.visit_all(callback, seen)
-  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\display\core.py", line 582, in visit_all
-    d.visit_all(callback, seen)
-  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\display\core.py", line 582, in visit_all
-    d.visit_all(callback, seen)
-  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\display\screen.py", line 451, in visit_all
-    callback(self)
-  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\display\core.py", line 3810, in <lambda>
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\display\screen.py", line 462, in per_interact
-    self.update()
-  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\display\screen.py", line 653, in update
-    self.screen.function(**self.scope)
-  File "game/map.rpy", line 5, in execute
-    screen minimap():
-  File "game/map.rpy", line 5, in execute
-    screen minimap():
-  File "game/map.rpy", line 8, in execute
-    $hide_window()
-  File "game/map.rpy", line 8, in <module>
-    $hide_window()
-NameError: name 'hide_window' is not defined
+  File "game/script.rpy", line 61, in script
+    $config.keymap['game_menu'].remove('mouseup_2')
+  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\ast.py", line 1131, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\python.py", line 1061, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/script.rpy", line 61, in <module>
+    $config.keymap['game_menu'].remove('mouseup_2')
+  File "D:\Ren'Py\renpy-8.0.3-sdk\renpy\revertable.py", line 97, in do_mutation
+    return method(self, *args, **kwargs)
+ValueError: list.remove(x): x not in list
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.0.3.22090809
 The House On Limbo Lane 1.0
-Sun Oct  1 21:24:32 2023
+Sun Oct  1 21:38:34 2023
