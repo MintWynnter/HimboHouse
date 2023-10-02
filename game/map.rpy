@@ -5,38 +5,60 @@ init:
 screen minimap():
     $config.allow_skipping = False
     $config.keymap["dismiss"] = []
+    add "images/mansionLayout.png"
     imagebutton:
-        idle "chibi_elizabeth.png"
+        if elizabeth_queststate == 0:
+            idle "question_mark.png"
+        else:
+            idle "chibi_elizabeth.png"
         pos (.1, .1)
         action [Hide("minimap"), Jump("liz")]
         at chibizoom
     imagebutton:
-        idle "chibi_lysander.png"
+        if lysander_queststate == 0:
+            idle "question_mark.png"
+        else:
+            idle "chibi_lysander.png"
         pos (.3, .3)
         action [Hide("minimap"), Jump("lysan")]
         at chibizoom
     imagebutton:
-        idle "chibi_marianne.png"
+        if marianne_queststate == 0:
+            idle "question_mark.png"
+        else:
+            idle "chibi_marianne.png"
         pos (.5, .5)
         action [Hide("minimap"), Jump("mari")]
         at chibizoom
     imagebutton:
-        idle "chibi_aures.png"
+        if auresQuestState == 1:
+            idle "question_mark.png"
+        else:
+            idle "chibi_aures.png"
         pos (.7, .5)
         action [Hide("minimap"), Jump("aures")]
         at chibizoom
     imagebutton:
-        idle "chibi_herman.png"
+        if herman_queststate == 0:
+            idle "question_mark.png"
+        else:
+            idle "chibi_herman.png"
         pos (.5, .3)
         action [Hide("minimap"), Jump("herman")]
         at chibizoom
     imagebutton:
-        idle "chibi_arabella.png"
+        if q3_state == 0:
+            idle "question_mark.png"
+        else:
+            idle "chibi_arabella.png"
         pos (.8, .3)
         action [Hide("minimap"), Jump("arabella")]
         at chibizoom
     imagebutton:
-        idle "question_mark.png"
+        if True:
+            idle "question_mark.png"
+        else:
+            idle "question_mark.png"
         pos (.8, .7)
         action [Hide("minimap"), Jump("presper_hub")]
         at chibizoom
