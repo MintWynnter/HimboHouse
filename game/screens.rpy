@@ -404,31 +404,31 @@ screen main_menu():
 
     textbutton "START":
         text_style "mmbuttons"
-        xpos .0208333
+        xpos .145833
         ypos .8925926
         action Start()
 
     textbutton "LOAD":
         text_style "mmbuttons"
-        xpos .2151042
+        xpos .2875
         ypos .8925926
         action ShowMenu("bigMenu", "Load", "1")
 
     textbutton "SETTINGS":
         text_style "mmbuttons"
-        xpos .4119792
+        xpos .417708
         ypos .8925926
         action ShowMenu("bigMenu", "Settings", "Graphics")
 
     textbutton "EXTRAS":
         text_style "mmbuttons"
-        xpos .6072917
+        xpos .615625
         ypos .8925926
         action ShowMenu("extras", "Art", "Characters")
 
     textbutton "EXIT":
         text_style "mmbuttons"
-        xpos .8015625
+        xpos .780208
         ypos .8925926
         action Quit()
 
