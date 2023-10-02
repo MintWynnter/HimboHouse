@@ -2,6 +2,7 @@
 default blink_pause = 0.25
 
 image blink:
+    yoffset 20
     "blink0.png"
     pause blink_pause
     "blink1.png"
@@ -215,6 +216,8 @@ default arabella_name = "???"
 define ar = Character("arabella_name", dynamic = True, color="#ffffff",what_color="#ffffff", image = "arabella")
 define mc = Character("You", color="#ffffff",what_color="#ffffff")
 
+
+define am = Character("The Amalgam", color="#ffffff",what_color="#ffffff", image = "amalgam")
 
 default q3_entry_count = 0
 default q3_priest_journal = False

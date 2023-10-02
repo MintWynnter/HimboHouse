@@ -16,7 +16,11 @@ label aures_hub:
 
     show aures neutral at aures_spot
     with dissolve
-    
+
+    if auresQuestState > 5:
+        show minoru neutral at minoru_spot
+        with dissolve
+
     #greeting
     if au_greeting_kill and killPath:
         $ au_greeting_kill = False
@@ -106,7 +110,7 @@ label aures_convohub:
 
             # a goodbye line
             if selfish >= 15 and au_farewell_selfish:
-                au_farewell_selfish = False
+                $ au_farewell_selfish = False
                 #voice "auf-04"
                 au "Oh, you're leaving me? I see. This will not be forgotten."
             elif au_farewell_1:

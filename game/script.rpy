@@ -17,13 +17,22 @@ transform aures_spot:
     xpos 200 ypos 0
 
 transform elizabeth_spot:
-    xpos 550 ypos 0
+    xpos 300 ypos 70
 
 transform marianne_spot:
     xpos 550 ypos 0
 
 transform presper_spot:
     xpos 550 ypos 0
+
+transform minoru_spot:
+    xpos 200 ypos 0
+
+transform arabella_spot:
+    xpos 300 ypos 50
+
+transform herman_spot:
+    xpos 825 ypos 0
 
 # The game starts here.
 
@@ -37,16 +46,18 @@ label start:
     $config.keymap["dismiss"].extend(['mouseup_1', 'K_RETURN', 'K_SPACE', 'K_KP_ENTER', 'K_SELECT'])
 
     #debugparty
-    $ elizabeth_queststate = 1
-    $ lysander_queststate = 2
-    $herman_queststate = 1
-    $q3_state = 1
-    $ marianne_queststate = 1
-    $ auresQuestState = 2
+    #$ elizabeth_queststate = 1
+    #$ lysander_queststate = 2
+    #$herman_queststate = 1
+    #$q3_state = 1
+    #$ marianne_queststate = 1
+    #$ auresQuestState = 2
+
+    jump gameintro
 
     call screen minimap()
 
-    jump gameintro
+
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images

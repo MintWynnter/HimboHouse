@@ -1,6 +1,6 @@
 label arabella_hub:
 
-    show arabella neutral
+    show arabella neutral at arabella_spot
     with dissolve
 
     default ar_greeting_1 = True # is this able to be used?
@@ -8,6 +8,11 @@ label arabella_hub:
     default ar_greeting_3 = True
     default ar_greeting_4 = True
     default ar_greeting_5 = True
+    default ar_farewell_1 = True # is this able to be used?
+    default ar_farewell_2 = True
+    default ar_farewell_3 = True
+    default ar_farewell_4 = True
+    default ar_farewell_5 = True
 
     if ar_greeting_1:
         $ ar_greeting_1 = False
@@ -62,7 +67,42 @@ label arabella_convohub:
 
 
         "Leave.":
-            # custom goodbye
+
+            if ar_farewell_1:
+                $ ar_farewell_1 = False
+                voice "arf-01"
+                show arabella joyful
+                ar "As you step beyond these doors, remember the tales they hold. Until next time."
+            elif ar_farewell_2:
+                $ ar_farewell_2 = False
+                voice "arf-02"
+                show arabella joyful
+                ar "May our shared quest echo in your thoughts till we meet again in these ancient corridors."
+            elif ar_farewell_3:
+                $ ar_farewell_3 = False
+                voice "arf-03"
+                show arabella joyful
+                ar "Each parting is but a brief pause in our tale. Farewell, and let the mysteries guide you back."
+            elif ar_farewell_4:
+                $ ar_farewell_4 = False
+                voice "arf-04"
+                show arabella joyful
+                ar "Our paths have intertwined for a reason. Go safely, and remember the mysteries we seek to unveil."
+            elif ar_farewell_5:
+                $ ar_farewell_1 = True
+                voice "arf-05"
+                show arabella joyful
+                ar "As the mansion's whispers fade, take our shared memories with you. Until our spirits reunite."
+                $ ar_farewell_2 = True
+                $ ar_farewell_3 = True
+                $ ar_farewell_4 = True
+                $ ar_farewell_5 = True
+
+
+
+
+
+
             call screen minimap()
 
 label arabella_aboutyou:

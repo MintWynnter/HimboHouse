@@ -11,7 +11,9 @@ default aures_questjustfinished = False
 label aures_ballroom:
 
     scene bg ballroom
+    show chand
     with fade
+
 
     if auresQuestState is 1:
         jump auresIntro
@@ -19,11 +21,13 @@ label aures_ballroom:
         jump aures_hub
 
 
+
+
 label auresIntro:
 
     "You enter a large door and find yourself in a ballroom. A woman in her early twenties appears to be dancing with an imaginary partner."
     #voice au_lhe1
-    show aures laughing
+    show aures laughing at aures_spot
     au "Ohohohohohoho! Welcome to my ballroom! Would you like some tea? Perhaps a short dance?"
     #voice au_hap3
     show aures neutral

@@ -2,9 +2,21 @@
 errors listed below, and try again.
 
 
-File "game/midpoint.rpy", line 130: expected 'simple_expression' not found.
-    show presper neutral at at presper_spot
-                            ^
+File "game/aureshub.rpy", line 109: expected statement.
+    au_farewell_selfish = False
+                        ^
+
+File "game/presperhub.rpy", line 42: end of line expected.
+    dr ""Ah! The cadaver of the hour. What allures you to my abode?""
+         ^
+
+File "game/presperhub.rpy", line 116: reached end of line when expecting ':'.
+    elif dr_farewell_4
+                      ^
+
+File "game/presperhub.rpy", line 120: expected statement.
+    else:
+        ^
 
 Ren'Py Version: Ren'Py 8.1.3.23091805
-Sun Oct  1 19:57:48 2023
+Sun Oct  1 20:12:18 2023

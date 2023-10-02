@@ -7,16 +7,16 @@ label herman_hub:
     default he_greeting_5 = True
     default he_greeting_6 = True
     default he_greeting_7 = True
-    
+
     default he_farewell_1 = True
     default he_farewell_2 = True
     default he_farewell_3 = True
     default he_farewell_4 = True
     default he_farewell_5 = True
     default he_farewell_6 = True
-    
 
-    show herman neutral
+
+    show herman neutralat herman_spot
     with dissolve
 
     #unqiue greeting

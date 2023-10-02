@@ -3,12 +3,12 @@ label lysander_hub:
     default ly_greeting_1 = True
     default ly_greeting_2 = True
     default ly_greeting_3 = True
-    
+
     default ly_farewell_1 = True
     default ly_farewell_2 = True
     default ly_farewell_3 = True
     default ly_farewell_4 = True
-    
+
 
     # custom greeting if not and not lysander_ded
     if lysander_ded:
@@ -169,7 +169,7 @@ label lysander_convohub:
                 jump lysander_quest2intro
 
             # a goodbye message (if lysander_angy = True then make it the angy goodbye, if lysander_ded do not play a greeting)
-            if !lysander_ded:
+            if not lysander_ded:
                 if lysander_angy and ly_farewell_4:
                     $ ly_farewell_4 = False
                     #voice "lyf-05"
@@ -189,7 +189,7 @@ label lysander_convohub:
                 else:
                     $ ly_farewell_1 = True
                     $ ly_farewell_2 = True
-                    $ ly_farewell_3 = True                  
+                    $ ly_farewell_3 = True
                     #voice "lyf-04"
                     ly "Should you require my assistance, you know where I'll be."
 
