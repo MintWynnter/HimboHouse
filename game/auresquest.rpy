@@ -294,6 +294,7 @@ label auresScene5:
             #voice au_hap3
             au "Come back later. I'm sure I will require your assistance again."
             $auresQuestState += 1
+            scene black
             call screen minimap()
     #voice miq4-11
     show minoru neutral
@@ -309,6 +310,7 @@ label auresScene5:
     au "Fine, I will do as you wish for now. But whenever you are ready to enter the loving embrace of death, tell me."
     au "In the meantime, I bid you farewell."
     $auresQuestState += 1
+    scene black
     call screen minimap()
 
 
@@ -368,6 +370,7 @@ label auresScene6K:
     "She turns to you."
     au "Leave us two lovers be for now, will you?"
     $auresQuestState += 1
+    scene black
     call screen minimap()
 
 label auresScene7K:
@@ -446,6 +449,7 @@ label auresScene7K:
     "Aures looks you dead in the eye."
     au "I need some privacy, please. My Reason and I need to establish an understanding."
     $auresQuestState += 1
+    scene black
     call screen minimap()
 
 label auresScene6NK:
@@ -502,6 +506,7 @@ label auresScene6NK:
     "She turns to you."
     au "Leave us two lovers be for now, will you?"
     $auresQuestState += 1
+    scene black
     call screen minimap()
 
 label auresScene7NK:
@@ -552,6 +557,7 @@ label auresScene7NK:
     "Aures looks you dead in the eye."
     au "I need some privacy, please. My Reason and I need to establish an understanding now that we are eternally bound."
     $auresQuestState += 1
+    scene black
     call screen minimap()
 
 

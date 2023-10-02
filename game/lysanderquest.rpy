@@ -147,7 +147,7 @@ label lysander_abouttoleave:
     #voice ABBE'S LAUGH
     "The voice in your head laughs, feeling at once very present and very far away."
     ab "If his suspicions are true, the literature he seeks should be in my living room."
-
+    scene black
     call screen minimap()
 
 label lysander_livingroom:
@@ -428,6 +428,7 @@ label lysander_quest2intro:
             #voice ly_hap1
             show lysander neutral
             ly "Take however long you need — you know where to find me."
+            scene black
             call screen minimap()
 
 

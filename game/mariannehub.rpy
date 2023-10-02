@@ -98,7 +98,7 @@ label marianne_convohub:
                 $ ma_farewell_4 = True
                 #voice "maf-05"
                 ma "Keep it peachy, sugar."
-
+            scene black
             call screen minimap()
 
 label marianne_herself:

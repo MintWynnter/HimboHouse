@@ -136,7 +136,7 @@ label aures_convohub:
                 $ au_farewell_4 = True
                 #voice "auf-06"
                 au "Do you have time for one more dance before you go?"
-
+            scene black
             call screen minimap()
 
 label aures_convohub_questions:
