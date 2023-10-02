@@ -980,6 +980,8 @@ label herman_basement:
     jump presper_convohub
 
 label herman_ringreturn_13:
+    stop music fadeout 1.0
+    play music m_tense if_changed fadein 1.0
     "Upon returning to the lounge, you find the atmosphere feels heavy."
     "The once bright room is lit solely by the open stove, which now rages with an angry green fire."
     "You see the room is almost entirely destroyed, Herman softly floating above the stove, arms stretched out to either side of himself and head tilted back."
@@ -1138,6 +1140,8 @@ label herman_quitvorvodoss_13:
 
 
 label herman_vorvodossgone_14:
+    stop music fadeout 1.0
+    play music m_he if_changed fadein 1.0
     $ herman_questjustfinished = True
     show herman neutral
     "As you open your eyes, you see Herman sitting in his chair, cigar in hand."

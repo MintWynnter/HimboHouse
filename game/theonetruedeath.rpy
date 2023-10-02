@@ -20,3 +20,5 @@ label theonetruedeath:
     "Just before it all goes black, before your essence is taken to realms unknown and unheard…"
     "Before you finally slip away into nothing…"
     "You catch a quiet glimpse {w} of the sunrise."
+
+    scene black

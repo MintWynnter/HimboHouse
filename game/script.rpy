@@ -27,27 +27,39 @@ label splashscreen:
 
 transform lysander_spot:
     xpos 550 ypos 0
-
 transform aures_spot:
     xpos 200 ypos 0
-
 transform elizabeth_spot:
     xpos 300 ypos 70
-
 transform marianne_spot:
     xpos 550 ypos 0
-
 transform presper_spot:
     xpos 550 ypos 0
-
 transform minoru_spot:
     xpos 200 ypos 0
-
 transform arabella_spot:
     xpos 300 ypos 50
-
 transform herman_spot:
     xpos 825 ypos 0
+
+transform lysander_spot_climax:
+    xpos 1450 ypos 0
+transform aures_spot_climax:
+    xpos -600 ypos 0
+transform elizabeth_spot_climax:
+    xpos 100 ypos 70
+transform marianne_spot_climax:
+    xpos 1100 ypos 0
+transform presper_spot_climax:
+    xpos 550 ypos 0
+transform arabella_spot_climax:
+    xpos -200 ypos 50
+transform herman_spot_climax:
+    xpos 1300 ypos 0
+
+transform abbe_spot:
+    xpos 450 ypos 0
+
 
 # The game starts here.
 
@@ -58,7 +70,6 @@ label start:
     # images directory to show it.\
     $config.allow_skipping = True
     $config.keymap["dismiss"].extend(['mouseup_1', 'K_RETURN', 'K_SPACE', 'K_KP_ENTER', 'K_SELECT'])
-    $config.keymap['game_menu'].remove('mouseup_3')
 
     #debugparty
     #$ elizabeth_queststate = 1
@@ -67,6 +78,7 @@ label start:
     #$q3_state = 1
     #$ marianne_queststate = 1
     #$ auresQuestState = 2
+    $ marianne_queststate = 3
 
     jump gameintro
 

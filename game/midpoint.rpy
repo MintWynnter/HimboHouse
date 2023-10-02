@@ -1,6 +1,8 @@
 label midpoint:
 
-    scene bg basement
+
+    stop music fadeout 1.0
+    play music m_spook if_changed fadein 1.0
 
     "The decomposition, however, does not stop with your knee."
     "Before you can fully acclimate to the reshuffling of your leg, you feel a splatter on your arm."
@@ -9,7 +11,7 @@ label midpoint:
     # screen goes black
     # sfx thud
 
-    # wait 5 seconds
+    scene bg basement
 
     # show bg of basement
     # sfx surgeon noises
@@ -227,7 +229,8 @@ label midpoint:
             pass
         "\"I just like stirring the pot, what can I say?\"":
             pass
-
+    stop music fadeout 1.0
+    play music m_tense if_changed fadein 1.0
     "The old man lets out a sigh, but his next words are interrupted by a loud banging."
     "A rusted iron door, bolted to the wall and barred shut, clangs as something behind it pounds against it with vigor."
     "The clangs echo through the small room. The gurney shakes with each reverberation."
@@ -352,6 +355,9 @@ label midpoint:
             show presper furrowed
             dr "I’ve been the keeper of this place for 200 years, not they."
 
+    stop music fadeout 1.0
+    play music m_spook if_changed fadein 1.0
+
     "He stops himself and sighs."
     voice "drq7-88"
     show presper neutral
@@ -399,7 +405,7 @@ label midpoint:
     dr "And I will see you very soon."
     # screen black
     "In a flash, you black out again."
-    # screen to mansion exterior
+    show bg outside
     "… and find yourself back on the front porch of the great mansion."
     #voice
     ab "I have recalled a great many things just now."

@@ -1,21 +1,45 @@
+<<<<<<< HEAD
+renpy.dissolve renpy.dissolve
+<<<<<<< HEAD
 renpy.texture
+renpy.geometry renpy.solid
 >>>>>>> ui
 >>>>>>> 1044a7cba82d857a2d41e373813444c01e00fde8
-renpy.alpha renpy.texture
-renpy.solid
-<<<<<<< HEAD
-renpy.dissolve renpy.geometry
 >>>>>>> Herman
-renpy.dissolve renpy.dissolve
->>>>>>> 8ecd7770cf96fdf9be79f62e9e8499956a955215
-=======
->>>>>>> 2cb1a662d0e367cafa196b61f316296ee8ff1bf8
->>>>>>> aures
+renpy.dissolve renpy.geometry
+renpy.alpha renpy.texture
 renpy.geometry renpy.texture
 >>>>>>> 6c7f4ce2105a41730f99fb6ab995f739a9716214
+>>>>>>> 2cb1a662d0e367cafa196b61f316296ee8ff1bf8
+=======
+renpy.solid
+>>>>>>> 8ecd7770cf96fdf9be79f62e9e8499956a955215
 >>>>>>> michael21hours
->>>>>>> michael2hours
-renpy.geometry renpy.solid
-renpy.alpha renpy.geometry renpy.texture
-renpy.ftl
 >>>>>>> master
+renpy.ftl
+>>>>>>> aures
+renpy.alpha renpy.geometry renpy.texture
+>>>>>>> michael2hours
+=======
+>>>>>>> aures
+renpy.geometry renpy.texture
+>>>>>>> ui
+renpy.geometry renpy.solid
+renpy.ftl
+>>>>>>> 1044a7cba82d857a2d41e373813444c01e00fde8
+>>>>>>> 2cb1a662d0e367cafa196b61f316296ee8ff1bf8
+>>>>>>> michael2hours
+renpy.alpha renpy.geometry renpy.texture
+=======
+>>>>>>> 8ecd7770cf96fdf9be79f62e9e8499956a955215
+<<<<<<< HEAD
+>>>>>>> michael21hours
+>>>>>>> master
+renpy.texture
+renpy.solid
+>>>>>>> 6c7f4ce2105a41730f99fb6ab995f739a9716214
+renpy.dissolve renpy.dissolve
+renpy.dissolve renpy.geometry
+renpy.alpha renpy.texture
+>>>>>>> Herman
+>>>>>>> jenkins
