@@ -250,7 +250,7 @@ screen quick_menu():
             xpos .854167
             ypos -.461111
             action Show("quick_menu2")
-            activate_sound "audio/sound/uiscrl.ogg"
+            activate_sound "audio/sound/uibanner1.ogg"
 
 screen quick_menu2():
 
@@ -263,7 +263,7 @@ screen quick_menu2():
             xpos .854167
             ypos -.012037
             action Hide("quick_menu2")
-            activate_sound "audio/sound/uiscrl.ogg"
+            activate_sound "audio/sound/uibanner2.ogg"
         textbutton "SAVE":
             text_style "qmbuttons"
             xpos .902604
