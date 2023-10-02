@@ -22,7 +22,7 @@ screen minimap():
         else:
             idle "chibi_lysander.png"
         pos (.7, .15)
-        action [Hide("minimap"), Jump("lysan")]
+        action [Jump("lysan"), Hide("minimap")]
         at chibizoom
     imagebutton:
         if marianne_queststate == 0:
