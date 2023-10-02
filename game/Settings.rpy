@@ -421,14 +421,12 @@ screen bigMenu(mtype, subtype):
                 ypos .472222
                 vbox:
                     bar value Preference("text speed")
-                    activate_sound "audio/sound/uiscrl.ogg"
             hbox:
                 style_prefix "slider"
                 xpos .194792
                 ypos .626852
                 vbox:
                     bar value Preference("auto-forward time")
-                    activate_sound "audio/sound/uiscrl.ogg"
         if subtype == "Audio":
             text "Music Volume" xpos .121354 ypos .213889 size 48
             text "SFX Volume" xpos .121354 ypos .368519 size 48
@@ -451,20 +449,17 @@ screen bigMenu(mtype, subtype):
                 ypos .290741
                 vbox:
                     bar value Preference("music volume")
-                    activate_sound "audio/sound/uiscrl.ogg"
             hbox:
                 style_prefix "slider"
                 xpos .191146
                 ypos .445370
                 vbox:
                     bar value Preference("sound volume")
-                    activate_sound "audio/sound/uiscrl.ogg"
             hbox:
                 style_prefix "slider"
                 xpos .191146
                 ypos .6
                 vbox:
                     bar value Preference("voice volume")
-                    activate_sound "audio/sound/uiscrl.ogg"
 
         
