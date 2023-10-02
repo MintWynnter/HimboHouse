@@ -52,7 +52,6 @@ transform herman_spot:
 # The game starts here.
 
 label start:
-    $ quick_menu = False
 
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
