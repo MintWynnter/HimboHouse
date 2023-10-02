@@ -6,7 +6,7 @@ label lysander_hub:
     if lysander_ded:
         "Lysander is no longer in the garden."
     else:
-        show lysander neutral
+        show lysander neutral at lysander_spot
         with dissolve
 
 label lysander_convohub:

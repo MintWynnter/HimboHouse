@@ -1,6 +1,6 @@
 label marianne_hub:
 
-    show marianne smile
+    show marianne smile at marianne_spot
     with dissolve
 
     # custom greeting
@@ -18,48 +18,10 @@ label marianne_convohub:
         "Check the bedroom for something dated to show Herman." if herman_queststate is 10 and not herman_newspaper:
             jump herman_bedroom
 
-        "\"What do you know about this mansion?\"":
-            #voice mar-ht01
-            ma "Why, next to nothing, sorry."
-            #voice
-            ma "I know it’s old, it’s full of ghosts like me —"
-            #voice
-            ma "— and I hear a few too many bloodcurdling noises to ever get a real good night’s sleep."
-            #voice mar-ht02
-            ma "Still, I’ve settled into quite the comfy nook here. It suits me just fine."
-            #voice
-            ma "Livin’ my best life, as far as the undead go."
-            #voice
-            ma "And besides that, it ain’t really my business to pry."
-            jump marianne_convohub
+        "\"I have questions about you.\"":
+            jump marianne_herself
 
-        "\"What do you think of the other ghosts?\"":
-            #voice mar-ht03
-            ma "I try not to tangle with too many of the others, but they’re kindly enough."
-            #voice mar-ht04
-            ma "Arabella, Elizabeth, Lysander… all real sweet, a real sweet bunch."
-            #voice
-            ma "Aures might have more glitz and glamor than me, color me a little bit jealous."
-            #voice
-            ma "And, well, Herman is… from a different time. You know how it is."
-            jump marianne_convohub
 
-        "\"How did you die?\"":
-            #voice mar-ht05
-            ma "No beating around the bush with you, huh?"
-            #voice mar-ht06
-            ma "Well, your brazen britches ain’t doing you any good this time."
-            #voice mar-ht07
-            ma "Mostly because I don’t entirely know what happened to me."
-            #voice
-            ma "I remember climbing down into the basement for some liquor."
-            #voice
-            ma "And that’s that. All sortsa things coulda happened to me."
-            #voice
-            ma "But, six of one, half a dozen the other."
-            #voice
-            ma "Dead is dead, and I ain’t even complaining."
-            jump marianne_convohub
 
         "Search the nearby desk for clues on Arabella's past." if q3_state is 1 and not q3_own_journal:
             # hey can i get marianne to fade away here?
@@ -80,6 +42,54 @@ label marianne_convohub:
             # a goodbye line
 
             call screen minimap()
+
+label marianne_herself:
+    menu:
+        "\"What do you know about this mansion?\"":
+            voice "mar-ht01"
+            ma "Why, next to nothing, sorry."
+            #voice
+            ma "I know it’s old, it’s full of ghosts like me —"
+            #voice
+            ma "— and I hear a few too many bloodcurdling noises to ever get a real good night’s sleep."
+            #voice mar-ht02
+            ma "Still, I’ve settled into quite the comfy nook here. It suits me just fine."
+            #voice
+            ma "Livin’ my best life, as far as the undead go."
+            #voice
+            ma "And besides that, it ain’t really my business to pry."
+            jump marianne_herself
+
+        "\"What do you think of the other ghosts?\"":
+            #voice mar-ht03
+            ma "I try not to tangle with too many of the others, but they’re kindly enough."
+            #voice mar-ht04
+            ma "Arabella, Elizabeth, Lysander… all real sweet, a real sweet bunch."
+            #voice
+            ma "Aures might have more glitz and glamor than me, color me a little bit jealous."
+            #voice
+            ma "And, well, Herman is… from a different time. You know how it is."
+            jump marianne_herself
+
+        "\"How did you die?\"":
+            #voice mar-ht05
+            ma "No beating around the bush with you, huh?"
+            #voice mar-ht06
+            ma "Well, your brazen britches ain’t doing you any good this time."
+            #voice mar-ht07
+            ma "Mostly because I don’t entirely know what happened to me."
+            #voice
+            ma "I remember climbing down into the basement for some liquor."
+            #voice
+            ma "And that’s that. All sortsa things coulda happened to me."
+            #voice
+            ma "But, six of one, half a dozen the other."
+            #voice
+            ma "Dead is dead, and I ain’t even complaining."
+            jump marianne_herself
+        "\"That's all for now, [marianne_name].\"":
+            jump marianne_convohub
+
 
 label marianne_arabella:
     "You pick up one of the books from the desk."

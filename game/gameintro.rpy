@@ -7,6 +7,7 @@ label gameintro:
     menu:
         "It beckons you in."
 
+
         "Approach the front door of the mansion.":
             "A voice in the back of your head, echoing ever so slightly, lauds you."
             #voice abq0-01

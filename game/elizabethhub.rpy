@@ -1,6 +1,6 @@
 label elizabeth_hub:
 
-    show elizabeth neutral
+    show elizabeth neutral at elizabeth_spot
     with dissolve
 
     # custom greeting
