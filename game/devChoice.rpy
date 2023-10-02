@@ -27,3 +27,6 @@ screen devChoice():
     textbutton "Eufasy":
         pos (.5, .75)
         action [Hide("devChoice"), Jump("Eufasy")]
+    textbutton "Main Menu":
+        pos (0, 0)
+        action Return()
