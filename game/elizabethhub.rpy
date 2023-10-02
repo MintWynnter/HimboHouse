@@ -108,5 +108,5 @@ label elizabeth_convohub:
                 $ el_farewell_5 = True
                 #voice "elf-06"
                 el "You're not leaving because of me, right? Promise?"
-
+            scene black
             call screen minimap()

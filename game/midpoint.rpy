@@ -407,5 +407,5 @@ label midpoint:
 
 
     # add the question mark to the map screen!
-
+    scene black
     call screen minimap()

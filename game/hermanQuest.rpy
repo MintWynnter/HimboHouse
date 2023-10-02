@@ -493,6 +493,7 @@ label herman_mumstheword_2:
     "With a hard waft of his hand, you are dragged backward by an unseen force towards the door as you hear it swing open."
     "Suddenly, you find yourself outside the lounge; Herman barely waves goodbye to you as the door slams shut in your face."
     #is this even gonna fuckin work
+    scene black
     call screen minimap()
 
 label herman_doubt_2:

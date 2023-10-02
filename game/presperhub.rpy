@@ -125,4 +125,5 @@ label presper_convohub:
                 $ dr_farewell_4 = True
                 #voice "drf-05"
                 dr "Farwell! May you amble back here once more."
+            scene black
             call screen minimap()

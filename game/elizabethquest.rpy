@@ -341,6 +341,7 @@ label elizabeth_intro:
 
 
     $ elizabeth_queststate = 2
+    scene black
     call screen minimap()
 
 label elizabeth_gotpaperpen:
