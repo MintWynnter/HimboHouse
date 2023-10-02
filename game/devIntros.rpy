@@ -101,3 +101,50 @@ label Eufasy:
     "Hope you enjoyed the game, it was really fun to meet all of the people who took part on this project and make a visual novel together (even though I'm SO shy, sorry guys)."
     "Thanks to Michael for reaching me and thanks to Elina for checking up on me. And thanks too to all of the team because you are all really talented artists and nice people."
     call screen devChoice
+
+label elina:
+    "Hello everyone!"
+    "My name is Elina, and I am the art lead of this game! I am in charge of all the art minions and also giving out cookies for a job well done! They all deserve it! They made such an awesome job to make everything ready in time!"
+    "I drew Herman the chicken bone man, the Lounge and the big mansion map!"
+    "Hope you enjoyed the game!"
+    "My Instagram is here >> \nhttps://www.instagram.com/paranoidedward/"
+    call screen devChoice
+
+label kylie:
+    "Hello friends, my name is Kylie!"
+    "I am the Audio Lead / Producer or as Elina likes to call me - all-seeing golden boss chicken of The House on Limbo Lane. "
+    "I’ve dipped my toes in basically every department of the jam coordinating stuff as a producer but also worked on the audio side of things like dialogue editing, sound effects and ensuring that recording sessions go smoothly. "
+    "I also kick Michael’s ass from time to time and make sure my fellow finch friends are ok!"
+    "Special thanks to my team of audio minions: Henri, Jan and James for composing our 11 piece track list; Maya, Leon, Ho San and Xander for tanking the 1,000++ files of VO lines with me; special thanks to the VAs and Michael for trusting my abilities once again; and a final thanks to Michael, Elina, Pod and Rumi especially for retaining my sanity."
+    "Hope you had fun! This was a challenging project to tackle in one month but I think our amazing team did a great job :>"
+    call screen devChoice
+
+label maxherz:
+    "Hey there, it’s Max."
+    "This is my second jam with this team, having appeared in Proud Blossoms as Giuseppe Mazzini, and everyone is such an incredible joy to work with."
+    "I’m so grateful to Michael for bringing me on as Dr. Antoine Presper. I think I’ve lost track of how many game jams I’ve participated in total."
+    "Though whether that says more about the number of jams or my need for better record keeping is hard to say. Presper was a wild character to pin down."
+    "He evolved from brooding, guilt ridden and dower to erratic and unhinged with a very sweet view of his creations. The guilt was still there but buried under self-justification."
+    "When you’ve lived as long as Antoine has I imagine you spend your energy caring intensely about the things that matter to you and forget about the rest. While Presper takes this to extremes I do wish I could be more focused and driven like he is."
+    "I also adore Antoine in a way to that’s like how he adores his monstrous experiments. He is my creation after all. I had so much fun recording with Michael. The highs and lows of this character were quite a process of experiments. I’m sure the doctor would be proud."
+    call screen devChoice
+
+label michael:
+    "Hi, there! I’m Michael (or, scriptfinch) and I acted as team lead, producer, director, lead narrative designer, and lead writer. "
+    "This is my third VN jam, and it’s the first time I realized what the differences were between those aforementioned roles."
+    "I’ve learned so, so much this month, which is really all I could ask for."
+    "And what an awesome team! I know how to pick ‘em, apparently."
+    "I will be so very tired after this, but that’s the joy in it."
+    "Enjoy the game, and leave a review if you liked it!"
+    "If you didn’t like it, don’t leave a review. Or, lie about liking it!"
+    "OK, I need to get back to programming."
+    "Cheers!"
+    call screen devChoice
+
+label mint:
+    "Hi! I'm Mint, the lead programmer, as well as the person who wrote Aures's quest."
+    "I'm here to tell you a bit about the development process (or at least, I wanted to, but I am running a bit low on time. Maybe in an update?)."
+    "This is the first time I'm writing for a game, which was pretty neat."
+    "I hope you like Aures, and just so you know, there is a \"canon\" ending, which would the \"ChainEnd\" from \"KillPath\". She's a yandere, what did you expect?"
+    call screen devChoice
+

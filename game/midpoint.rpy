@@ -246,10 +246,12 @@ label midpoint:
     "The bar clangs to the floor as it comes loose."
     "And the door swings open."
     #voice am [roar]
+    show amalgam attacksilhouette
     "A beast of unclear proportions is on you immediately."
     "It clambers up the gurney and knocks it on its side, sending you falling to the ground."
     "But still strapped to the table, you lie horizontal, bound to the gurney and suspended just a few inches above the ground."
     "You can sense the beast looming over you."
+    show amalgam neutralsilhouette
     "It presses against your body. There is no fur, only flesh."
     "What feel like dozens of fingers — tongues? — probe at your body."
     "One such appendage finds its way into the hole in your head, carefully carved by the old man."
@@ -271,6 +273,7 @@ label midpoint:
     show presper concerned
     dr "I’m sorry, my dears. Now is not the time."
     "And the beast retracts."
+    hide amalgam
     "By the time you get your bearings and look up, the old man has barred the door shut again."
     "His tubes run under the door and into the room behind."
     "He turns back to you."

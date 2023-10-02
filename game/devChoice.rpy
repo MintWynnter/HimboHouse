@@ -27,6 +27,21 @@ screen devChoice():
     textbutton "Eufasy":
         pos (.5, .75)
         action [Hide("devChoice"), Jump("Eufasy")]
+    textbutton "Elina":
+        pos (.75, .75)
+        action [Hide("devChoice"), Jump("elina")]
+    textbutton "Michael":
+        pos (.9, .25)
+        action [Hide("devChoice"), Jump("michael")]
+    textbutton "Mint":
+        pos (.9, .5)
+        action [Hide("devChoice"), Jump("mint")]
+    textbutton "Kylie":
+        pos (.9, .75)
+        action [Hide("devChoice"), Jump("kylie")]
+    textbutton "Max":
+        pos (.9, .9)
+        action [Hide("devChoice"), Jump("maxherz")]
     textbutton "Main Menu":
         pos (0, 0)
         action Return()
