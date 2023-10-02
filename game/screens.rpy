@@ -655,11 +655,7 @@ screen save():
     use file_slots(_("Save"))
 
 
-screen load():
 
-    tag menu
-
-    use file_slots(_("Load"))
 
 
 screen file_slots(title):

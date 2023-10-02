@@ -6,10 +6,24 @@
 init:
     transform spritezoom:
         zoom .1
+    transform splashy:
+        zoom .537815
 
 define a = Character("Aures", image="aures")
 define w = Character("Minoru", image="minoru")
 image splash = "images/splash.png"
+
+label splashscreen:
+    scene black
+    with Pause(1)
+
+    show splash at splashy
+    with Pause(2)
+
+    hide splash
+    with Pause(1)
+
+    return
 
 
 # The game starts here.

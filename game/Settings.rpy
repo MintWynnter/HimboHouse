@@ -47,28 +47,287 @@ screen bigMenu(mtype, subtype):
     
     if mtype == "Save":
         textbutton "1":
+            text_style "smallbuttons"
+            if subtype == "1":
+                text_color "#F4BB4F"
             xpos .365625
             ypos .895370
             action ShowMenu("bigMenu", "Save", "1")
         textbutton "2":
-            xpos 
+            text_style "smallbuttons"
+            if subtype == "2":
+                text_color "#F4BB4F"
+            xpos .428125
             ypos .895370
             action ShowMenu("bigMenu", "Save", "2")
         textbutton "3":
-            xpos 
+            text_style "smallbuttons"
+            if subtype == "3":
+                text_color "#F4BB4F"
+            xpos .493229
             ypos .895370
             action ShowMenu("bigMenu", "Save", "3")
         textbutton "4":
-            xpos 
+            text_style "smallbuttons"
+            if subtype == "4":
+                text_color "#F4BB4F"
+            xpos .557813
             ypos .895370
             action ShowMenu("bigMenu", "Save", "4")
         textbutton "5":
-            xpos 
+            text_style "smallbuttons"
+            if subtype == "5":
+                text_color "#F4BB4F"
+            xpos .623438
             ypos .895370
             action ShowMenu("bigMenu", "Save", "5")
+        
+        $slot1 = pow(6, int(subtype) - 1)
+        $slot2 = slot1 + 1
+        $slot3 = slot2 + 1
+        $slot4 = slot3 + 1
+        $slot5 = slot4 + 1
+        $slot6 = slot5 + 1
+
+        button:
+            xpos .133854
+            ypos .227778
+            action FileAction(slot1)
+
+            has vbox
+
+            add FileScreenshot(slot1) xalign 0.5
+
+            text FileTime(slot1, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("empty slot")):
+                style "slot_time_text"
+
+            text FileSaveName(slot1):
+                style "slot_name_text"
+
+            key "save_delete" action FileDelete(slot1)
+        button:
+            xpos .394792
+            ypos .227778
+            action FileAction(slot2)
+
+            has vbox
+
+            add FileScreenshot(slot2) xalign 0.5
+
+            text FileTime(slot2, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("empty slot")):
+                style "slot_time_text"
+
+            text FileSaveName(slot2):
+                style "slot_name_text"
+
+            key "save_delete" action FileDelete(slot2)
+        button:
+            xpos .655729
+            ypos .227778
+            action FileAction(slot3)
+
+            has vbox
+
+            add FileScreenshot(slot3) xalign 0.5
+
+            text FileTime(slot3, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("empty slot")):
+                style "slot_time_text"
+
+            text FileSaveName(slot3):
+                style "slot_name_text"
+
+            key "save_delete" action FileDelete(slot3)
+        button:
+            xpos .133854
+            ypos .551852
+            action FileAction(slot4)
+
+            has vbox
+
+            add FileScreenshot(slot4) xalign 0.5
+
+            text FileTime(slot4, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("empty slot")):
+                style "slot_time_text"
+
+            text FileSaveName(slot4):
+                style "slot_name_text"
+
+            key "save_delete" action FileDelete(slot4)
+        button:
+            xpos .394792
+            ypos .551852
+            action FileAction(slot5)
+
+            has vbox
+
+            add FileScreenshot(slot5) xalign 0.5
+
+            text FileTime(slot5, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("empty slot")):
+                style "slot_time_text"
+
+            text FileSaveName(slot5):
+                style "slot_name_text"
+
+            key "save_delete" action FileDelete(slot5)
+        button:
+            xpos .655729
+            ypos .551852
+            action FileAction(slot6)
+
+            has vbox
+
+            add FileScreenshot(slot6) xalign 0.5
+
+            text FileTime(slot6, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("empty slot")):
+                style "slot_time_text"
+
+            text FileSaveName(slot6):
+                style "slot_name_text"
+
+            key "save_delete" action FileDelete(slot6)
 
     if mtype == "Load":
-        use file_slots(_("Load"))
+        $config.allow_skipping = True
+        $config.keymap["dismiss"].extend(['mouseup_1', 'K_RETURN', 'K_SPACE', 'K_KP_ENTER', 'K_SELECT'])
+        textbutton "1":
+            text_style "smallbuttons"
+            if subtype == "1":
+                text_color "#F4BB4F"
+            xpos .365625
+            ypos .895370
+            action ShowMenu("bigMenu", "Load", "1")
+        textbutton "2":
+            text_style "smallbuttons"
+            if subtype == "2":
+                text_color "#F4BB4F"
+            xpos .428125
+            ypos .895370
+            action ShowMenu("bigMenu", "Load", "2")
+        textbutton "3":
+            text_style "smallbuttons"
+            if subtype == "3":
+                text_color "#F4BB4F"
+            xpos .493229
+            ypos .895370
+            action ShowMenu("bigMenu", "Load", "3")
+        textbutton "4":
+            text_style "smallbuttons"
+            if subtype == "4":
+                text_color "#F4BB4F"
+            xpos .557813
+            ypos .895370
+            action ShowMenu("bigMenu", "Load", "4")
+        textbutton "5":
+            text_style "smallbuttons"
+            if subtype == "5":
+                text_color "#F4BB4F"
+            xpos .623438
+            ypos .895370
+            action ShowMenu("bigMenu", "Load", "5")
+        
+        $slot1 = pow(6, int(subtype) - 1)
+        $slot2 = slot1 + 1
+        $slot3 = slot2 + 1
+        $slot4 = slot3 + 1
+        $slot5 = slot4 + 1
+        $slot6 = slot5 + 1
+
+        button:
+            xpos .133854
+            ypos .227778
+            action FileLoad(slot1)
+
+            has vbox
+
+            add FileScreenshot(slot1) xalign 0.5
+
+            text FileTime(slot1, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("empty slot")):
+                style "slot_time_text"
+
+            text FileSaveName(slot1):
+                style "slot_name_text"
+
+            key "save_delete" action FileDelete(slot1)
+        button:
+            xpos .394792
+            ypos .227778
+            action FileLoad(slot2)
+
+            has vbox
+
+            add FileScreenshot(slot2) xalign 0.5
+
+            text FileTime(slot2, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("empty slot")):
+                style "slot_time_text"
+
+            text FileSaveName(slot2):
+                style "slot_name_text"
+
+            key "save_delete" action FileDelete(slot2)
+        button:
+            xpos .655729
+            ypos .227778
+            action FileLoad(slot3)
+
+            has vbox
+
+            add FileScreenshot(slot3) xalign 0.5
+
+            text FileTime(slot3, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("empty slot")):
+                style "slot_time_text"
+
+            text FileSaveName(slot3):
+                style "slot_name_text"
+
+            key "save_delete" action FileDelete(slot3)
+        button:
+            xpos .133854
+            ypos .551852
+            action FileLoad(slot4)
+
+            has vbox
+
+            add FileScreenshot(slot4) xalign 0.5
+
+            text FileTime(slot4, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("empty slot")):
+                style "slot_time_text"
+
+            text FileSaveName(slot4):
+                style "slot_name_text"
+
+            key "save_delete" action FileDelete(slot4)
+        button:
+            xpos .394792
+            ypos .551852
+            action FileLoad(slot5)
+
+            has vbox
+
+            add FileScreenshot(slot5) xalign 0.5
+
+            text FileTime(slot5, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("empty slot")):
+                style "slot_time_text"
+
+            text FileSaveName(slot5):
+                style "slot_name_text"
+
+            key "save_delete" action FileDelete(slot5)
+        button:
+            xpos .655729
+            ypos .551852
+            action FileLoad(slot6)
+
+            has vbox
+
+            add FileScreenshot(slot6) xalign 0.5
+
+            text FileTime(slot6, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("empty slot")):
+                style "slot_time_text"
+
+            text FileSaveName(slot6):
+                style "slot_name_text"
+
+            key "save_delete" action FileDelete(slot6)
     
     if mtype == "Settings":
         textbutton "GRAPHICS":
