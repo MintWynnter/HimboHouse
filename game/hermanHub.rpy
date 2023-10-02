@@ -1,9 +1,63 @@
 label herman_hub:
 
+    default he_greeting_1 = True
+    default he_greeting_2 = True
+    default he_greeting_3 = True
+    default he_greeting_4 = True
+    default he_greeting_5 = True
+    default he_greeting_6 = True
+    default he_greeting_7 = True
+    
+    default he_farewell_1 = True
+    default he_farewell_2 = True
+    default he_farewell_3 = True
+    default he_farewell_4 = True
+    default he_farewell_5 = True
+    default he_farewell_6 = True
+    
+
     show herman neutral
     with dissolve
 
     #unqiue greeting
+    if he_greeting_1:
+        $ he_greeting_1 = False
+        #voice "heg-01"
+        he "What can ol' Rory do for you?"
+    elif he_greeting_2:
+        $ he_greeting_2 = False
+        #voice "heg-02"
+        he "Whatcha need?"
+    elif he_greeting_3:
+        $ he_greeting_3 = False
+        #voice "heg-03"
+        he "I haven't got all day."
+    elif he_greeting_4:
+        $ he_greeting_4 = False
+        #voice "heg-04"
+        he "My drink is gettin wet, hurry it up."
+    elif he_greeting_5:
+        $ he_greeting_5 = False
+        #voice "heg-05"
+        he "In or out! I ain't made of money!"
+    elif he_greeting_6:
+        $ he_greeting_6 = False
+        #voice "heg-06"
+        he "You back to waste more of my precious time, young'n?"
+    elif he_greeting_7:
+        $ he_greeting_7 = False
+        #voice "heg-07"
+        he "Don'tcha got better things to be doin? I know I do."
+    else:
+        $ he_greeting_1 = True
+        $ he_greeting_2 = True
+        $ he_greeting_3 = True
+        $ he_greeting_4 = True
+        $ he_greeting_5 = True
+        $ he_greeting_6 = True
+        $ he_greeting_7 = True
+        #voice "heg-08"
+        he "You make me madder than a wet settin' hen, you know that?"
 
 label herman_convohub:
 
@@ -60,6 +114,39 @@ label herman_convohub:
             if herman_justgotrebuffed:
                 jump herman_getdunkedon
             # a goodbye line
+            if he_farewell_1:
+                $ he_farewell_1 = False
+                #voice "hef-01"
+                he "See ya soon! *under breath* Probably too soon."
+            elif he_farewell_2:
+                $ he_farewell_2 = False
+                #voice "hef-02"
+                he "Don't be a stranger! *under breath* Ya' nit-wit."
+            elif he_farewell_3:
+                $ he_farewell_3 = False
+                #voice "hef-03"
+                he "*hums*"
+            elif he_farewell_4:
+                $ he_farewell_4 = False
+                #voice "hef-04"
+                he "Yeah, yeah."
+            elif he_farewell_5:
+                $ he_farewell_5 = False
+                #voice "hef-05"
+                he "These damn cigars are dry or somethin."
+            elif he_farewell_6:
+                $ he_farewell_6 = False
+                #voice "hef-06"
+                he " Are'ya off on another fantastical adventure? Bless 'ur heart."
+            else:
+                $ he_farewell_1 = True
+                $ he_farewell_2 = True
+                $ he_farewell_3 = True
+                $ he_farewell_4 = True
+                $ he_farewell_5 = True
+                $ he_farewell_6 = True
+                #voice "hef-07"
+                he "Tuck your tail and git, then."
             call screen minimap()
 
 label herman_persuasion:

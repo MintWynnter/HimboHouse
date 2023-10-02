@@ -1,10 +1,45 @@
 label presper_hub:
+
+    default dr_greeting_1 = True
+    default dr_greeting_2 = True
+    default dr_greeting_3 = True
+    default dr_greeting_4 = True
+    
+    default dr_farewell_1 = True
+    default dr_farewell_2 = True
+    default dr_farewell_3 = True
+    default dr_farewell_4 = True
+
     scene bg basement
     with fade
     show presper neutral
     with dissolve
 
     # custom greeting
+
+    if dr_greeting_1:
+        $ dr_greeting_1 = False
+        #voice "drg-01"
+        dr "Salutations, my decompos-itory denizen."
+    elif dr_greeting_2:
+        $ dr_greeting_2 = False
+        #voice "drg-02"
+        dr "Aha, we have a re-ambler. For what have you ambled back here?"
+    elif dr_greeting_3:
+        $ dr_greeting_3 = False
+        #voice "drg-03"
+        dr "Oho! Just the zombie I was looking for."
+    elif dr_greeting_4:
+        $ dr_greeting_4 = False
+        #voice "drg-04"
+        dr "The confused cadaver returns. What can I do for you?"
+    else:
+        $ dr_greeting_1 = True
+        $ dr_greeting_2 = True
+        $ dr_greeting_3 = True
+        $ dr_greeting_4 = True      
+        #voice "drg-05"
+        dr ""Ah! The cadaver of the hour. What allures you to my abode?""
 
 label presper_convohub:
 
@@ -66,4 +101,27 @@ label presper_convohub:
 
         "\"See ya later, Presper.\"":
             # a goodbye line
+            if dr_farewell_1:
+                $ dr_farewell_1 = False
+                #voice "drf-01"
+                dr "I bid you farewell, my good carcass."
+            elif dr_farewell_2:
+                $ dr_farewell_2 = False
+                #voice "drf-02"
+                dr "Do come back soon, my rancid relic."
+            elif dr_farewell_3:
+                $ dr_farewell_3 = False
+                #voice "drf-03"
+                dr "Au revoir! That's French, you know -"
+            elif dr_farewell_4
+                $ dr_farewell_4 = False
+                #voice "drf-04"
+                dr "See you later, alli-cadaver! Oho, I do rouse myself."
+            else:
+                $ dr_farewell_1 = True
+                $ dr_farewell_2 = True
+                $ dr_farewell_3 = True
+                $ dr_farewell_4 = True              
+                #voice "drf-05"
+                dr "Farwell! May you amble back here once more."
             call screen minimap()
