@@ -13,6 +13,8 @@ label aures_ballroom:
     scene bg ballroom
     show chand
     with fade
+    stop music fadeout 1.0
+    play music m_au if_changed fadein 1.0
 
 
     if auresQuestState is 1:

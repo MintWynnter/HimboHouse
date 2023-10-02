@@ -2,6 +2,8 @@ label lysander_garden:
 
     scene bg garden
     with fade
+    stop music fadeout 1.0
+    play music m_ly if_changed fadein 1.0
 
     #show whatever bg i don't remember the syntax
 

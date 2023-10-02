@@ -4,6 +4,8 @@ label herman_lounge:
     scene bg lounge
     show drink
     with fade
+    stop music fadeout 1.0
+    play music m_he if_changed fadein 1.0
 
     #show whatever bg i don't remember the syntax
 

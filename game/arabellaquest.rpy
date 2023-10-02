@@ -3,6 +3,8 @@ label arabella_foyer:
     scene bg foyer
     show blink
     with fade
+    stop music fadeout 1.0
+    play music m_ar if_changed fadein 1.0
 
 
     #show whatever bg i don't remember the syntax

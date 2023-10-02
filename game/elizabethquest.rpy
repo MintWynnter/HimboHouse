@@ -3,6 +3,8 @@ label elizabeth_livingroom:
     scene bg livingroom
     show fire
     with fade
+    stop music fadeout 1.0
+    play music m_el if_changed fadein 1.0
 
     #show whatever bg i don't remember the syntax
 
