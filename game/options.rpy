@@ -48,12 +48,16 @@ define build.name = "TheHouseOnLimboLane"
 ## These three variables control, among other things, which mixers are shown
 ## to the player by default. Setting one of these to False will hide the
 ## appropriate mixer.
+init python:
+    renpy.music.register_channel("ambient","sfx",loop=True,tight=True)
 
 define config.has_sound = True
 define config.has_music = True
 define config.has_voice = True
 
 define config.voice_filename_format = "audio/{filename}.ogg"
+#define config.music_filename_format = "audio/music/{filename}.ogg"
+#define config.sound_filename_format = "audio/sound/{filename}.ogg"
 
 
 ## To allow the user to play a test sound on the sound or voice channel,
@@ -67,7 +71,7 @@ define config.voice_filename_format = "audio/{filename}.ogg"
 ## the player is at the main menu. This file will continue playing into the
 ## game, until it is stopped or another file is played.
 
-# define config.main_menu_music = "main-menu-theme.ogg"
+define config.main_menu_music = "music/m-main.ogg"
 
 
 ## Transitions #################################################################

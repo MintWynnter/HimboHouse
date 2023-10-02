@@ -3,7 +3,46 @@ label arabella_hub:
     show arabella neutral
     with dissolve
 
-    # custom greeting
+    default ar_greeting_1 = True # is this able to be used?
+    default ar_greeting_2 = True
+    default ar_greeting_3 = True
+    default ar_greeting_4 = True
+    default ar_greeting_5 = True
+
+    if ar_greeting_1:
+        $ ar_greeting_1 = False
+        voice "arg-01"
+        show arabella contemplative
+        ar "Ah, a familiar face amid these ever-whispering walls. What brings you?"
+    elif ar_greeting_2:
+        $ ar_greeting_2 = False
+        #voice "arg-02"
+        show arabella contemplative
+        ar "Your presence stirs the memories of this mansion. Ready for another journey into the unknown?"
+    elif ar_greeting_3:
+        $ ar_greeting_3 = False
+        #voice "arg-03"
+        show arabella contemplative
+        ar "Every return of yours feels like a step closer to the truth. How shall we proceed?"
+    elif ar_greeting_4:
+        $ ar_greeting_4 = False
+        #voice "arg-04"
+        show arabella contemplative
+        ar "Between these walls, our quest continues. What stories have you come to share?"
+    elif ar_greeting_5:
+        #voice "arg-05"
+        show arabella contemplative
+        ar "The winds of time seem to pause when you're here. To what mystery shall we attend today?"
+        $ ar_greeting_1 = True
+        $ ar_greeting_2 = True
+        $ ar_greeting_3 = True
+        $ ar_greeting_4 = True
+        $ ar_greeting_5 = True
+
+
+
+
+
 
 label arabella_convohub:
 

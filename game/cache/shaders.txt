@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 renpy.alpha renpy.texture
 >>>>>>> aures
 >>>>>>> 2cb1a662d0e367cafa196b61f316296ee8ff1bf8
@@ -15,3 +16,22 @@ renpy.dissolve renpy.geometry
 renpy.geometry renpy.texture
 renpy.texture
 >>>>>>> Herman
+=======
+renpy.ftl
+renpy.dissolve renpy.geometry
+renpy.solid
+renpy.alpha renpy.geometry renpy.texture
+renpy.geometry renpy.solid
+renpy.texture
+renpy.geometry renpy.texture
+>>>>>>> aures
+renpy.alpha renpy.texture
+>>>>>>> 2cb1a662d0e367cafa196b61f316296ee8ff1bf8
+=======
+>>>>>>> 8ecd7770cf96fdf9be79f62e9e8499956a955215
+>>>>>>> Herman
+renpy.dissolve renpy.dissolve
+>>>>>>> 1044a7cba82d857a2d41e373813444c01e00fde8
+>>>>>>> 6c7f4ce2105a41730f99fb6ab995f739a9716214
+<<<<<<< HEAD
+>>>>>>> michael21hours
