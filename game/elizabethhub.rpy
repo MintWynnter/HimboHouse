@@ -13,7 +13,7 @@ label elizabeth_hub:
     default el_farewell_5 = True
     
 
-    show elizabeth neutral
+    show elizabeth neutral at elizabeth_spot
     with dissolve
 
     # custom greeting

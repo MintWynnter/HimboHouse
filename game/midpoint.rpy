@@ -127,7 +127,7 @@ label midpoint:
     dr "Come, take a look."
     "The same hand that caved in your skull reemerges above your head, wielding a piece of shattered glass."
     "He jabs the shard into your cheek at such an angle that you can glimpse an old man in its reflection."
-    show presper neutral
+    show presper neutral at presper_spot
     "He is ancient."
     "His skin is blotched many times over. His hair has lost all its pigment — it is white as a fingernail's edge."
     "A great number of tubes pump fluid into and out of his body. Their source and destination, respectively, is unclear."

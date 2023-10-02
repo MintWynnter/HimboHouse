@@ -10,10 +10,25 @@ init:
 define a = Character("Aures", image="aures")
 define w = Character("Minoru", image="minoru")
 
+transform lysander_spot:
+    xpos 550 ypos 0
+
+transform aures_spot:
+    xpos 200 ypos 0
+
+transform elizabeth_spot:
+    xpos 550 ypos 0
+
+transform marianne_spot:
+    xpos 550 ypos 0
+
+transform presper_spot:
+    xpos 550 ypos 0
 
 # The game starts here.
 
 label start:
+    $ quick_menu = False
 
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
@@ -21,7 +36,15 @@ label start:
     $config.allow_skipping = True
     $config.keymap["dismiss"].extend(['mouseup_1', 'K_RETURN', 'K_SPACE', 'K_KP_ENTER', 'K_SELECT'])
 
+    #debugparty
+    $ elizabeth_queststate = 1
+    $ lysander_queststate = 2
+    $herman_queststate = 1
+    $q3_state = 1
+    $ marianne_queststate = 1
+    $ auresQuestState = 2
 
+    call screen minimap()
 
     jump gameintro
 

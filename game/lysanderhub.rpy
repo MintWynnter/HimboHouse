@@ -14,7 +14,7 @@ label lysander_hub:
     if lysander_ded:
         "Lysander is no longer in the garden."
     else:
-        show lysander neutral
+        show lysander neutral at lysander_spot
         with dissolve
         if ly_greeting_1:
             $ ly_greeting_1 = False

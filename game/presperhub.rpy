@@ -12,7 +12,7 @@ label presper_hub:
 
     scene bg basement
     with fade
-    show presper neutral
+    show presper neutral at presper_spot
     with dissolve
 
     # custom greeting
@@ -45,8 +45,8 @@ label presper_convohub:
 
     menu:
 
-        "\"Start the midpoint event, please.\"":
-            jump midpoint
+        #"\"Start the midpoint event, please.\"":
+        #    jump midpoint
         "\"Have you seen a camcorder around here?\"" if marianne_queststate is 10:
             jump marianne_presper
         "Search for Herman's signet ring." if herman_queststate is 5:

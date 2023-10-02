@@ -1,3 +1,4 @@
+
 default blink_pause = 0.25
 
 image blink:
@@ -114,9 +115,25 @@ image light:
 default out_pause = 0.25
 
 image out:
+    "out1.png"
+    pause out_pause
+    "out2.png"
+    pause out_pause
+    "out3.png"
+    pause out_pause
+    "out4.png"
+    pause out_pause
+    "out5.png"
+    pause out_pause
+    "out6.png"
+    pause out_pause
     "out7.png"
     pause out_pause
+    "out8.png"
+    pause out_pause
     "out9.png"
+    pause out_pause
+    "out10.png"
     pause out_pause
     "out11.png"
     pause out_pause
@@ -127,6 +144,10 @@ image out:
     repeat
 
 default questsdone = 0 # how many quests have you completed?
+default amalgam_dead = False #what it says on tin
+default amalgam_vorv = False #what it says on tin
+default amalgam_sedated = False
+default getting_chewed = False
 
 # the marianne corner (she's magenta-pink)
 default marianne_name = "???"
@@ -164,7 +185,7 @@ define ab = Character("abbe_name", dynamic = True, color = "#e3f0ff", what_color
 #the herman corner
 default herman_queststate = 0
 default herman_attitude = 0
-define he = Character("Herman", color="#ffffff",what_color="#ffffff")
+define he = Character("Herman", color="#ffffff",what_color="#ffffff", image = "herman")
 default herman_justgotfetch = False
 default herman_date = False
 default herman_newspaper = False
@@ -176,7 +197,7 @@ default vorvodoss_name = "???"
 define vo = Character("vorvodoss_name", dynamic = True, color="#ffffff",what_color="#ffffff")
 
 default elizabeth_queststate = 0
-define el = Character("Elizabeth", color="#ffffff",what_color="#ffffff")
+define el = Character("Elizabeth", color="#ffffff",what_color="#ffffff", image = "elizabeth")
 default aures_queststate = 0
 
 
