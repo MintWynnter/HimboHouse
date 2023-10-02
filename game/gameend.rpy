@@ -1,15 +1,9 @@
-label ghosts_telloff_maurice:
-
-label ghosts_tell_presperkill:
-
-
-
 label gameend:
 
     "His giggle morphs into a cackle."
     #voice ""
     ab "AHAHAHAHA."
-    # BLACK SCREEN
+    scene black
     voice "abe1-01"
     ab "What a pathetic pet project you turned out to be."
     #voice ""
@@ -71,7 +65,15 @@ label gameend:
     "You hear the mansion’s ghosts congregating in the foyer."
     "The ring you found after Lysander's disappearance hums with an eerie energy. Could he be…?"
 
-    # JUMP TO THE FOYER
+    scene bg foyer
+    show aures neutral at aures_spot_climax
+    show lysander neutral at lysander_spot_climax
+    show elizabeth neutral at elizabeth_spot_climax
+    show marianne happysad at marianne_spot_climax
+    show presper neutral at presper_spot_climax
+    show arabella contemplative at arabella_spot_climax
+    show herman neutral at herman_spot_climax
+
 
     ar "Wh-what... was that terrifying sound...?"
     voice "ly_mad1"
@@ -157,7 +159,7 @@ label gameend:
             "The voice in your head makes a suggestion."
             ab "They’ll find him and that sooner or later. You may as well be there when all hell breaks loose."
 
-    # BLACK SCREEN
+    scene black
 
     "The walk to the lab wears at your body in quantities and qualities not yet seen."
     "Toes pop off your foot and rumble around freely in your boot."
@@ -166,7 +168,8 @@ label gameend:
     #voice ""
     ab "Clocks, a’ticking, zombie."
 
-    # IN THE LAB NOW
+    scene bg basement
+    show presper at presper_spot
 
     "You are the first to arrive to Presper’s lab."
     "The old man himself is leaned up against the rusted iron door, behind which the beast pounds mercilessly."
@@ -212,7 +215,7 @@ label gameend:
 
     "A voice emerges from you. It is not your own, but it its all too familiar."
     "For the first time, its voice fills more than just your brain. It fills the room in which you stand."
-    # SHOW THE ABBE FINALLY
+    show abbe at abbe_spot
     "Its shadow pours out of your ear and onto the floor beside you."
     voice "abe1-04"
     ab "Presper. Pathetic, as always."
@@ -444,6 +447,15 @@ label gameend:
     "Presper is flung across the room."
     "The beast {w} emerges."
     #voice ""
+    hide herman
+    hide arabella
+    hide elizabeth
+    hide aures
+    hide marianne
+    hide lysander
+    show presper frantic at right
+    show abbe at left
+    show amalgam attack
     # FINALLY SHOW THE AMALGAM FUCKER
     # BIG OL ROAR
     #voice ""

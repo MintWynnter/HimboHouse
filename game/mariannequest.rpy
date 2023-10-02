@@ -3,6 +3,8 @@ label marianne_bedroom:
     scene bg bedroom
     show curtain
     with fade
+    stop music fadeout 1.0
+    play music m_ma if_changed fadein 1.0
 
 
     #show whatever bg i don't remember the syntax
@@ -50,9 +52,9 @@ label marianne_intro:
     "The air slowly shifts."
     "A shiver runs up your spine as an amused looking woman materializes into existence."
     voice "maq6-04"
-    show marianne smile
+    show marianne smile at marianne_spot
     ma "Sorry it took me so long, hon, I had to go make myself presentable."
-    voice "ma_uni"
+    voice "ma_uni1"
     show marianne happysad
     ma "I wasn’t really ready for company—we don’t get a lot of visitors out here in the sticks."
     voice "maq6-05"
@@ -480,6 +482,9 @@ label marianne_gotcamcorder:
     "It looks much the same as you witnessed when you entered — decrepit furniture, warped wood, all caked in a thin layer of dust."
     "What differs are the myriad decorations and warm yellow lights that theme the place as a speakeasy."
     "In fact, on closer inspection, it looks just about like it could play the part."
+    show cg_marianne
+    hide marianne
+    with dissolve
     "The figures dancing and cavorting in the frame seem right at home there, outfitted in pinstripe suits and glitzy dresses."
     "Hot jazz, frenetic and vibrant, sets the pace for their footwork, some of whom trot across the room with a well-rehearsed choreography."
     menu:
@@ -498,101 +503,101 @@ label marianne_alsodoesntmatterlol:
 
     "The only presence that betrays a complete recreation of a Jazz Age speakeasy are the copious red plastic cups in the hand of each partygoer."
     voice "ma_dis"
-    show marianne playful2
+    #show marianne playful2
     ma "We broke most of the champagne glasses we bought within the hour."
     #voice ma_hap
-    show marianne smile
+    #show marianne smile
     ma "Had to make do with what we had — them’s the brakes."
     "Suddenly, a girl with a beaming smile strides into frame. She looks right into the camera, tilts her head, and waves hello."
     voice "maq6-51"
-    show marianne happysad
+    #show marianne happysad
     ma "Marianne."
     "Sure enough, her dress is identical to the ghost beside you."
     "The same pearl necklace. The same pearl headdress."
     "The same elegant dress."
     "Even the shades of lipstick match precisely."
     #voice ma_sad
-    show marianne happysad
+    #show marianne happysad
     ma "Marianne, the one and only."
     voice "maq6-52"
-    show marianne happysad
+    #show marianne happysad
     menu:
         ma "That smile could power a suburb, it’s so dang electric."
 
         "\"It is a spectacular smile.\"":
             voice "ma_ner"
-            show marianne happysad
+            #show marianne happysad
             ma "You’re telling me. I couldn’t match it if I tried."
             #voice ma_hap
-            show marianne smile
+            #show marianne smile
             ma "Although I’ve gotten close."
             voice "ma_dis"
-            show marianne happysad
+            #show marianne happysad
             ma "But it’s not just the smile."
 
         "\"A bit showy, don’t you think?\"":
             #voice ma_uni
-            show marianne thoughtful
+            #show marianne thoughtful
             ma "Showy? Sure, and it’s a hell of a show."
             voice "ma_dis"
-            show marianne happysad
+            #show marianne happysad
             ma "But it’s not just the smile."
 
         "\"I find that kind of enthusiasm unnerving.\"":
             voice "ma_ann"
-            show marianne thoughtful
+            #show marianne thoughtful
             ma "You wouldn’t feel that way if you were in the room with her."
             #voice ma_dis
-            show marianne happysad
+            #show marianne happysad
             ma "Because it wasn’t just the smile…"
 
-    voice "ma_sad"
-    show marianne happysad
+    voice "ma_sad1"
+    #show marianne happysad
     ma "She was the whole package."
     "The girl in the frame bats her eyelashes and lets out a laugh."
     "She speaks into the camera, but her words are drowned out by the voices around her and by the music."
     voice "maq6-53"
-    show marianne happysad
+    #show marianne happysad
     ma "A real belle of the ball. So full of life. So… happy."
     "The camera swings to focus on another girl, one much further back in the crowd."
     "Her face is pale. Even from the other end of the room, you can see beads of sweat form on her forehead."
     "She lacks the same decadenat regalia as the other partygoers."
     "She locks eyes with the camera and forces a smile before the camera pans back to Marianne."
     voice "maq6-54"
-    show marianne sad
+    #show marianne sad
     ma "You wanna know who I am? Well, that was me."
-    voice "ma_dis"
-    show marianne sad
+    voice "ma_dis3"
+    #show marianne sad
     menu:
         ma "In the corner, there, sweating bullets."
 
         "\"Were you nervous?\"":
             #voice ma_ann
-            show marianne sad
+            #show marianne sad
             ma "Sure, and even that’s an understatement."
-            voice "ma_ner"
-            show marianne sad
+            voice "ma_ner3"
+            #show marianne sad
             ma "But I don’t sweat when I’m nervous. I stutter."
         "\"Were you sick?\"":
             #voice ma_sad
-            show marianne sad
+            #show marianne sad
             ma "No, I was right as rain."
         "\"Did you see a ghost?\"":
-            voice "ma_uni"
-            show marianne sad
+            voice "ma_uni2"
+            #show marianne sad
             ma "If Arabella was here, she certainly didn’t make an appearance."
             #voice ma_ner
-            show marianne sad
+            #show marianne sad
             ma "No, we were spared frights like that."
 
     voice "maq6-55"
-    show marianne happysad
+    #show marianne happysad
     ma "Nope, I set up this whole party. The venue, the decorations."
     #voice ma_ann
-    show marianne playful2
+    #show marianne playful2
     ma "I cannot tell you how much awful, grating vaudeville music I sat through trying to make a playlist."
     voice "maq6-56"
-    show marianne happysad
+    #show marianne happysad
     ma "Hell, I even made the damn dress."
     "The camera is still focused on the real Marianne."
     "Her hands are on her knees, swinging them back and forth."
@@ -601,43 +606,43 @@ label marianne_alsodoesntmatterlol:
         "The girl in the back looks on, tightly wound and wide-eyed."
 
         "\"Where’s your dress, then?\"":
-            voice "ma_dis"
-            show marianne thoughtful
+            voice "ma_dis3"
+            #show marianne thoughtful
             ma "Didn’t have the time. Party planning, supply shopping…"
             #voice ma_uni
-            show marianne thoughtful
+            #show marianne thoughtful
             ma "Took that whole week prior to even learn to sew."
-            voice "ma_ann"
-            show marianne sad
+            voice "ma_ann1"
+            #show marianne sad
             ma "And I didn’t take to it quickly. Why?"
             voice "maq6-57"
-            show marianne sad
+            #show marianne sad
             ma "Lazy, incompetent, or distractable? Take your pick."
         "\"Why didn’t you wear it, then?\"":
-            voice "ma_sad"
-            show marianne sad
+            voice "ma_sad2"
+            #show marianne sad
             ma "I couldn’t. It wouldn’t look right on me."
             voice "maq6-58"
-            show marianne thoughtful
+            #show marianne thoughtful
             ma "Plus, imagine me striding into a party all glammed up like that."
             #voice ma_ann
-            show marianne thoughtful
+            #show marianne thoughtful
             ma "I’d look like a pretentious prick."
-            voice "ma_ner"
-            show marianne happysad
+            voice "ma_ner2"
+            #show marianne happysad
             ma "Not that she does, she rocks it."
             #voice ma_dis
-            show marianne happysad
+            #show marianne happysad
             ma "And besides, I offered."
         "\"She looks better in it, anyway.\"":
             #voice ma_ann
-            show marianne thoughtful
+            #show marianne thoughtful
             ma "Boy, thanks a lot."
-            voice "ma_dis"
-            show marianne thoughtful
+            voice "ma_dis1"
+            #show marianne thoughtful
             ma "I thought losing weight would turn things around."
             #voice maq6-59 THIS DOES NOT EXIST
-            show marianne happysad
+            #show marianne happysad
             ma "But I guess even shedding 100% of your mass and going fully incorporeal still doesn’t cut it."
 
     "The camera’s focus starts to fade away from Marianne and toward the crowd at large."
@@ -648,57 +653,57 @@ label marianne_alsodoesntmatterlol:
     "The ghost beside you stares into her face."
     "Her nose scrunches, and she scoffs."
     #voice ma_ner
-    show marianne sad
+    #show marianne sad
     ma "Ain’t never seen her like that."
-    voice "ma_puz"
-    show marianne sad
+    voice "ma_puz2"
+    #show marianne sad
     ma "Is she…"
     voice "maq6-60"
-    show marianne sad
+    #show marianne sad
     menu:
         ma "Why does she look so sad?"
 
         "\"Maybe she was sad.\"":
             voice "maq6-61"
-            show marianne happysad
+            #show marianne happysad
             ma "Marianne? Ha. That girl wouldn't know sadness from a teacup."
             voice "ma_hap"
-            show marianne smile
+            #show marianne smile
             ma "Her momma used to say she'd been born laughing."
             #voice ma_dis
             show marianne thoughtful
             ma "My momma said I'd scream the house down if I didn't have my way."
         "\"Maybe you didn't know her that well.\"":
             voice "maq6-62"
-            show marianne happysad
+            #show marianne happysad
             ma "Oh, I knew her, alright. "
 
-            show marianne playful1
+            #show marianne playful1
             ma "Sometimes I think I knew her better than I knew myself which ain't saying much because there was so much more of her than there was of me."
             #voice ma_uni
-            show marianne smile
+            #show marianne smile
             ma "She was always larger than life."
         "\"What do you think?\"":
             voice "ma_puz"
-            show marianne thoughtful
+            #show marianne thoughtful
             ma "Maybe she was ill…?"
             #voice ma_dis
-            show marianne thoughtful
+            #show marianne thoughtful
             ma "She didn't take care of herself enough."
             voice "maq6-63"
-            show marianne happysad
+            #show marianne happysad
             ma "She was always running herself ragged, running up and down town doing things for everyone."
             #voice ma_sad
-            show marianne happysad
+            #show marianne happysad
             ma "She was beloved, Marianne."
             voice "ma_dis"
-            show marianne sad
+            #show marianne sad
             ma "Always a smile on her face."
 
     "The girl in the sequin dress shakes herself a little, and the smile comes back."
     "Albeit, it reemerges not quite as brightly."
     voice "maq6-64"
-    show marianne happysad
+    #show marianne happysad
     ma "See? I told you. Must've been tired, poor girl."
     "The ghost speaks with a certain unease."
     "The camera shifts back to the pale girl, who looks better than before."
@@ -708,7 +713,7 @@ label marianne_alsodoesntmatterlol:
     "For any or all of these reasons — she is smiling."
     "Sweat and all."
     voice "maq6-65"
-    show marianne sad
+    #show marianne sad
     menu:
         ma "Oh, wow. I look–"
 
@@ -728,40 +733,40 @@ label marianne_nothingisrealrealityisasuggestion:
     "In an instant, the smile vanishes."
     "Next to you, the ghost stiffens, color rising to her cheeks."
     voice "maq6-66"
-    show marianne sad
+    #show marianne sad
     ma "I'd forgotten about that."
     "The reaction of the girl on the screen is much the same."
     "The girl’s paleness is overcome with a deep red blush as she bows her head and hurries offscreen."
     voice "maq6-67"
-    show marianne sad
+    #show marianne sad
     ma "That's when I left. I was mortified. I wanted the ground to swallow me whole."
     voice "maq6-68"
-    show marianne sad
+    #show marianne sad
     ma "And, in a sense, it did. I went into the basement."
     #voice ma_uni
-    show marianne happysad
+    #show marianne happysad
     ma "Told them I was grabbing more liquor."
-    voice "ma_dis"
-    show marianne happysad
+    voice "ma_dis1"
+    #show marianne happysad
     ma "But I just needed to escape the humiliation."
     #voice ma_sad
-    show marianne sad
+    #show marianne sad
     ma "Instead, I —"
     "For the first time in the video, the voices of some of the partygoers overpower the jazz that plays overhead."
     "Beckoning, they call, \"Daisy!\""
     "The girl in the sequin dress calls the loudest."
     "The ghost beside you recoils at the name, but watches intently anyway."
     voice "maq6-69"
-    show marianne happysad
+    #show marianne happysad
     ma "Didn’t know she was calling to me."
 
-    show marianne happysad
+    #show marianne happysad
     ma "Must have shut the hatch behind me by that point."
     voice "maq6-70"
-    show marianne sad
+    #show marianne sad
     ma "Leave it to me to abandon my friends when they’re just trying to help."
     voice "maq6-71"
-    show marianne sad
+    #show marianne sad
     menu:
         ma "What is wrong with me?"
 
@@ -775,16 +780,21 @@ label marianne_lmfao:
 
     "The ghost beside you — Daisy — clasps the camcorder tightly."
     "The video cuts out."
+    hide cg_marianne
+    show marianne thoughtful at marianne_spot
+    with dissolve
     #voice ma_ann
     show marianne thoughtful
     ma "I knew I shouldn’t have watched this damn thing."
-    voice "ma_sad"
+    voice "ma_sad3"
     show marianne thoughtful
     ma "It was better off lost."
     voice "maq6-72"
     show marianne thoughtful
     ma "I don’t need video evidence to show what a damn fool I am."
     "She lifts the camcorder and rears back her arm."
+    stop music fadeout 1.0
+    play music m_sad if_changed fadein 1.0
     menu:
         "She wants to throw it to the floor."
 
@@ -806,10 +816,10 @@ label marianne_lmfao:
             "Daisy places the camcorder on the bed and puts her head in her hands."
 
     voice "maq6-73"
-    show marianne happysad
+    show marianne sad
     ma "So what if I’m a phony?"
     voice "maq6-74"
-    show marianne happysad
+    show marianne sad
     ma "It’s better than being whatever the hell I was."
     voice "maq6-75"
     show marianne happysad
@@ -895,4 +905,4 @@ label marianne_lmfao:
     $ marianne_questdone = True
     $ marianne_questjustfinished = True
 
-    jump marianne_hub
+    jump marianne_convohub

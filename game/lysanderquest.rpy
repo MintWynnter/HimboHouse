@@ -462,6 +462,8 @@ label lysander_bigdecision:
         ly "Now."
 
         "\"You served as a guardian in life and in death. I free you from your stewardship.\"":
+            stop music fadeout 1.0
+            play music m_hope if_changed fadein 1.0
             $ lysander_queststate = 7
             "You stand in awe as Lysander's ghostly form is enveloped in a gentle amber light, seemingly drawing him back upward into his typical floating posture."
             "As the light grows in intensity, you can see its color begin to shift—first to a more yellow color, and then to an incredibly intense white."
@@ -509,6 +511,8 @@ label lysander_bigdecision:
 
 
         "\"I promise, Lysander—you will never, ever lose who you are.\"":
+            stop music fadeout 1.0
+            play music m_tense if_changed fadein 1.0
             $ lysander_queststate = 8
             $ lysander_ded = True
             "With a sharp CRACK and faint scent of sulfur, you witness Lysander's entire body grow tense, then nearly double over as if struck in the abdomen. He covers his left eye with his opposite hand, breathing raggedly."
@@ -551,6 +555,8 @@ label lysander_bigdecision:
             jump lysander_reflection
 
         "\"I will take this burden from you. Pass the pain of your vow to me.\"":
+            stop music fadeout 1.0
+            play music m_sad if_changed fadein 1.0
             $ lysander_queststate = 9
             "Lysander gestures for you to approach him."
             "You step into the chalk circle and walk up to Lysander."
@@ -630,6 +636,9 @@ label lysander_bigdecision:
             jump lysander_reflection
 
         "\"This is what you agreed to. Accept it in its purest form.\"":
+
+            stop music fadeout 1.0
+            play music m_tense if_changed fadein 1.0
             $ lysander_queststate = 10
             $ lysander_ded = True
             "With a sharp CRACK and faint scent of sulfur, you witness Lysander's entire body grow tense, then nearly double over as if struck in the abdomen. "

@@ -858,6 +858,8 @@ label arabella_ending:
     "She closes her eyes for a moment, drawing a deep, ethereal breath."
     "When she finally opens her eyes, her expression is that of one you can't seem to place, leaving you wondering about the path she's chosen."
     if q3_ending_points >= 2:
+        stop music fadeout 1.0
+        play music m_hope if_changed fadein 1.0
         "You hold out the letter to Arabella. She stares at it for what feels like forever, before slowly and hesitantly taking it."
         "As she goes to open it, she looks up at you, with a look that seems to be asking for...  reassurance, perhaps?"
         "You nod your head to her, and she slowly and carefully takes the letter out of the envelope, and as she reads it, tears flood from her eyes."

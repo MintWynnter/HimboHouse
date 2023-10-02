@@ -517,6 +517,8 @@ label lysander_arabellalore:
     ly "I would’ve done anything for that child."
 
 label lysander_arabellalore_questions:
+    stop music fadeout 1.0
+    play music m_sad if_changed fadein 1.0
     $ q3_lysander_convo = True
     menu:
         "\"You would have done anything for her?\"":
