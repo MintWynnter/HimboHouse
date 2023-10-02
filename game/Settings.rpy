@@ -46,7 +46,27 @@ screen bigMenu(mtype, subtype):
         action Return()
     
     if mtype == "Save":
-        use file_slots(_("Save"))
+        textbutton "1":
+            xpos .365625
+            ypos .895370
+            action ShowMenu("bigMenu", "Save", "1")
+        textbutton "2":
+            xpos 
+            ypos .895370
+            action ShowMenu("bigMenu", "Save", "2")
+        textbutton "3":
+            xpos 
+            ypos .895370
+            action ShowMenu("bigMenu", "Save", "3")
+        textbutton "4":
+            xpos 
+            ypos .895370
+            action ShowMenu("bigMenu", "Save", "4")
+        textbutton "5":
+            xpos 
+            ypos .895370
+            action ShowMenu("bigMenu", "Save", "5")
+
     if mtype == "Load":
         use file_slots(_("Load"))
     
