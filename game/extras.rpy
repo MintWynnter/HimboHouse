@@ -86,6 +86,7 @@ screen extras(mtype, subtype):
         xpos .101563
         ypos .038889
         action ShowMenu("extras", "Art", "Characters")
+        activate_sound "audio/sound/uismbtn.ogg"
     textbutton "MUSIC":
         text_style "tembuttons"
         if mtype == "Music":
@@ -93,6 +94,7 @@ screen extras(mtype, subtype):
         xpos .271354
         ypos .038889
         action ShowMenu("extras", "Music", "1")
+        activate_sound "audio/sound/uismbtn.ogg"
     textbutton "CREDITS":
         text_style "tembuttons"
         if mtype == "Credits":
@@ -100,11 +102,13 @@ screen extras(mtype, subtype):
         xpos .498958
         ypos .038889
         action ShowMenu("extras", "Credits", "")
+        activate_sound "audio/sound/uismbtn.ogg"
     textbutton "TITLE":
         text_style "tembuttons"
         xpos .768229
         ypos .038889
         action ShowMenu("main_menu")
+        activate_sound "audio/sound/uismbtn.ogg"
     if mtype == "Credits":
         viewport:
             #area(xstart, ystart, xend, yend)
@@ -126,6 +130,7 @@ screen extras(mtype, subtype):
             xpos .145313
             ypos .903704
             action ShowMenu("extras", "Art", "Characters")
+            activate_sound "audio/sound/uismbtn.ogg"
         textbutton "BACKGROUNDS":
             text_style "bembuttons"
             if subtype == "Backgrounds":
@@ -133,6 +138,7 @@ screen extras(mtype, subtype):
             xpos .421875
             ypos .903704
             action ShowMenu("extras", "Art", "Backgrounds")
+            activate_sound "audio/sound/uismbtn.ogg"
         textbutton "OTHERS":
             text_style "bembuttons"
             if subtype == "Others":
@@ -140,6 +146,7 @@ screen extras(mtype, subtype):
             xpos .719227
             ypos .903704
             action ShowMenu("extras", "Art", "Others")
+            activate_sound "audio/sound/uismbtn.ogg"
         if subtype == "Characters":
             imagebutton:
                 idle "images/headshot_lysander.png"

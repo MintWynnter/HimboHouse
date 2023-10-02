@@ -20,6 +20,7 @@ screen bigMenu(mtype, subtype):
         xpos .097917
         ypos .038889
         action ShowMenu("bigMenu", "Save", "1")
+        activate_sound "audio/sound/uismbtn.ogg"
     textbutton "LOAD":
         text_style "tbmbuttons"
         if mtype == "Load":
@@ -27,6 +28,7 @@ screen bigMenu(mtype, subtype):
         xpos .28125
         ypos .038889
         action ShowMenu("bigMenu", "Load", "1")
+        activate_sound "audio/sound/uismbtn.ogg"
     textbutton "SETTINGS":
         text_style "tbmbuttons"
         if mtype == "Settings":
@@ -34,16 +36,19 @@ screen bigMenu(mtype, subtype):
         xpos .478646
         ypos .038889
         action ShowMenu("bigMenu", "Settings", "Graphics")
+        activate_sound "audio/sound/uismbtn.ogg"
     textbutton "TITLE":
         text_style "tbmbuttons"
         xpos .770833
         ypos .038889
         action ShowMenu("main_menu")
+        activate_sound "audio/sound/uismbtn.ogg"
     textbutton "RETURN":
         text_style "smallbuttons"
         xpos .026563
         ypos .935185
         action Return()
+        activate_sound "audio/sound/uismbtn.ogg"
     
     if mtype == "Save":
         textbutton "1":
@@ -53,6 +58,7 @@ screen bigMenu(mtype, subtype):
             xpos .365625
             ypos .895370
             action ShowMenu("bigMenu", "Save", "1")
+            activate_sound "audio/sound/uismallbtn3.ogg"
         textbutton "2":
             text_style "smallbuttons"
             if subtype == "2":
@@ -60,6 +66,7 @@ screen bigMenu(mtype, subtype):
             xpos .428125
             ypos .895370
             action ShowMenu("bigMenu", "Save", "2")
+            activate_sound "audio/sound/uismallbtn3.ogg"
         textbutton "3":
             text_style "smallbuttons"
             if subtype == "3":
@@ -67,6 +74,7 @@ screen bigMenu(mtype, subtype):
             xpos .493229
             ypos .895370
             action ShowMenu("bigMenu", "Save", "3")
+            activate_sound "audio/sound/uismallbtn3.ogg"
         textbutton "4":
             text_style "smallbuttons"
             if subtype == "4":
@@ -74,6 +82,7 @@ screen bigMenu(mtype, subtype):
             xpos .557813
             ypos .895370
             action ShowMenu("bigMenu", "Save", "4")
+            activate_sound "audio/sound/uismallbtn3.ogg"
         textbutton "5":
             text_style "smallbuttons"
             if subtype == "5":
@@ -81,6 +90,7 @@ screen bigMenu(mtype, subtype):
             xpos .623438
             ypos .895370
             action ShowMenu("bigMenu", "Save", "5")
+            activate_sound "audio/sound/uismallbtn3.ogg"
         
         $slot1 = pow(6, int(subtype) - 1)
         $slot2 = slot1 + 1
@@ -93,6 +103,7 @@ screen bigMenu(mtype, subtype):
             xpos .133854
             ypos .227778
             action FileAction(slot1)
+            activate_sound "audio/sound/uisave.ogg"
 
             has vbox
 
@@ -109,6 +120,7 @@ screen bigMenu(mtype, subtype):
             xpos .394792
             ypos .227778
             action FileAction(slot2)
+            activate_sound "audio/sound/uisave.ogg"
 
             has vbox
 
@@ -125,6 +137,7 @@ screen bigMenu(mtype, subtype):
             xpos .655729
             ypos .227778
             action FileAction(slot3)
+            activate_sound "audio/sound/uisave.ogg"
 
             has vbox
 
@@ -141,6 +154,7 @@ screen bigMenu(mtype, subtype):
             xpos .133854
             ypos .551852
             action FileAction(slot4)
+            activate_sound "audio/sound/uisave.ogg"
 
             has vbox
 
@@ -157,6 +171,7 @@ screen bigMenu(mtype, subtype):
             xpos .394792
             ypos .551852
             action FileAction(slot5)
+            activate_sound "audio/sound/uisave.ogg"
 
             has vbox
 
@@ -173,6 +188,7 @@ screen bigMenu(mtype, subtype):
             xpos .655729
             ypos .551852
             action FileAction(slot6)
+            activate_sound "audio/sound/uisave.ogg"
 
             has vbox
 
@@ -196,6 +212,7 @@ screen bigMenu(mtype, subtype):
             xpos .365625
             ypos .895370
             action ShowMenu("bigMenu", "Load", "1")
+            activate_sound "audio/sound/uismbtn.ogg"
         textbutton "2":
             text_style "smallbuttons"
             if subtype == "2":
@@ -203,6 +220,7 @@ screen bigMenu(mtype, subtype):
             xpos .428125
             ypos .895370
             action ShowMenu("bigMenu", "Load", "2")
+            activate_sound "audio/sound/uismbtn.ogg"
         textbutton "3":
             text_style "smallbuttons"
             if subtype == "3":
@@ -210,6 +228,7 @@ screen bigMenu(mtype, subtype):
             xpos .493229
             ypos .895370
             action ShowMenu("bigMenu", "Load", "3")
+            activate_sound "audio/sound/uismbtn.ogg"
         textbutton "4":
             text_style "smallbuttons"
             if subtype == "4":
@@ -217,6 +236,7 @@ screen bigMenu(mtype, subtype):
             xpos .557813
             ypos .895370
             action ShowMenu("bigMenu", "Load", "4")
+            activate_sound "audio/sound/uismbtn.ogg"
         textbutton "5":
             text_style "smallbuttons"
             if subtype == "5":
@@ -224,6 +244,7 @@ screen bigMenu(mtype, subtype):
             xpos .623438
             ypos .895370
             action ShowMenu("bigMenu", "Load", "5")
+            activate_sound "audio/sound/uismbtn.ogg"
         
         $slot1 = pow(6, int(subtype) - 1)
         $slot2 = slot1 + 1
@@ -236,6 +257,7 @@ screen bigMenu(mtype, subtype):
             xpos .133854
             ypos .227778
             action FileLoad(slot1)
+            activate_sound "audio/sound/uiload.ogg"
 
             has vbox
 
@@ -252,6 +274,7 @@ screen bigMenu(mtype, subtype):
             xpos .394792
             ypos .227778
             action FileLoad(slot2)
+            activate_sound "audio/sound/uiload.ogg"
 
             has vbox
 
@@ -268,6 +291,7 @@ screen bigMenu(mtype, subtype):
             xpos .655729
             ypos .227778
             action FileLoad(slot3)
+            activate_sound "audio/sound/uiload.ogg"
 
             has vbox
 
@@ -284,6 +308,7 @@ screen bigMenu(mtype, subtype):
             xpos .133854
             ypos .551852
             action FileLoad(slot4)
+            activate_sound "audio/sound/uiload.ogg"
 
             has vbox
 
@@ -300,6 +325,7 @@ screen bigMenu(mtype, subtype):
             xpos .394792
             ypos .551852
             action FileLoad(slot5)
+            activate_sound "audio/sound/uiload.ogg"
 
             has vbox
 
@@ -316,6 +342,7 @@ screen bigMenu(mtype, subtype):
             xpos .655729
             ypos .551852
             action FileLoad(slot6)
+            activate_sound "audio/sound/uiload.ogg"
 
             has vbox
 
@@ -337,6 +364,7 @@ screen bigMenu(mtype, subtype):
             xpos .197396
             ypos .905556
             action ShowMenu("bigMenu", "Settings", "Graphics")
+            activate_sound "audio/sound/uismbtn.ogg"
         textbutton "AUDIO":
             text_style "bbmbuttons"
             if subtype == "Audio":
@@ -344,6 +372,7 @@ screen bigMenu(mtype, subtype):
             xpos .457813
             ypos .905556
             action ShowMenu("bigMenu", "Settings", "Audio")
+            activate_sound "audio/sound/uismbtn.ogg"
         textbutton "CONTROLS":
             text_style "bbmbuttons"
             if subtype == "Controls":
@@ -351,6 +380,7 @@ screen bigMenu(mtype, subtype):
             xpos .673958
             ypos .905556
             action ShowMenu("bigMenu", "Settings", "Controls")
+            activate_sound "audio/sound/uismbtn.ogg"
         if subtype == "Graphics":
             text "Display" xpos .125 ypos .202778 size 48
             text "Skip" xpos .420833 ypos .202778 size 48
@@ -366,33 +396,39 @@ screen bigMenu(mtype, subtype):
                 xpos .153125
                 ypos .262037
                 action Preference("display", "fullscreen")
+                activate_sound "audio/sound/uismbtn.ogg"
             textbutton "Windowed":
                 text_style "smallbuttons"
                 xpos .153125
                 ypos .306481
                 action Preference("display", "window")
+                activate_sound "audio/sound/uismbtn.ogg"
             textbutton "Unseen Text":
                 text_style "smallbuttons"
                 xpos .445833
                 ypos .262037
                 action Preference("skip", "toggle")
+                activate_sound "audio/sound/uismbtn.ogg"
             textbutton "After Choices":
                 text_style "smallbuttons"
                 xpos .445833
                 ypos .306481
                 action Preference("after choices", "toggle")
+                activate_sound "audio/sound/uismbtn.ogg"
             hbox:
                 style_prefix "slider"
                 xpos .194792
                 ypos .472222
                 vbox:
                     bar value Preference("text speed")
+                    activate_sound "audio/sound/uiscrl.ogg"
             hbox:
                 style_prefix "slider"
                 xpos .194792
                 ypos .626852
                 vbox:
                     bar value Preference("auto-forward time")
+                    activate_sound "audio/sound/uiscrl.ogg"
         if subtype == "Audio":
             text "Music Volume" xpos .121354 ypos .213889 size 48
             text "SFX Volume" xpos .121354 ypos .368519 size 48
@@ -408,23 +444,27 @@ screen bigMenu(mtype, subtype):
                 ypos .794444
                 action Preference("all mute", "toggle")
                 style "mute_all_button"
+                activate_sound "audio/sound/uismbtn.ogg"
             hbox:
                 style_prefix "slider"
                 xpos .191146
                 ypos .290741
                 vbox:
                     bar value Preference("music volume")
+                    activate_sound "audio/sound/uiscrl.ogg"
             hbox:
                 style_prefix "slider"
                 xpos .191146
                 ypos .445370
                 vbox:
                     bar value Preference("sound volume")
+                    activate_sound "audio/sound/uiscrl.ogg"
             hbox:
                 style_prefix "slider"
                 xpos .191146
                 ypos .6
                 vbox:
                     bar value Preference("voice volume")
+                    activate_sound "audio/sound/uiscrl.ogg"
 
         

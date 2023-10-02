@@ -250,6 +250,7 @@ screen quick_menu():
             xpos .854167
             ypos -.461111
             action Show("quick_menu2")
+            activate_sound "audio/sound/uiscrl.ogg"
 
 screen quick_menu2():
 
@@ -262,31 +263,37 @@ screen quick_menu2():
             xpos .854167
             ypos -.012037
             action Hide("quick_menu2")
+            activate_sound "audio/sound/uiscrl.ogg"
         textbutton "SAVE":
             text_style "qmbuttons"
             xpos .902604
             ypos .050926
             action ShowMenu("bigMenu", "Save", "1")
+            activate_sound "audio/sound/uismallbtn1.ogg"
         textbutton "LOAD":
             text_style "qmbuttons"
             xpos .9
             ypos .114815
             action ShowMenu("bigMenu", "Load", "1")
+            activate_sound "audio/sound/uismallbtn1.ogg"
         textbutton "LOG":
             text_style "qmbuttons"
             xpos .905208
             ypos .178704
             action ShowMenu("history")
+            activate_sound "audio/sound/uismallbtn1.ogg"
         textbutton "SETTINGS":
             text_style "qmbuttons"
             xpos .883333
             ypos .242593
             action ShowMenu("bigMenu", "Settings", "Graphics")
+            activate_sound "audio/sound/uismallbtn1.ogg"
         textbutton "TITLE":
             text_style "qmbuttons"
             xpos .898958
             ypos .306481
             action MainMenu()
+            activate_sound "audio/sound/uismallbtn1.ogg"
 
 
 
@@ -401,36 +408,42 @@ screen main_menu():
         ypos .0842593
         at logozoom
         action [Hide("main_menu"), Show("devChoice")]
+        activate_sound "audio/sound/uimmbtn.ogg"
 
     textbutton "START":
         text_style "mmbuttons"
         xpos .145833
         ypos .8925926
         action Start()
+        activate_sound "audio/sound/uimmbtn.ogg"
 
     textbutton "LOAD":
         text_style "mmbuttons"
         xpos .2875
         ypos .8925926
         action ShowMenu("bigMenu", "Load", "1")
+        activate_sound "audio/sound/uimmbtn.ogg"
 
     textbutton "SETTINGS":
         text_style "mmbuttons"
         xpos .417708
         ypos .8925926
         action ShowMenu("bigMenu", "Settings", "Graphics")
+        activate_sound "audio/sound/uimmbtn.ogg"
 
     textbutton "EXTRAS":
         text_style "mmbuttons"
         xpos .615625
         ypos .8925926
         action ShowMenu("extras", "Art", "Characters")
+        activate_sound "audio/sound/uimmbtn.ogg"
 
     textbutton "EXIT":
         text_style "mmbuttons"
         xpos .780208
         ypos .8925926
         action Quit()
+        activate_sound "audio/sound/uimmbtn.ogg"
 
     if False:#gui.show_name:
 
