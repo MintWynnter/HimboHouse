@@ -236,27 +236,58 @@ style choice_button_text is default:
 ## The quick menu is displayed in-game to provide easy access to the out-of-game
 ## menus.
 
+style qmbuttons:
+    hover_color "#FF90F4"
+
 screen quick_menu():
 
     ## Ensure this appears on top of other screens.
     zorder 100
 
     if quick_menu:
+        imagebutton:
+            idle "gui/quickmenu.png"
+            xpos .854167
+            ypos -.461111
+            action Show("quick_menu2")
 
-        hbox:
-            style_prefix "quick"
+screen quick_menu2():
 
-            xalign 0.5
-            yalign 1.0
+    ## Ensure this appears on top of other screens.
+    zorder 100
 
-            textbutton _("Back") action Rollback()
-            textbutton _("History") action ShowMenu('history')
-            textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Save") action ShowMenu('save')
-            textbutton _("Q.Save") action QuickSave()
-            textbutton _("Q.Load") action QuickLoad()
-            textbutton _("Prefs") action ShowMenu('preferences')
+    if quick_menu:
+        imagebutton:
+            idle "gui/quickmenu.png"
+            xpos .854167
+            ypos -.012037
+            action Hide("quick_menu2")
+        textbutton "SAVE":
+            text_style "qmbuttons"
+            xpos .902604
+            ypos .050926
+            action ShowMenu("bigMenu", "Save", "1")
+        textbutton "LOAD":
+            text_style "qmbuttons"
+            xpos .9
+            ypos .114815
+            action ShowMenu("bigMenu", "Load", "1")
+        textbutton "LOG":
+            text_style "qmbuttons"
+            xpos .905208
+            ypos .178704
+            action ShowMenu("history")
+        textbutton "SETTINGS":
+            text_style "qmbuttons"
+            xpos .883333
+            ypos .242593
+            action ShowMenu("bigMenu", "Settings", "Graphics")
+        textbutton "TITLE":
+            text_style "qmbuttons"
+            xpos .898958
+            ypos .306481
+            action MainMenu()
+
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
@@ -381,19 +412,19 @@ screen main_menu():
         text_style "mmbuttons"
         xpos .2151042
         ypos .8925926
-        action ShowMenu("load")
+        action ShowMenu("bigMenu", "Load", "1")
 
     textbutton "SETTINGS":
         text_style "mmbuttons"
         xpos .4119792
         ypos .8925926
-        action ShowMenu("preferences")
+        action ShowMenu("bigMenu", "Settings", "Graphics")
 
     textbutton "EXTRAS":
         text_style "mmbuttons"
         xpos .6072917
         ypos .8925926
-        #action ShowMenu("extras")
+        action ShowMenu("extras", "Art", "Characters")
 
     textbutton "EXIT":
         text_style "mmbuttons"
@@ -624,11 +655,7 @@ screen save():
     use file_slots(_("Save"))
 
 
-screen load():
 
-    tag menu
-
-    use file_slots(_("Load"))
 
 
 screen file_slots(title):
