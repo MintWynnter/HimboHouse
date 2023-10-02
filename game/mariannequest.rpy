@@ -1,7 +1,9 @@
 label marianne_bedroom:
 
     scene bg bedroom
+    show curtain
     with fade
+
 
     #show whatever bg i don't remember the syntax
 

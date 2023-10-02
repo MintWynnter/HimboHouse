@@ -4,13 +4,14 @@ label presper_hub:
     default dr_greeting_2 = True
     default dr_greeting_3 = True
     default dr_greeting_4 = True
-    
+
     default dr_farewell_1 = True
     default dr_farewell_2 = True
     default dr_farewell_3 = True
     default dr_farewell_4 = True
 
     scene bg basement
+    show lab
     with fade
     show presper neutral at presper_spot
     with dissolve
@@ -37,9 +38,9 @@ label presper_hub:
         $ dr_greeting_1 = True
         $ dr_greeting_2 = True
         $ dr_greeting_3 = True
-        $ dr_greeting_4 = True      
+        $ dr_greeting_4 = True
         #voice "drg-05"
-        dr ""Ah! The cadaver of the hour. What allures you to my abode?""
+        dr "Ah! The cadaver of the hour. What allures you to my abode?"
 
 label presper_convohub:
 
@@ -113,7 +114,7 @@ label presper_convohub:
                 $ dr_farewell_3 = False
                 #voice "drf-03"
                 dr "Au revoir! That's French, you know -"
-            elif dr_farewell_4
+            elif dr_farewell_4:
                 $ dr_farewell_4 = False
                 #voice "drf-04"
                 dr "See you later, alli-cadaver! Oho, I do rouse myself."
@@ -121,7 +122,7 @@ label presper_convohub:
                 $ dr_farewell_1 = True
                 $ dr_farewell_2 = True
                 $ dr_farewell_3 = True
-                $ dr_farewell_4 = True              
+                $ dr_farewell_4 = True
                 #voice "drf-05"
                 dr "Farwell! May you amble back here once more."
             call screen minimap()

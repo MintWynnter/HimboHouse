@@ -8,7 +8,7 @@ label marianne_hub:
     default ma_farewell_1 = True
     default ma_farewell_2 = True
     default ma_farewell_3 = True
-    default ma_farewell_4 = True  
+    default ma_farewell_4 = True
 
     show marianne smile at marianne_spot
     with dissolve
@@ -23,7 +23,7 @@ label marianne_hub:
         $ ma_greeting_2 = False
         #voice "mag-02"
         ma "Welcome back, darlin'."
-    elif ma_greeting_3 and !marianne_questdone:
+    elif ma_greeting_3 and not marianne_questdone:
         $ ma_greeting_3 = False
         #voice "mag-03"
         ma "What can Marianne do for you, huh?"
@@ -35,7 +35,7 @@ label marianne_hub:
         $ ma_greeting_1 = True
         $ ma_greeting_2 = True
         $ ma_greeting_3 = True
-        $ ma_greeting_4 = True  
+        $ ma_greeting_4 = True
         #voice "mag-05"
         ma "Looking fresh, zombiepie!"
 
@@ -95,7 +95,7 @@ label marianne_convohub:
                 $ ma_farewell_1 = True
                 $ ma_farewell_2 = True
                 $ ma_farewell_3 = True
-                $ ma_farewell_4 = True   
+                $ ma_farewell_4 = True
                 #voice "maf-05"
                 ma "Keep it peachy, sugar."
 

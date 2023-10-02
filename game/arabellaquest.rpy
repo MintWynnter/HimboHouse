@@ -1,7 +1,9 @@
 label arabella_foyer:
 
     scene bg foyer
+    show blink
     with fade
+
 
     #show whatever bg i don't remember the syntax
 
@@ -44,7 +46,7 @@ label arabella_intro:
             "The apparition smiles sadly at you and the corner of her lips turns upwards, revealing a hint of warmth in the depths of her ghostly eyes."
             "She speaks softly, gazing around the room with a melancholic expression on her face."
             $ arabella_name = "Arabella"
-            show arabella regal
+            show arabella regal at arabella_spot
             with dissolve
             voice "arq3-02"
             ar "My name is Arabella. I lived in this home with my mother and father, but my life ended here many years ago."
@@ -53,7 +55,7 @@ label arabella_intro:
             "You ask her gently:"
             mc "Why are you here? Are you not able to leave?"
             "Arabella sighs softly and it sounds almost like a whisper."
-            show arabella melancholic
+            show arabella melancholic at arabella_spot
             #voice "arq3-04"
             ar "I am bound to this house. It was my prison while I lived, and it is now my prison after death."
             #voice "arq3-05"
@@ -86,7 +88,7 @@ label arabella_intro:
             "She sighs softly and it sounds almost like a whisper."
             "Speaking softly, she gazes around the room with a melancholic expression on her face."
             $ arabella_name = "Arabella"
-            show arabella melancholic
+            show arabella melancholic   at arabella_spot
             with dissolve
             #voice "arq3-07"
             ar "M-my name is Arabella. I lived in this home with my mother and father, but my life ended here many years ago."

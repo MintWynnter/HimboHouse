@@ -2,6 +2,7 @@ label herman_lounge:
     #Dagon you bastard
 
     scene bg lounge
+    show drink
     with fade
 
     #show whatever bg i don't remember the syntax
@@ -35,7 +36,7 @@ label herman_intro:
     "His wide, toothy smile proudly displays a single gold tooth."
     "Before you can react, he grasps your hand abruptly and begins to shake it with vigor as if attempting to yank your arm off, coughing rudely in your face."
     #voice heq2-01
-    show herman laugh
+    show herman laugh at herman_spot
     he "Well, butter my backside and call me a biscuit; a fresh one!"
     #voice heq2-02
     show herman happy

@@ -1,6 +1,7 @@
 label elizabeth_livingroom:
 
     scene bg livingroom
+    show fire
     with fade
 
     #show whatever bg i don't remember the syntax
@@ -57,7 +58,7 @@ label elizabeth_intro:
     #voice ""
     mc "What happened to you?"
     #voice "elq5-01"
-    show elizabeth tantrum1
+    show elizabeth tantrum1 at elizabeth_spot
     el "GO AWAY!"
     #voice ""
     mc "I’m just asking—"
