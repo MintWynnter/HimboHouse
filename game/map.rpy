@@ -56,11 +56,12 @@ screen minimap():
         pos (.8, .3)
         action [Hide("minimap"), Jump("arabella")]
         at chibizoom
-    imagebutton:
-        if True:
-            idle "question_mark.png"
-        else:
-            idle "question_mark.png"
-        pos (.8, .7)
-        action [Hide("minimap"), Jump("presper_hub")]
-        at chibizoom
+    if questsdone >= 3:
+        imagebutton:
+            if True:
+                idle "question_mark.png"
+            else:
+                idle "question_mark.png"
+            pos (.8, .7)
+            action [Hide("minimap"), Jump("presper_hub")]
+            at chibizoom
