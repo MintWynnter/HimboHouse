@@ -147,6 +147,7 @@ label herman_convohub:
                 $ he_farewell_6 = True
                 #voice "hef-07"
                 he "Tuck your tail and git, then."
+            scene black
             call screen minimap()
 
 label herman_persuasion:
@@ -194,6 +195,7 @@ label herman_getdunkedon:
     ab "And if you care so much as to acquire some, I might have a lead of sorts."
     ab "Check the living room. A great many memories are hidden away, there."
     $ herman_justgotrebuffed = False
+    scene black
     call screen minimap()
 
 label herman_elizabeth:

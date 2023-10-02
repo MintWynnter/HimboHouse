@@ -192,7 +192,7 @@ label lysander_convohub:
                     $ ly_farewell_3 = True
                     #voice "lyf-04"
                     ly "Should you require my assistance, you know where I'll be."
-
+            scene black
             call screen minimap()
 
 

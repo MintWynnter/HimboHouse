@@ -22,7 +22,7 @@ label postquest:
     if questsdone is 6:
         jump decomp6
 
-
+    scene black
     call screen minimap()
 
 
@@ -178,7 +178,7 @@ label exposition1:
     ab "You will know with time."
     #voice
     ab "That is all."
-
+    scene black
     call screen minimap()
 
 label exposition2:
@@ -249,7 +249,7 @@ label exposition2:
     ab "But, as I said before, you will know with time."
     #voice
     ab "Even if I don’t."
-
+    scene black
     call screen minimap()
 
 label exposition3:
@@ -287,7 +287,7 @@ label exposition4:
 
     #voice abq0-129
     ab "Antoine is responsible for both our predicaments. Let us keep the little worm under scrutiny until we know more."
-
+    scene black
     call screen minimap()
 
 label exposition5:
@@ -353,7 +353,7 @@ label exposition5:
     ab "He will always be a failure."
     #voice abq0-137
     ab "I will speak no more of it. Let’s move on."
-
+    scene black
     call screen minimap()
 
 label exposition6:

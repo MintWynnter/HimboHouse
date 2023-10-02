@@ -5,6 +5,8 @@ init:
 screen minimap():
     $config.allow_skipping = False
     $config.keymap["dismiss"] = []
+    zorder 99
+    add "images/just_a_black_screen.png"
     add "images/mansionLayout.png"
     imagebutton:
         if elizabeth_queststate == 0:

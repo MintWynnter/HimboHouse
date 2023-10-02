@@ -102,7 +102,7 @@ label arabella_convohub:
 
 
 
-
+            scene black
             call screen minimap()
 
 label arabella_aboutyou:
@@ -351,4 +351,5 @@ label q3_farewell:
 
 # Arabella Exit
 label foyer_exit:
+    scene black
     call screen minimap()
